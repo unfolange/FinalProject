@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      palm-detailed-bend_0: -7492056568103957245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
