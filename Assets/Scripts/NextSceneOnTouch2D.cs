@@ -12,7 +12,6 @@ public class NextSceneOnTouch2D : MonoBehaviour
         
         if (other.gameObject.CompareTag(triggeringTag))
         {
-            Debug.Log(other.gameObject.name + " ha entrado en el trigger. Cargando siguiente escena.");
 
             
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;

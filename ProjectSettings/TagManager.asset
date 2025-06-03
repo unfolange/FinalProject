@@ -48,11 +48,14 @@ TagManager:
   - name: Props 2
     uniqueID: 3354568079
     locked: 0
+  - name: Player
+    uniqueID: 1808899559
+    locked: 0
   - name: Props 3
     uniqueID: 3704976049
     locked: 0
-  - name: Player
-    uniqueID: 1808899559
+  - name: Fog
+    uniqueID: 1174818589
     locked: 0
   m_RenderingLayers:
   - Default
