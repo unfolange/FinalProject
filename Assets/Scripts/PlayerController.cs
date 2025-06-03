@@ -3,12 +3,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Horizontal Movement Settings")]     
+    [Header("Horizontal Movement Settings")]
     [SerializeField] private float walkSpeed = 1;
     [Space(5)]
 
     [Header("Vertical Movement Settings")]
-    [SerializeField]private float jumpForce = 45;
+    [SerializeField] private float jumpForce = 45;
     private float jumpBufferCounter = 0;
     [SerializeField] private float jumpBufferFrames;
     private float coyoteTimeCounter = 0;
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
     public void Awake()
     {
-        if(Instance != null && Instance != null)
+        if (Instance != null && Instance != null)
         {
             Destroy(gameObject);
         }
@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// Método para obtener las entradas del usuario
+    /// Mï¿½todo para obtener las entradas del usuario
     /// </summary>
     void GetInputs()
     {
@@ -121,7 +121,7 @@ public class PlayerController : MonoBehaviour
 
     void Flip()
     {
-        if (xAxis < 0 && Time.timeScale !=0)
+        if (xAxis < 0 && Time.timeScale != 0)
         {
             transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y);
             pState.lookingRight = false;
@@ -132,12 +132,12 @@ public class PlayerController : MonoBehaviour
             transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y);
             pState.lookingRight = true;
             //transform.eulerAngles = new Vector2(0, 0);
-        }        
+        }
     }
 
 
     /// <summary>
-    /// Método para mover el player
+    /// Mï¿½todo para mover el player
     /// </summary>
     private void Move()
     {
@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
 
     void StartDash()
     {
-        if(Input.GetButtonDown("Dash") && canDash && !dashed)
+        if (Input.GetButtonDown("Dash") && canDash && !dashed)
         {
             StartCoroutine(Dash());
             dashed = true;
@@ -194,7 +194,7 @@ public class PlayerController : MonoBehaviour
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 80, upAttackTransform);
             }
-            else if(yAxis<0 && !Grounded())
+            else if (yAxis < 0 && !Grounded())
             {
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
@@ -203,7 +203,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoilDir, float _recoilStrength )
+    private void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoilDir, float _recoilStrength)
     {
         Collider2D[] objectsToHit = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
 
@@ -213,12 +213,12 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        for(int i=0; i < objectsToHit.Length; i++)
+        for (int i = 0; i < objectsToHit.Length; i++)
         {
-            if(objectsToHit[i].GetComponent<Enemy>() != null)
+            if (objectsToHit[i].GetComponent<Enemy>() != null)
             {
-                objectsToHit[i].GetComponent<Enemy>().EnemyHit(damage, 
-                    (transform.position-objectsToHit[i].transform.position).normalized, _recoilStrength);
+                objectsToHit[i].GetComponent<Enemy>().EnemyHit(damage,
+                    (transform.position - objectsToHit[i].transform.position).normalized, _recoilStrength);
             }
         }
     }
@@ -229,7 +229,7 @@ public class PlayerController : MonoBehaviour
         _slashEffect.transform.eulerAngles = new Vector3(0, 0, _effectAngle);
         _slashEffect.transform.localScale = new Vector2(_attackTransform.localScale.x, _attackTransform.localScale.y);
     }
-    
+
 
     void Recoil()
     {
@@ -263,7 +263,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //Stop recoil X
-        if(pState.recoilingX && stepsXRecoiled < recoilXSteps)
+        if (pState.recoilingX && stepsXRecoiled < recoilXSteps)
         {
             stepsXRecoiled++;
         }
@@ -282,7 +282,7 @@ public class PlayerController : MonoBehaviour
             StopRecoilY();
         }
 
-        //si ya está en el suelo deja de retroceder
+        //si ya estï¿½ en el suelo deja de retroceder
         if (Grounded())
         {
             StopRecoilY();
@@ -302,7 +302,7 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// Método para detectar la presencia del suelo 
+    /// Mï¿½todo para detectar la presencia del suelo 
     /// </summary>
     public bool Grounded()
     {
@@ -319,20 +319,21 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// Método para que el player salte
+    /// Mï¿½todo para que el player salte
     /// </summary>
     void Jump()
     {
         //Variar la intensidad del salto
-        if(Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0)
+        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-            pState.jumping = false;            
+            pState.jumping = false;
         }
 
         if (!pState.jumping)
         {
             //Salta
+
             if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -344,7 +345,7 @@ public class PlayerController : MonoBehaviour
                 airJumpCounter++;
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
-        }        
+        }
 
         anim.SetBool("Jumping", !Grounded());
     }

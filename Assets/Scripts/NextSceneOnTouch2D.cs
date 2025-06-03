@@ -3,36 +3,23 @@ using UnityEngine.SceneManagement;
 
 public class NextSceneOnTouch2D : MonoBehaviour
 {
-    
-    public string triggeringTag = "Player";
 
-    
+    public string triggeringTag = "Player";
+    public string sceneName;
+
+
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        Debug.Log("get to end", other);
         if (other.gameObject.CompareTag(triggeringTag))
         {
-
-            
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-           
-            int nextSceneIndex = currentSceneIndex + 1;
-
-            
-            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
-            {
-                SceneManager.LoadScene(nextSceneIndex);
-            }
-            else
-            {
-                SceneManager.LoadScene(0);
-            }
+            Debug.Log("is player", other);
+            SceneManager.LoadScene(sceneName);
         }
-    
+
     }
 
-    
+
     void OnDrawGizmos()
     {
         Collider2D col = GetComponent<Collider2D>();
