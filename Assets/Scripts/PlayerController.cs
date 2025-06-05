@@ -3,6 +3,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Joystick Settings")]
+    public FloatingJoystick joystick;
+    private bool dashButtonPressed = false;
+    private bool attackButtonPressed = false;
+    public bool jumpButtonPressed;
+    public bool jumpButtonReleased;
+
     [Header("Horizontal Movement Settings")]
     [SerializeField] private float walkSpeed = 1;
     [Space(5)]
@@ -110,13 +117,19 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// M�todo para obtener las entradas del usuario
+    /// Método para obtener las entradas del usuario
     /// </summary>
     void GetInputs()
     {
+#if UNITY_STANDALONE || UNITY_WEBGL || UNITY_EDITOR
         xAxis = Input.GetAxisRaw("Horizontal");
         yAxis = Input.GetAxisRaw("Vertical");
-        attack = Input.GetMouseButtonDown(0);
+        attack = Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.K);
+#else
+        xAxis = joystick.Horizontal;
+        yAxis = joystick.Vertical;
+        attack = attackButtonPressed;
+#endif
     }
 
     void Flip()
@@ -137,7 +150,7 @@ public class PlayerController : MonoBehaviour
 
 
     /// <summary>
-    /// M�todo para mover el player
+    /// Método para mover el player
     /// </summary>
     private void Move()
     {
@@ -147,7 +160,16 @@ public class PlayerController : MonoBehaviour
 
     void StartDash()
     {
-        if (Input.GetButtonDown("Dash") && canDash && !dashed)
+        bool dashInput = false;
+
+#if UNITY_STANDALONE || UNITY_WEBGL || UNITY_EDITOR
+        dashInput = Input.GetButtonDown("Dash");
+#else
+        dashInput = dashButtonPressed;
+#endif
+
+
+        if (dashInput && canDash && !dashed)
         {
             StartCoroutine(Dash());
             dashed = true;
@@ -157,6 +179,12 @@ public class PlayerController : MonoBehaviour
         {
             dashed = false;
         }
+
+        // Reiniciar el botón después de procesarlo (solo en Android)
+#if !UNITY_STANDALONE && !UNITY_WEBGL || UNITY_EDITOR
+        dashButtonPressed = false;
+#endif
+
     }
 
     IEnumerator Dash()
@@ -184,22 +212,28 @@ public class PlayerController : MonoBehaviour
             timeSinceAttack = 0;
             anim.SetTrigger("Attacking");
 
-            if (yAxis == 0)
-            {
-                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
-                SlashEffectAngle(slashEffect, 0, sideAttackTransform);
-            }
-            else if (yAxis > 0)
+            if (yAxis > 0.5f) // Attack Up
             {
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 80, upAttackTransform);
             }
-            else if (yAxis < 0 && !Grounded())
+            else if (yAxis < -0.5 && !Grounded()) //Attack Down
             {
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
+            else //Attack left and right
+            {
+                Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
+                SlashEffectAngle(slashEffect, 0, sideAttackTransform);
+            }
         }
+
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+        attackButtonPressed = false;
+        jumpButtonPressed = false;
+#endif
+
     }
 
 
@@ -319,36 +353,43 @@ public class PlayerController : MonoBehaviour
     }
 
     /// <summary>
-    /// M�todo para que el player salte
+    /// Método para que el player salte
     /// </summary>
     void Jump()
     {
-        //Variar la intensidad del salto
-        if (Input.GetButtonUp("Jump") && rb.linearVelocity.y > 0)
+        // Intentar salto en el suelo
+        if ((jumpBufferCounter > 0 && coyoteTimeCounter > 0) && !pState.jumping)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            pState.jumping = true;
+        }
+        //Intentar salto en el aire (doble salto)
+        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed))
+        {
+            airJumpCounter++;
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            pState.jumping = true;
+        }
+
+        // Cortar salto si se suelta el botón mientras asciende (Variar intensidad de salto)
+        if ((Input.GetButtonUp("Jump") || jumpButtonReleased) && rb.linearVelocity.y > 0)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
+        }
+
+        if (Grounded())
+        {
             pState.jumping = false;
         }
 
-        if (!pState.jumping)
-        {
-            //Salta
-
-            if (jumpBufferCounter > 0 && coyoteTimeCounter > 0)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                pState.jumping = true;
-            }
-            else if (!Grounded() && airJumpCounter < maxAirJumps && Input.GetButtonDown("Jump"))
-            {
-                pState.jumping = true;
-                airJumpCounter++;
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            }
-        }
-
         anim.SetBool("Jumping", !Grounded());
+
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+        jumpButtonPressed = false;
+        jumpButtonReleased = false;
+#endif
     }
+
 
     void UpdateJumpVariables()
     {
@@ -363,7 +404,7 @@ public class PlayerController : MonoBehaviour
             coyoteTimeCounter -= Time.deltaTime;
         }
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || jumpButtonPressed)
         {
             jumpBufferCounter = jumpBufferFrames;
         }
@@ -378,4 +419,26 @@ public class PlayerController : MonoBehaviour
         // Aquí puedes reducir la vida real, reproducir animaciones, etc.
     }
 
+
+
+    //Android
+    public void OnDashButtonPressed()
+    {
+        dashButtonPressed = true;
+    }
+
+    public void OnAttackButtonPressed()
+    {
+        attackButtonPressed = true;
+    }
+
+    public void OnJumpButtonDown()
+    {
+        jumpButtonPressed = true;
+    }
+
+    public void OnJumpButtonUp()
+    {
+        jumpButtonReleased = true;
+    }
 }
