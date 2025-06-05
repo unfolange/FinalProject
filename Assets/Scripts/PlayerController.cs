@@ -372,4 +372,10 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter = jumpBufferCounter - Time.deltaTime * 10;
         }
     }
+    public void TakeDamage(int amount)
+    {
+        Debug.Log($"Jugador recibió daño: {amount} puntos.");
+        // Aquí puedes reducir la vida real, reproducir animaciones, etc.
+    }
+
 }
