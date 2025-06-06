@@ -1,49 +1,61 @@
 fileFormatVersion: 2
-guid: 94b762824465c6c4a93b3a66b0e62ab1
+guid: c28a0ea304bf4c046b572b5e9e495eac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4262177298367310080
-    second: AdamIdle_0
+      213: -6797410125048131925
+    second: SimJump_0
   - first:
-      213: -1264398593078963998
-    second: AdamIdle_1
+      213: -9185014589023711905
+    second: SimJump_1
   - first:
-      213: 8929890210926008146
-    second: AdamIdle_2
+      213: -3676213957572417070
+    second: SimJump_2
   - first:
-      213: -5586734914666356303
-    second: AdamIdle_3
+      213: 7525052997793632876
+    second: SimJump_3
   - first:
-      213: 5922586075818616297
-    second: AdamIdle_4
+      213: -800804031305160167
+    second: SimJump_4
   - first:
-      213: 3225620923035710474
-    second: AdamIdle_5
+      213: 841865761914768626
+    second: SimJump_5
   - first:
-      213: 6295755039263143454
-    second: AdamIdle_6
+      213: -6211845318817945736
+    second: SimJump_6
   - first:
-      213: 3164850702227938822
-    second: AdamIdle_7
+      213: -7221701487501649823
+    second: SimJump_7
   - first:
-      213: 6577399622472788654
-    second: AdamIdle_8
+      213: 7208436578657139659
+    second: SimJump_8
   - first:
-      213: -7151087429581120033
-    second: AdamIdle_9
+      213: -2146252228635078915
+    second: SimJump_9
   - first:
-      213: -1317844097894668884
-    second: AdamIdle_10
+      213: -1709956985994398974
+    second: SimJump_10
   - first:
-      213: -5350028198661525266
-    second: AdamIdle_11
+      213: -5658391645559954074
+    second: SimJump_11
   - first:
-      213: -5934597937997365069
-    second: AdamIdle_12
+      213: 5365850835175551947
+    second: SimJump_12
   - first:
-      213: 5208760092636703570
-    second: AdamIdle_13
+      213: -2147000354081069616
+    second: SimJump_13
+  - first:
+      213: -4935596291179595666
+    second: SimJump_14
+  - first:
+      213: -3540068089472611030
+    second: SimJump_15
+  - first:
+      213: 4233163937076592045
+    second: SimJump_16
+  - first:
+      213: -431655982705055926
+    second: SimJump_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,299 +190,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdamIdle_0
+      name: AdamSRun_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 009eaeebbab462b30800000000000000
-      internalID: 4262177298367310080
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_1
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2e0560dbd24f37ee0800000000000000
-      internalID: -1264398593078963998
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_2
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2579b7195d75deb70800000000000000
-      internalID: 8929890210926008146
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_3
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1b12a05e13ee772b0800000000000000
-      internalID: -5586734914666356303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_4
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9e5e7d028a0413250800000000000000
-      internalID: 5922586075818616297
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_5
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a047c91b325b3cc20800000000000000
-      internalID: 3225620923035710474
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e16b7241ad30f5750800000000000000
-      internalID: 6295755039263143454
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_7
-      rect:
-        serializedVersion: 2
-        x: 560
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 60e117112fecbeb20800000000000000
-      internalID: 3164850702227938822
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_8
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eaa674bab1e974b50800000000000000
-      internalID: 6577399622472788654
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_9
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fdd5e02fedb32cc90800000000000000
-      internalID: -7151087429581120033
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_10
-      rect:
-        serializedVersion: 2
-        x: 800
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca5a4a376c316bde0800000000000000
-      internalID: -1317844097894668884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_11
-      rect:
-        serializedVersion: 2
-        x: 880
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee0f470f2b1e0c5b0800000000000000
-      internalID: -5350028198661525266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_12
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 0
-        width: 80
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b0c6e44e9214ada0800000000000000
-      internalID: -5934597937997365069
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: AdamIdle_13
-      rect:
-        serializedVersion: 2
-        x: 1040
-        y: 0
-        width: 80
-        height: 111
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,8 +205,382 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44a8d19209f3963498a1fd9e98ac8a95
-      internalID: 5208760092636703570
+      spriteID: d75c75dd509950f42ab809cbd594b5cc
+      internalID: -1066760597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0d84f9454afa9f4a88ccbccf5fa1a3c
+      internalID: -378728713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5977bed0e107142a4aeb9d5456ae16
+      internalID: 1728017188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e88fd8e4dfad3f4caf5984d097b88b3
+      internalID: -797383786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841e6d3eaac0dd041b63198ff1194bed
+      internalID: 562953008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50871cdb2c1fdc54d84cb477e8a81b1b
+      internalID: 1530989996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1106e33f9bb4242b08ca2eb27a4de4
+      internalID: 560346239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94af3b331d1e80944a6a24fa00c721bd
+      internalID: -1103315088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890b05039988ec24e829ca5c0fefe7da
+      internalID: -134157769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842606238d24a7c4384b29c17ba82f5b
+      internalID: 93953440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c664b0416f5dd4b8cf22fde68d7ee0
+      internalID: -2019800550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6537869917b0b054384f2db0caf30e86
+      internalID: -393834420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1215beb56fc5f8a4b9f41b027daa1b73
+      internalID: -361755421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4d63b13926350e4489ae4053c9a463e
+      internalID: 1552798305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_14
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e21cb4b4fe0ad44b72f2fcd1a6c1db
+      internalID: 128086501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f6fbea7dd1a22f4ab43600aeea5a2ac
+      internalID: -914134989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc99e206b3be5645833131bffc5af40
+      internalID: 1594352381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db7b178e28460d48ba1c32e56109783
+      internalID: -433057458
       vertices: []
       indices: 
       edges: []
@@ -489,7 +589,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: fdb65fdb8a67bd2489a73b010f93d279
+    spriteID: 16abba0266959a141a06a263fc975557
     internalID: 0
     vertices: []
     indices: 
@@ -499,20 +599,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AdamIdle_0: 4262177298367310080
-      AdamIdle_1: -1264398593078963998
-      AdamIdle_10: -1317844097894668884
-      AdamIdle_11: -5350028198661525266
-      AdamIdle_12: -5934597937997365069
-      AdamIdle_13: 5208760092636703570
-      AdamIdle_2: 8929890210926008146
-      AdamIdle_3: -5586734914666356303
-      AdamIdle_4: 5922586075818616297
-      AdamIdle_5: 3225620923035710474
-      AdamIdle_6: 6295755039263143454
-      AdamIdle_7: 3164850702227938822
-      AdamIdle_8: 6577399622472788654
-      AdamIdle_9: -7151087429581120033
+      AdamSRun_0: -1066760597
+      AdamSRun_1: -378728713
+      AdamSRun_10: -2019800550
+      AdamSRun_11: -393834420
+      AdamSRun_12: -361755421
+      AdamSRun_13: 1552798305
+      AdamSRun_14: 128086501
+      AdamSRun_15: -914134989
+      AdamSRun_16: 1594352381
+      AdamSRun_17: -433057458
+      AdamSRun_2: 1728017188
+      AdamSRun_3: -797383786
+      AdamSRun_4: 562953008
+      AdamSRun_5: 1530989996
+      AdamSRun_6: 560346239
+      AdamSRun_7: -1103315088
+      AdamSRun_8: -134157769
+      AdamSRun_9: 93953440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

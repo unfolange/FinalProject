@@ -206,6 +206,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -860,7 +873,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      happy_0: 6266176060360064
+      happy_1: 3193106209548952640
+      happy_10: 3986295080230820885
+      happy_11: 8450939961874301933
+      happy_12: -4345366713707982264
+      happy_13: -752497300952621267
+      happy_14: -4668203024647421388
+      happy_15: 2148730909023357796
+      happy_16: -3621398926445456344
+      happy_17: -6619225282526579979
+      happy_18: 4937733872559295849
+      happy_19: -6046175371331240947
+      happy_2: 9007878228973910016
+      happy_20: -6226756898704806523
+      happy_21: 350918637738791271
+      happy_22: 3857201084900890630
+      happy_23: 2145400503193940887
+      happy_24: 2307315512925192974
+      happy_25: -1818299660997060314
+      happy_26: 1792350648865459244
+      happy_27: -4662197157188461317
+      happy_28: 786895256770522934
+      happy_3: -7609154811369545380
+      happy_4: -6712656766815208701
+      happy_5: -8040711958805771792
+      happy_6: -5778940713444667941
+      happy_7: -729891031834249776
+      happy_8: -1023249637084565850
+      happy_9: -2393240513285694997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
