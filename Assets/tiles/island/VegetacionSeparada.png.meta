@@ -285,7 +285,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      VegetacionSeparada_0: 4203935929591445922
+      VegetacionSeparada_1: 7169982703597492570
+      VegetacionSeparada_2: 591383342363465840
+      VegetacionSeparada_3: -7890587076711188799
+      VegetacionSeparada_4: -1840320310041178271
+      VegetacionSeparada_5: 4727464562532635969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -435,7 +435,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bored_0: 6615438384583162987
+      bored_1: -7712320812027587069
+      bored_10: 1554292102484288744
+      bored_11: -6130735387031358860
+      bored_2: -1861686259791716519
+      bored_3: -8700268109144245290
+      bored_4: 929177892839952668
+      bored_5: 5464997106718630745
+      bored_6: 6326516792959467112
+      bored_7: 2766319960608892276
+      bored_8: -6255789987993777102
+      bored_9: -7580535193612237294
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
