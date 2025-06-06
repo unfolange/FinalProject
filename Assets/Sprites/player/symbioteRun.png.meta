@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 23680d0dc335e65449fcb161c338da64
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4976011458889258438
+    second: symbioteRun_0
+  - first:
+      213: -5416630450953717303
+    second: symbioteRun_1
+  - first:
+      213: -1785090248666202089
+    second: symbioteRun_2
+  - first:
+      213: -8152504602039092780
+    second: symbioteRun_3
+  - first:
+      213: 6582360213034750190
+    second: symbioteRun_4
+  - first:
+      213: -4787371819890993566
+    second: symbioteRun_5
+  - first:
+      213: 1665572305892067840
+    second: symbioteRun_6
+  - first:
+      213: 8296056283817792376
+    second: symbioteRun_7
+  - first:
+      213: -7221805327542858637
+    second: symbioteRun_8
+  - first:
+      213: -4151357290584157676
+    second: symbioteRun_9
+  - first:
+      213: -1666067923455143655
+    second: symbioteRun_10
+  - first:
+      213: -4689065884227551203
+    second: symbioteRun_11
+  - first:
+      213: -170022265921911778
+    second: symbioteRun_12
+  - first:
+      213: -734037325475842335
+    second: symbioteRun_13
+  - first:
+      213: 2183279648888902746
+    second: symbioteRun_14
+  - first:
+      213: 851866445329644271
+    second: symbioteRun_15
+  - first:
+      213: 437557399758749420
+    second: symbioteRun_16
+  - first:
+      213: 7765863537551679702
+    second: symbioteRun_17
+  - first:
+      213: -6960786929908022128
+    second: symbioteRun_18
+  - first:
+      213: -9035209596850707771
+    second: symbioteRun_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 35
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: symbioteRun_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 0
+        width: 91
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ae1a231f7a1fab0800000000000000
+      internalID: -4976011458889258438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 0
+        width: 54
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9f65bad4344d4b0800000000000000
+      internalID: -5416630450953717303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_2
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 0
+        width: 79
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 710cc3c60e51a37e0800000000000000
+      internalID: -1785090248666202089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_3
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 10
+        width: 89
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d9f8bd124c7cde80800000000000000
+      internalID: -8152504602039092780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 93
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee0d9992dbd395b50800000000000000
+      internalID: 6582360213034750190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_5
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 0
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2669ea3c1b6df8db0800000000000000
+      internalID: -4787371819890993566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_6
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 0
+        width: 52
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00acc68003d4d1710800000000000000
+      internalID: 1665572305892067840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_7
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 85
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8735b995c33812370800000000000000
+      internalID: 8296056283817792376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 9
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37cc8ce315ef6cb90800000000000000
+      internalID: -7221805327542858637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_9
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 0
+        width: 108
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 412d00ff98a6366c0800000000000000
+      internalID: -4151357290584157676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_10
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 0
+        width: 91
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91198c20d00f0e8e0800000000000000
+      internalID: -1666067923455143655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_11
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 0
+        width: 54
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d10c63a0c671deeb0800000000000000
+      internalID: -4689065884227551203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_12
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 0
+        width: 79
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1441d366a5f3adf0800000000000000
+      internalID: -170022265921911778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_13
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 10
+        width: 89
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6722b01fc20d5f0800000000000000
+      internalID: -734037325475842335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_14
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 0
+        width: 93
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a54dc5de5419c4e10800000000000000
+      internalID: 2183279648888902746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_15
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 0
+        width: 83
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feab2f5c40072db00800000000000000
+      internalID: 851866445329644271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_16
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 0
+        width: 52
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceeb6750324821600800000000000000
+      internalID: 437557399758749420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_17
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 0
+        width: 85
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d02de9fdb3e5cb60800000000000000
+      internalID: 7765863537551679702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_18
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 9
+        width: 105
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09486a5ca21566f90800000000000000
+      internalID: -6960786929908022128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: symbioteRun_19
+      rect:
+        serializedVersion: 2
+        x: 2447
+        y: 0
+        width: 108
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c263840ebc7c9280800000000000000
+      internalID: -9035209596850707771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      symbioteRun_0: -4976011458889258438
+      symbioteRun_1: -5416630450953717303
+      symbioteRun_10: -1666067923455143655
+      symbioteRun_11: -4689065884227551203
+      symbioteRun_12: -170022265921911778
+      symbioteRun_13: -734037325475842335
+      symbioteRun_14: 2183279648888902746
+      symbioteRun_15: 851866445329644271
+      symbioteRun_16: 437557399758749420
+      symbioteRun_17: 7765863537551679702
+      symbioteRun_18: -6960786929908022128
+      symbioteRun_19: -9035209596850707771
+      symbioteRun_2: -1785090248666202089
+      symbioteRun_3: -8152504602039092780
+      symbioteRun_4: 6582360213034750190
+      symbioteRun_5: -4787371819890993566
+      symbioteRun_6: 1665572305892067840
+      symbioteRun_7: 8296056283817792376
+      symbioteRun_8: -7221805327542858637
+      symbioteRun_9: -4151357290584157676
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
