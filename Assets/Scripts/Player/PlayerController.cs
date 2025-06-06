@@ -1,5 +1,7 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,8 +9,8 @@ public class PlayerController : MonoBehaviour
     public FloatingJoystick joystick;
     private bool dashButtonPressed = false;
     private bool attackButtonPressed = false;
-    public bool jumpButtonPressed;
-    public bool jumpButtonReleased;
+    private bool jumpButtonPressed;
+    private bool jumpButtonReleased;
 
     [Header("Horizontal Movement Settings")]
     [SerializeField] private float walkSpeed = 1;
@@ -39,14 +41,15 @@ public class PlayerController : MonoBehaviour
     [Space(5)]
 
 
-    [Header("Attack")]
+    [Header("Attack Settings")]
     bool attack = false;
-    float timeBetweenAttack, timeSinceAttack;
     [SerializeField] Transform sideAttackTransform, upAttackTransform, downAttackTransform;
     [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
     [SerializeField] LayerMask attackableLayer;
     [SerializeField] float damage;
     [SerializeField] GameObject slashEffect;
+    [SerializeField] private float timeBetweenAttack; 
+    private float timeSinceAttack;
     [Space(5)]
 
     [Header("Recoil")]
@@ -57,13 +60,23 @@ public class PlayerController : MonoBehaviour
     int stepsXRecoiled, stepsYRecoiled;
     [Space(5)]
 
-    PlayerStateList pState;
+    [Header("Health Settings")]
+    public Image imageHealth;
+    public float health;
+    public int maxHealth;
+    [Space(5)]
+
+    [HideInInspector] public PlayerStateList pState;
     private Rigidbody2D rb;
     private float xAxis, yAxis;
     private float gravity;
     Animator anim;
     private bool canDash = true;
     private bool dashed;
+
+    //Time
+    bool restoreTime;
+    float restoreTimeSpeed;
 
 
     //Evitar players duplicados
@@ -79,6 +92,8 @@ public class PlayerController : MonoBehaviour
         {
             Instance = this;
         }
+
+        health = maxHealth;
     }
 
 
@@ -113,6 +128,12 @@ public class PlayerController : MonoBehaviour
         Jump();
         StartDash();
         Attack();
+        RestoreTimeScale();
+    }
+
+    private void FixedUpdate()
+    {
+        if (pState.dashing) return;
         Recoil();
     }
 
@@ -240,19 +261,28 @@ public class PlayerController : MonoBehaviour
     private void Hit(Transform _attackTransform, Vector2 _attackArea, ref bool _recoilDir, float _recoilStrength)
     {
         Collider2D[] objectsToHit = Physics2D.OverlapBoxAll(_attackTransform.position, _attackArea, 0, attackableLayer);
+        List<Enemy> enemiesHited = new List<Enemy>();
 
         if (objectsToHit.Length > 0)
         {
             _recoilDir = true;
         }
 
-
         for (int i = 0; i < objectsToHit.Length; i++)
         {
-            if (objectsToHit[i].GetComponent<Enemy>() != null)
+            Enemy enemy = objectsToHit[i].GetComponent<Enemy>();
+
+            if (enemy != null)
             {
-                objectsToHit[i].GetComponent<Enemy>().EnemyHit(damage,
-                    (transform.position - objectsToHit[i].transform.position).normalized, _recoilStrength);
+                if (enemy.gameObject.CompareTag("Enemy") && !enemiesHited.Contains(enemy))
+                {
+                    enemy.TakeDamage(damage, (transform.position - objectsToHit[i].transform.position).normalized, _recoilStrength);
+                    enemiesHited.Add(enemy);
+                }
+                else if (enemy.gameObject.CompareTag("Boss"))
+                {
+                    enemy.TakeDamageBoss(damage);
+                }
             }
         }
     }
@@ -335,8 +365,14 @@ public class PlayerController : MonoBehaviour
         pState.recoilingY = false;
     }
 
+    void ClampHealth()
+    {
+        health = Mathf.Clamp(health, 0, maxHealth);
+    }
+
+
     /// <summary>
-    /// M�todo para detectar la presencia del suelo 
+    /// Método para detectar la presencia del suelo 
     /// </summary>
     public bool Grounded()
     {
@@ -413,15 +449,69 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter = jumpBufferCounter - Time.deltaTime * 10;
         }
     }
-    public void TakeDamage(int amount)
+    public void TakeDamage(float _damage)
     {
-        Debug.Log($"Jugador recibió daño: {amount} puntos.");
-        // Aquí puedes reducir la vida real, reproducir animaciones, etc.
+        health -= _damage;
+        anim.SetTrigger("TakeDamage");
+        HitStopTime(0, 5, 0.5f);
+
+        StartCoroutine(stopTakeDamage());
+        imageHealth.fillAmount -= damage / maxHealth; 
+        Debug.Log($"Jugador recibió daño: {_damage} puntos.");
+        //------------------------Actualizar Barra vida
+    }
+
+    IEnumerator stopTakeDamage()
+    {
+        pState.invincible = true;
+        anim.SetTrigger("TakeDamage");
+        ClampHealth();
+        yield return new WaitForSeconds(1);
+        pState.invincible = false;
+    }
+
+    void RestoreTimeScale()
+    {
+        if (restoreTime)
+        {
+            if (Time.timeScale < 1)
+            {
+                Time.timeScale += Time.unscaledDeltaTime  * restoreTimeSpeed;
+            }
+            else
+            {
+                Time.timeScale = 1;
+                restoreTime = false;
+            }
+        }
+    }
+
+    public void HitStopTime(float _newTimeScale, int _restoreTime, float _delay)
+    {
+        Debug.Log("Congelando el tiempo");
+
+        restoreTimeSpeed = _restoreTime;
+        Time.timeScale = _newTimeScale;
+
+        if (_delay > 0)
+        {
+            StopCoroutine(StartTimeAgain(_delay));
+            StartCoroutine(StartTimeAgain(_delay));
+        }
+        else
+        {
+            restoreTime = true;
+        }
+    }
+
+    IEnumerator StartTimeAgain(float _delay)
+    {       
+        yield return new WaitForSecondsRealtime(_delay);
+        restoreTime = true;
     }
 
 
-
-    //Android
+    //MÉTODOS PARA LOS BOTONES ANDROID
     public void OnDashButtonPressed()
     {
         dashButtonPressed = true;
