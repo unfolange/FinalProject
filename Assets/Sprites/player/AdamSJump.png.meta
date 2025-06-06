@@ -1,67 +1,61 @@
 fileFormatVersion: 2
-guid: 23680d0dc335e65449fcb161c338da64
+guid: c28a0ea304bf4c046b572b5e9e495eac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4976011458889258438
-    second: symbioteRun_0
+      213: -6797410125048131925
+    second: SimJump_0
   - first:
-      213: -5416630450953717303
-    second: symbioteRun_1
+      213: -9185014589023711905
+    second: SimJump_1
   - first:
-      213: -1785090248666202089
-    second: symbioteRun_2
+      213: -3676213957572417070
+    second: SimJump_2
   - first:
-      213: -8152504602039092780
-    second: symbioteRun_3
+      213: 7525052997793632876
+    second: SimJump_3
   - first:
-      213: 6582360213034750190
-    second: symbioteRun_4
+      213: -800804031305160167
+    second: SimJump_4
   - first:
-      213: -4787371819890993566
-    second: symbioteRun_5
+      213: 841865761914768626
+    second: SimJump_5
   - first:
-      213: 1665572305892067840
-    second: symbioteRun_6
+      213: -6211845318817945736
+    second: SimJump_6
   - first:
-      213: 8296056283817792376
-    second: symbioteRun_7
+      213: -7221701487501649823
+    second: SimJump_7
   - first:
-      213: -7221805327542858637
-    second: symbioteRun_8
+      213: 7208436578657139659
+    second: SimJump_8
   - first:
-      213: -4151357290584157676
-    second: symbioteRun_9
+      213: -2146252228635078915
+    second: SimJump_9
   - first:
-      213: -1666067923455143655
-    second: symbioteRun_10
+      213: -1709956985994398974
+    second: SimJump_10
   - first:
-      213: -4689065884227551203
-    second: symbioteRun_11
+      213: -5658391645559954074
+    second: SimJump_11
   - first:
-      213: -170022265921911778
-    second: symbioteRun_12
+      213: 5365850835175551947
+    second: SimJump_12
   - first:
-      213: -734037325475842335
-    second: symbioteRun_13
+      213: -2147000354081069616
+    second: SimJump_13
   - first:
-      213: 2183279648888902746
-    second: symbioteRun_14
+      213: -4935596291179595666
+    second: SimJump_14
   - first:
-      213: 851866445329644271
-    second: symbioteRun_15
+      213: -3540068089472611030
+    second: SimJump_15
   - first:
-      213: 437557399758749420
-    second: symbioteRun_16
+      213: 4233163937076592045
+    second: SimJump_16
   - first:
-      213: 7765863537551679702
-    second: symbioteRun_17
-  - first:
-      213: -6960786929908022128
-    second: symbioteRun_18
-  - first:
-      213: -9035209596850707771
-    second: symbioteRun_19
+      213: -431655982705055926
+    second: SimJump_17
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -108,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 35
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -179,445 +173,414 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: symbioteRun_0
+      name: AdamSRun_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 91
-        height: 107
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3ae1a231f7a1fab0800000000000000
-      internalID: -4976011458889258438
+      spriteID: d75c75dd509950f42ab809cbd594b5cc
+      internalID: -1066760597
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_1
+      name: AdamSRun_1
       rect:
         serializedVersion: 2
-        x: 167
+        x: 128
         y: 0
-        width: 54
-        height: 109
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c9f65bad4344d4b0800000000000000
-      internalID: -5416630450953717303
+      spriteID: b0d84f9454afa9f4a88ccbccf5fa1a3c
+      internalID: -378728713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_2
+      name: AdamSRun_2
       rect:
         serializedVersion: 2
-        x: 281
+        x: 256
         y: 0
-        width: 79
-        height: 113
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710cc3c60e51a37e0800000000000000
-      internalID: -1785090248666202089
+      spriteID: 6a5977bed0e107142a4aeb9d5456ae16
+      internalID: 1728017188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_3
+      name: AdamSRun_3
       rect:
         serializedVersion: 2
-        x: 401
-        y: 10
-        width: 89
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d9f8bd124c7cde80800000000000000
-      internalID: -8152504602039092780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: symbioteRun_4
-      rect:
-        serializedVersion: 2
-        x: 526
+        x: 384
         y: 0
-        width: 93
-        height: 110
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee0d9992dbd395b50800000000000000
-      internalID: 6582360213034750190
+      spriteID: 6e88fd8e4dfad3f4caf5984d097b88b3
+      internalID: -797383786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_5
+      name: AdamSRun_4
       rect:
         serializedVersion: 2
-        x: 658
+        x: 512
         y: 0
-        width: 83
-        height: 107
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2669ea3c1b6df8db0800000000000000
-      internalID: -4787371819890993566
+      spriteID: 841e6d3eaac0dd041b63198ff1194bed
+      internalID: 562953008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_6
+      name: AdamSRun_5
       rect:
         serializedVersion: 2
-        x: 808
+        x: 640
         y: 0
-        width: 52
-        height: 109
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 00acc68003d4d1710800000000000000
-      internalID: 1665572305892067840
+      spriteID: 50871cdb2c1fdc54d84cb477e8a81b1b
+      internalID: 1530989996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_7
+      name: AdamSRun_6
       rect:
         serializedVersion: 2
-        x: 922
+        x: 768
         y: 0
-        width: 85
-        height: 112
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8735b995c33812370800000000000000
-      internalID: 8296056283817792376
+      spriteID: 1d1106e33f9bb4242b08ca2eb27a4de4
+      internalID: 560346239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_8
+      name: AdamSRun_7
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 9
-        width: 105
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 37cc8ce315ef6cb90800000000000000
-      internalID: -7221805327542858637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: symbioteRun_9
-      rect:
-        serializedVersion: 2
-        x: 1167
+        x: 896
         y: 0
-        width: 108
-        height: 111
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 412d00ff98a6366c0800000000000000
-      internalID: -4151357290584157676
+      spriteID: 94af3b331d1e80944a6a24fa00c721bd
+      internalID: -1103315088
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_10
+      name: AdamSRun_8
       rect:
         serializedVersion: 2
-        x: 1303
+        x: 1024
         y: 0
-        width: 91
-        height: 107
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 91198c20d00f0e8e0800000000000000
-      internalID: -1666067923455143655
+      spriteID: 890b05039988ec24e829ca5c0fefe7da
+      internalID: -134157769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_11
+      name: AdamSRun_9
       rect:
         serializedVersion: 2
-        x: 1447
+        x: 1152
         y: 0
-        width: 54
-        height: 109
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d10c63a0c671deeb0800000000000000
-      internalID: -4689065884227551203
+      spriteID: 842606238d24a7c4384b29c17ba82f5b
+      internalID: 93953440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_12
+      name: AdamSRun_10
       rect:
         serializedVersion: 2
-        x: 1561
+        x: 1280
         y: 0
-        width: 79
-        height: 113
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1441d366a5f3adf0800000000000000
-      internalID: -170022265921911778
+      spriteID: b1c664b0416f5dd4b8cf22fde68d7ee0
+      internalID: -2019800550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_13
+      name: AdamSRun_11
       rect:
         serializedVersion: 2
-        x: 1681
-        y: 10
-        width: 89
-        height: 106
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e6722b01fc20d5f0800000000000000
-      internalID: -734037325475842335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: symbioteRun_14
-      rect:
-        serializedVersion: 2
-        x: 1806
+        x: 1408
         y: 0
-        width: 93
-        height: 110
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a54dc5de5419c4e10800000000000000
-      internalID: 2183279648888902746
+      spriteID: 6537869917b0b054384f2db0caf30e86
+      internalID: -393834420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_15
+      name: AdamSRun_12
       rect:
         serializedVersion: 2
-        x: 1938
+        x: 1536
         y: 0
-        width: 83
-        height: 107
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: feab2f5c40072db00800000000000000
-      internalID: 851866445329644271
+      spriteID: 1215beb56fc5f8a4b9f41b027daa1b73
+      internalID: -361755421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_16
+      name: AdamSRun_13
       rect:
         serializedVersion: 2
-        x: 2088
+        x: 1664
         y: 0
-        width: 52
-        height: 109
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ceeb6750324821600800000000000000
-      internalID: 437557399758749420
+      spriteID: b4d63b13926350e4489ae4053c9a463e
+      internalID: 1552798305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_17
+      name: AdamSRun_14
       rect:
         serializedVersion: 2
-        x: 2202
+        x: 1792
         y: 0
-        width: 85
-        height: 112
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d02de9fdb3e5cb60800000000000000
-      internalID: 7765863537551679702
+      spriteID: 37e21cb4b4fe0ad44b72f2fcd1a6c1db
+      internalID: 128086501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_18
+      name: AdamSRun_15
       rect:
         serializedVersion: 2
-        x: 2320
-        y: 9
-        width: 105
-        height: 107
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09486a5ca21566f90800000000000000
-      internalID: -6960786929908022128
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: symbioteRun_19
-      rect:
-        serializedVersion: 2
-        x: 2447
+        x: 1920
         y: 0
-        width: 108
-        height: 111
+        width: 128
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5c263840ebc7c9280800000000000000
-      internalID: -9035209596850707771
+      spriteID: 2f6fbea7dd1a22f4ab43600aeea5a2ac
+      internalID: -914134989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_16
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc99e206b3be5645833131bffc5af40
+      internalID: 1594352381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSRun_17
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 128
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db7b178e28460d48ba1c32e56109783
+      internalID: -433057458
       vertices: []
       indices: 
       edges: []
@@ -626,7 +589,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 16abba0266959a141a06a263fc975557
     internalID: 0
     vertices: []
     indices: 
@@ -636,26 +599,24 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      symbioteRun_0: -4976011458889258438
-      symbioteRun_1: -5416630450953717303
-      symbioteRun_10: -1666067923455143655
-      symbioteRun_11: -4689065884227551203
-      symbioteRun_12: -170022265921911778
-      symbioteRun_13: -734037325475842335
-      symbioteRun_14: 2183279648888902746
-      symbioteRun_15: 851866445329644271
-      symbioteRun_16: 437557399758749420
-      symbioteRun_17: 7765863537551679702
-      symbioteRun_18: -6960786929908022128
-      symbioteRun_19: -9035209596850707771
-      symbioteRun_2: -1785090248666202089
-      symbioteRun_3: -8152504602039092780
-      symbioteRun_4: 6582360213034750190
-      symbioteRun_5: -4787371819890993566
-      symbioteRun_6: 1665572305892067840
-      symbioteRun_7: 8296056283817792376
-      symbioteRun_8: -7221805327542858637
-      symbioteRun_9: -4151357290584157676
+      AdamSRun_0: -1066760597
+      AdamSRun_1: -378728713
+      AdamSRun_10: -2019800550
+      AdamSRun_11: -393834420
+      AdamSRun_12: -361755421
+      AdamSRun_13: 1552798305
+      AdamSRun_14: 128086501
+      AdamSRun_15: -914134989
+      AdamSRun_16: 1594352381
+      AdamSRun_17: -433057458
+      AdamSRun_2: 1728017188
+      AdamSRun_3: -797383786
+      AdamSRun_4: 562953008
+      AdamSRun_5: 1530989996
+      AdamSRun_6: 560346239
+      AdamSRun_7: -1103315088
+      AdamSRun_8: -134157769
+      AdamSRun_9: 93953440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

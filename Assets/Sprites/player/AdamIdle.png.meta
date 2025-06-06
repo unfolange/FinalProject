@@ -76,7 +76,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -114,7 +114,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -161,6 +161,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -168,9 +181,9 @@ TextureImporter:
       name: AdamIdle_0
       rect:
         serializedVersion: 2
-        x: 23
+        x: 0
         y: 0
-        width: 48
+        width: 80
         height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -190,9 +203,9 @@ TextureImporter:
       name: AdamIdle_1
       rect:
         serializedVersion: 2
-        x: 103
+        x: 80
         y: 0
-        width: 48
+        width: 80
         height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -212,10 +225,10 @@ TextureImporter:
       name: AdamIdle_2
       rect:
         serializedVersion: 2
-        x: 183
+        x: 160
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +247,10 @@ TextureImporter:
       name: AdamIdle_3
       rect:
         serializedVersion: 2
-        x: 263
+        x: 240
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +269,10 @@ TextureImporter:
       name: AdamIdle_4
       rect:
         serializedVersion: 2
-        x: 343
+        x: 320
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,10 +291,10 @@ TextureImporter:
       name: AdamIdle_5
       rect:
         serializedVersion: 2
-        x: 423
+        x: 400
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -300,10 +313,10 @@ TextureImporter:
       name: AdamIdle_6
       rect:
         serializedVersion: 2
-        x: 503
+        x: 480
         y: 0
-        width: 48
-        height: 109
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,10 +335,10 @@ TextureImporter:
       name: AdamIdle_7
       rect:
         serializedVersion: 2
-        x: 583
+        x: 560
         y: 0
-        width: 48
-        height: 109
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +357,10 @@ TextureImporter:
       name: AdamIdle_8
       rect:
         serializedVersion: 2
-        x: 663
+        x: 640
         y: 0
-        width: 48
-        height: 109
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +379,10 @@ TextureImporter:
       name: AdamIdle_9
       rect:
         serializedVersion: 2
-        x: 743
+        x: 720
         y: 0
-        width: 48
-        height: 109
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -388,10 +401,10 @@ TextureImporter:
       name: AdamIdle_10
       rect:
         serializedVersion: 2
-        x: 823
+        x: 800
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,10 +423,10 @@ TextureImporter:
       name: AdamIdle_11
       rect:
         serializedVersion: 2
-        x: 903
+        x: 880
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -432,10 +445,10 @@ TextureImporter:
       name: AdamIdle_12
       rect:
         serializedVersion: 2
-        x: 983
+        x: 960
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -454,19 +467,19 @@ TextureImporter:
       name: AdamIdle_13
       rect:
         serializedVersion: 2
-        x: 1063
+        x: 1040
         y: 0
-        width: 48
-        height: 110
+        width: 80
+        height: 111
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25b67d105bb394840800000000000000
+      spriteID: 44a8d19209f3963498a1fd9e98ac8a95
       internalID: 5208760092636703570
       vertices: []
       indices: 
@@ -476,7 +489,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: fdb65fdb8a67bd2489a73b010f93d279
     internalID: 0
     vertices: []
     indices: 
