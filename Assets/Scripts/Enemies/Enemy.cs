@@ -4,7 +4,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Enemy Settings")]
     protected Animator anim;
-    [HideInInspector]public Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
     [SerializeField] protected float speed;
     public bool isLookingRight = true;
     [SerializeField] protected float damage;
@@ -18,11 +18,21 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
     protected float recoilTimer;
-    [Space(5)]
-        
+    //[Space(5)]
+
+    
+
+    //[Header("Enemies States Setttings")]
+    protected enum EnemyStates { //Spider
+        Spider_Walk,
+        Spider_Chase,
+        Spider_Flip
+    }
+
+    protected EnemyStates currentEnemyState;
+
     public PlayerController player;
     protected float playerDistance;
-
 
     protected virtual void Awake()
     {
@@ -41,7 +51,9 @@ public class Enemy : MonoBehaviour
 
     // Update is called once per frame
     protected virtual void Update()
-    {     
+    {
+        UpdateEnemyStates();
+
         if (isRecoiling)
         {
             if (recoilTimer < recoilLength)
@@ -56,9 +68,18 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Equivalente a EnemyHit
-    /// </summary>
+    protected virtual void UpdateEnemyStates() 
+    {
+
+    }
+
+    protected void ChangeState(EnemyStates _newState)
+    {
+        currentEnemyState = _newState;
+    }
+
+
+  
     public virtual void TakeDamage(float _damageDone, Vector2 _hitDirection, float _hitForce)
     {
         if (isDead) return;
