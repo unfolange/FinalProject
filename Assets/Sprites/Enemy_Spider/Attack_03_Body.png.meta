@@ -911,7 +911,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Attack_03_Body_0: -8460714011191160381
+      Attack_03_Body_1: 1083232386352829187
+      Attack_03_Body_10: 6714900575274355374
+      Attack_03_Body_11: -3856181179062305574
+      Attack_03_Body_12: -8165630883833288643
+      Attack_03_Body_13: 3843510113382985315
+      Attack_03_Body_14: -4266672236201988878
+      Attack_03_Body_15: 763870348181824004
+      Attack_03_Body_16: 7963835953342620589
+      Attack_03_Body_17: 3491933939992713531
+      Attack_03_Body_18: -1686513036526427036
+      Attack_03_Body_19: 782613801428762421
+      Attack_03_Body_2: -8441939569727072750
+      Attack_03_Body_20: -7495865879910813409
+      Attack_03_Body_21: 6188634011823187518
+      Attack_03_Body_22: -4338293269939994040
+      Attack_03_Body_23: 1719953917679869616
+      Attack_03_Body_24: 3183402862974245331
+      Attack_03_Body_25: -2522887262088055741
+      Attack_03_Body_26: -6844444748599219802
+      Attack_03_Body_27: 3577117285680263129
+      Attack_03_Body_28: 8409634230932785470
+      Attack_03_Body_29: -3099792340336049339
+      Attack_03_Body_3: -8846057689681768301
+      Attack_03_Body_4: -8508322454614514886
+      Attack_03_Body_5: -3016216708669506364
+      Attack_03_Body_6: -3428216735067102159
+      Attack_03_Body_7: 2718160294665937980
+      Attack_03_Body_8: 8186365047155834890
+      Attack_03_Body_9: 6016305929403263397
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

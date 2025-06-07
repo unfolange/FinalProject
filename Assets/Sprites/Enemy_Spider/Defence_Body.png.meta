@@ -561,7 +561,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Defence_Body_0: 5257860754624385332
+      Defence_Body_1: -8668979686888260667
+      Defence_Body_10: 9164398880760764994
+      Defence_Body_11: -5767799226687093925
+      Defence_Body_12: 6277158820744454887
+      Defence_Body_13: 8112973283992987940
+      Defence_Body_14: -3895700639584985626
+      Defence_Body_15: -24203072335389571
+      Defence_Body_2: 5909130751891715234
+      Defence_Body_3: 6701798094959390169
+      Defence_Body_4: -7026569131837527485
+      Defence_Body_5: 5930764487251486397
+      Defence_Body_6: 3054662724592448193
+      Defence_Body_7: -75312792831707502
+      Defence_Body_8: -551687543559943045
+      Defence_Body_9: 5379181640650677657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
