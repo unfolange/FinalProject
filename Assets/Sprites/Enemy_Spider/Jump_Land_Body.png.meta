@@ -1,0 +1,585 @@
+fileFormatVersion: 2
+guid: b74f36e96da375547b8a23ac42f26103
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6043646495545325214
+    second: Jump_Land_Body_0
+  - first:
+      213: -2027030492214823434
+    second: Jump_Land_Body_1
+  - first:
+      213: 1996086096924731115
+    second: Jump_Land_Body_2
+  - first:
+      213: -4854687551819884799
+    second: Jump_Land_Body_3
+  - first:
+      213: -1205082749427923776
+    second: Jump_Land_Body_4
+  - first:
+      213: -1112834256402780758
+    second: Jump_Land_Body_5
+  - first:
+      213: -395407511594104020
+    second: Jump_Land_Body_6
+  - first:
+      213: 8675582774251910670
+    second: Jump_Land_Body_7
+  - first:
+      213: 916099698352756165
+    second: Jump_Land_Body_8
+  - first:
+      213: 5963934246353854155
+    second: Jump_Land_Body_9
+  - first:
+      213: 1246507517079157525
+    second: Jump_Land_Body_10
+  - first:
+      213: 1891628918268596139
+    second: Jump_Land_Body_11
+  - first:
+      213: 6086463236852426652
+    second: Jump_Land_Body_12
+  - first:
+      213: -590013543215555235
+    second: Jump_Land_Body_13
+  - first:
+      213: 3605474391232305824
+    second: Jump_Land_Body_14
+  - first:
+      213: 1265597038899618805
+    second: Jump_Land_Body_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jump_Land_Body_0
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 1199
+        width: 280
+        height: 235
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2698cfc6887a02ca0800000000000000
+      internalID: -6043646495545325214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_1
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1201
+        width: 260
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f576aac18a8ed3e0800000000000000
+      internalID: -2027030492214823434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1207
+        width: 247
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be66b4cbab583bb10800000000000000
+      internalID: 1996086096924731115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_3
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 1136
+        width: 269
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 107d342946fa0acb0800000000000000
+      internalID: -4854687551819884799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_4
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 772
+        width: 274
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4c56bcf9fa64fe0800000000000000
+      internalID: -1205082749427923776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_5
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 774
+        width: 274
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aade93dc32b6e80f0800000000000000
+      internalID: -1112834256402780758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_6
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 776
+        width: 276
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b89e196fa338af0800000000000000
+      internalID: -395407511594104020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_7
+      rect:
+        serializedVersion: 2
+        x: 2207
+        y: 776
+        width: 277
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0678c6619cd56870800000000000000
+      internalID: 8675582774251910670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_8
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 416
+        width: 281
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5982b62d3a6bc00800000000000000
+      internalID: 916099698352756165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_9
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 416
+        width: 299
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce55b9499624c250800000000000000
+      internalID: 5963934246353854155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_10
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 416
+        width: 322
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b7b558bfb7c4110800000000000000
+      internalID: 1246507517079157525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_11
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 416
+        width: 318
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baf81489a7a604a10800000000000000
+      internalID: 1891628918268596139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_12
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 56
+        width: 316
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9720130116777450800000000000000
+      internalID: 6086463236852426652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_13
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 57
+        width: 298
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d97f7fec9dfc7f0800000000000000
+      internalID: -590013543215555235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_14
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 57
+        width: 276
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa5b203bd7390230800000000000000
+      internalID: 3605474391232305824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jump_Land_Body_15
+      rect:
+        serializedVersion: 2
+        x: 2121
+        y: 57
+        width: 276
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3e56c2dcd409110800000000000000
+      internalID: 1265597038899618805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jump_Land_Body_0: -6043646495545325214
+      Jump_Land_Body_1: -2027030492214823434
+      Jump_Land_Body_10: 1246507517079157525
+      Jump_Land_Body_11: 1891628918268596139
+      Jump_Land_Body_12: 6086463236852426652
+      Jump_Land_Body_13: -590013543215555235
+      Jump_Land_Body_14: 3605474391232305824
+      Jump_Land_Body_15: 1265597038899618805
+      Jump_Land_Body_2: 1996086096924731115
+      Jump_Land_Body_3: -4854687551819884799
+      Jump_Land_Body_4: -1205082749427923776
+      Jump_Land_Body_5: -1112834256402780758
+      Jump_Land_Body_6: -395407511594104020
+      Jump_Land_Body_7: 8675582774251910670
+      Jump_Land_Body_8: 916099698352756165
+      Jump_Land_Body_9: 5963934246353854155
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

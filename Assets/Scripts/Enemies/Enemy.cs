@@ -4,23 +4,35 @@ public class Enemy : MonoBehaviour
 {
     [Header("Enemy Settings")]
     protected Animator anim;
-    [HideInInspector]public Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb;
     [SerializeField] protected float speed;
     public bool isLookingRight = true;
     [SerializeField] protected float damage;
+    private bool isDead = false;
     [Space(5)]
 
     [Header("Attack Settings")]
-    [SerializeField] protected float health;
+    public float maxHealth;
+    [HideInInspector] public float health;
     [SerializeField] protected float recoilLength;
     [SerializeField] protected float recoilFactor;
     [SerializeField] protected bool isRecoiling = false;
     protected float recoilTimer;
-    [Space(5)]
-        
+    //[Space(5)]
+
+    
+
+    //[Header("Enemies States Setttings")]
+    protected enum EnemyStates { //Spider
+        Spider_Walk,
+        Spider_Chase,
+        Spider_Flip
+    }
+
+    protected EnemyStates currentEnemyState;
+
     public PlayerController player;
     protected float playerDistance;
-
 
     protected virtual void Awake()
     {
@@ -28,6 +40,7 @@ public class Enemy : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         //player = PlayerController.Instance;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        health = maxHealth;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,7 +51,9 @@ public class Enemy : MonoBehaviour
 
     // Update is called once per frame
     protected virtual void Update()
-    {     
+    {
+        UpdateEnemyStates();
+
         if (isRecoiling)
         {
             if (recoilTimer < recoilLength)
@@ -53,13 +68,22 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Equivalente a EnemyHit
-    /// </summary>
+    protected virtual void UpdateEnemyStates() 
+    {
+
+    }
+
+    protected void ChangeState(EnemyStates _newState)
+    {
+        currentEnemyState = _newState;
+    }
+
+
+  
     public virtual void TakeDamage(float _damageDone, Vector2 _hitDirection, float _hitForce)
     {
-        health -= _damageDone;
-        //------------------------Actualizar Barra vida
+        if (isDead) return;
+        health -= _damageDone;       
 
         if (!isRecoiling)
         {
@@ -69,17 +93,19 @@ public class Enemy : MonoBehaviour
 
         if (health <= 0)
         {
+            isDead = true;
             Destroy(gameObject);
         }
     }
 
     public virtual void TakeDamageBoss(float _damageDone)
     {
+        if (isDead) return;
         health -= _damageDone;
-        //------------------------Actualizar Barra vida
 
         if (health <= 0)
         {
+            isDead = true;
             anim.SetTrigger("Death");
         }
     }
