@@ -38,6 +38,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashTime;
     [SerializeField] private float dashCooldDown;
     [SerializeField] private GameObject dashEffect;
+    private bool canDash = true;
+    private bool dashed;
     [Space(5)]
 
 
@@ -48,9 +50,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask attackableLayer;
     [SerializeField] float damage;
     [SerializeField] GameObject slashEffect;
-    [SerializeField] private float timeBetweenAttack; 
+    [SerializeField] private float timeBetweenAttack;
     private float timeSinceAttack;
-    [Space(5)]
+    public bool isKnockBack;
+   [Space(5)]
 
     [Header("Recoil")]
     [SerializeField] int recoilXSteps = 5;
@@ -61,9 +64,12 @@ public class PlayerController : MonoBehaviour
     [Space(5)]
 
     [Header("Health Settings")]
-    public Image imageHealth;
-    public float health;
-    public int maxHealth;
+    [SerializeField] GameObject bloodSpurt;
+    public float maxHealth;
+    [HideInInspector] public float health;    
+    [SerializeField] float hitFlashSpeed;
+    private SpriteRenderer spritePlayer;
+    [HideInInspector] public bool isKnockback = false;
     [Space(5)]
 
     [HideInInspector] public PlayerStateList pState;
@@ -71,13 +77,11 @@ public class PlayerController : MonoBehaviour
     private float xAxis, yAxis;
     private float gravity;
     Animator anim;
-    private bool canDash = true;
-    private bool dashed;
+ 
 
     //Time
     bool restoreTime;
     float restoreTimeSpeed;
-
 
     //Evitar players duplicados
     public static PlayerController Instance;
@@ -104,6 +108,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         gravity = rb.gravityScale;
+        spritePlayer = GetComponent<SpriteRenderer>();
     }
 
 
@@ -128,7 +133,7 @@ public class PlayerController : MonoBehaviour
         Jump();
         StartDash();
         Attack();
-        RestoreTimeScale();
+        RestoreTimeScale();       
     }
 
     private void FixedUpdate()
@@ -175,8 +180,11 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     private void Move()
     {
-        rb.linearVelocity = new Vector2(walkSpeed * xAxis, rb.linearVelocity.y);
-        anim.SetBool("Walking", rb.linearVelocity.x != 0 && Grounded());
+        if (!isKnockback)
+        {
+            rb.linearVelocity = new Vector2(walkSpeed * xAxis, rb.linearVelocity.y);
+            anim.SetBool("Walking", rb.linearVelocity.x != 0 && Grounded());
+        }        
     }
 
     void StartDash()
@@ -346,7 +354,7 @@ public class PlayerController : MonoBehaviour
             StopRecoilY();
         }
 
-        //si ya est� en el suelo deja de retroceder
+        //si ya está en el suelo deja de retroceder
         if (Grounded())
         {
             StopRecoilY();
@@ -453,22 +461,31 @@ public class PlayerController : MonoBehaviour
     {
         health -= _damage;
         anim.SetTrigger("TakeDamage");
+        FlashWhileInvicible();
         HitStopTime(0, 5, 0.5f);
 
         StartCoroutine(stopTakeDamage());
-        imageHealth.fillAmount -= damage / maxHealth; 
-        Debug.Log($"Jugador recibió daño: {_damage} puntos.");
-        //------------------------Actualizar Barra vida
     }
 
     IEnumerator stopTakeDamage()
     {
         pState.invincible = true;
+        GameObject _bloodSpurt = Instantiate(bloodSpurt, transform.position, Quaternion.identity);
+        Destroy(_bloodSpurt, 1.5f);
+        
+
         anim.SetTrigger("TakeDamage");
         ClampHealth();
         yield return new WaitForSeconds(1);
         pState.invincible = false;
     }
+
+    void FlashWhileInvicible()
+    {
+        spritePlayer.color = pState.invincible ? Color.Lerp(Color.white, Color.red, Mathf.PingPong(Time.time * hitFlashSpeed, 0.8f)) : Color.white;
+    }
+
+
 
     void RestoreTimeScale()
     {
@@ -488,8 +505,6 @@ public class PlayerController : MonoBehaviour
 
     public void HitStopTime(float _newTimeScale, int _restoreTime, float _delay)
     {
-        Debug.Log("Congelando el tiempo");
-
         restoreTimeSpeed = _restoreTime;
         Time.timeScale = _newTimeScale;
 

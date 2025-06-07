@@ -324,12 +324,16 @@ MonoBehaviour:
   damage: 2
   slashEffect: {fileID: 4613942624798021630, guid: 2e4dbd07ea9aa72498228b3000f56782, type: 3}
   timeBetweenAttack: 0.5
+  isKnockBack: 0
   recoilXSteps: 5
   recoilYSteps: 5
-  recoilXSpeed: 50
+  recoilXSpeed: 30
   recoilYSpeed: 30
-  health: 10
+  bloodSpurt: {fileID: 4888869374818767479, guid: 8e563cc5d5218734680252563b2d587c, type: 3}
   maxHealth: 10
+  health: 10
+  hitFlashSpeed: 10
+  isKnockback: 0
   pState: {fileID: 0}
 --- !u!114 &9088037749876490647
 MonoBehaviour:
