@@ -561,7 +561,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dizzy_Body_0: -1728146480966202900
+      Dizzy_Body_1: -1452160266175868986
+      Dizzy_Body_10: -1183374732123447659
+      Dizzy_Body_11: 3955505465042028282
+      Dizzy_Body_12: 4478503612618622205
+      Dizzy_Body_13: -1031279097095441447
+      Dizzy_Body_14: -2800513153107675700
+      Dizzy_Body_15: -3513878952720525432
+      Dizzy_Body_2: 7057092372810170054
+      Dizzy_Body_3: -4466834282955602227
+      Dizzy_Body_4: 912126221798313813
+      Dizzy_Body_5: 7033943163880244460
+      Dizzy_Body_6: 3798752037942043113
+      Dizzy_Body_7: 4488643221466431129
+      Dizzy_Body_8: 3175826522101168422
+      Dizzy_Body_9: 7933118457919127037
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
