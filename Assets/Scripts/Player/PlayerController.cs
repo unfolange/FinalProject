@@ -133,7 +133,8 @@ public class PlayerController : MonoBehaviour
         Jump();
         StartDash();
         Attack();
-        RestoreTimeScale();       
+        RestoreTimeScale();
+        FlashWhileInvicible();
     }
 
     private void FixedUpdate()
@@ -184,7 +185,7 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(walkSpeed * xAxis, rb.linearVelocity.y);
             anim.SetBool("Walking", rb.linearVelocity.x != 0 && Grounded());
-        }        
+        }
     }
 
     void StartDash()
@@ -461,7 +462,7 @@ public class PlayerController : MonoBehaviour
     {
         health -= _damage;
         anim.SetTrigger("TakeDamage");
-        FlashWhileInvicible();
+        
         HitStopTime(0, 5, 0.5f);
 
         StartCoroutine(stopTakeDamage());
@@ -524,6 +525,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSecondsRealtime(_delay);
         restoreTime = true;
     }
+    
 
 
     //MÉTODOS PARA LOS BOTONES ANDROID
