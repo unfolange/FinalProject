@@ -207,7 +207,7 @@ MonoBehaviour:
   maxHealth: 10
   health: 10
   recoilLength: 2
-  recoilFactor: 5
+  recoilFactor: 3
   isRecoiling: 0
   player: {fileID: 0}
   acidPrefab: {fileID: 4336379936130536961, guid: e8666322e2770d241bbd0487b5ea8538, type: 3}
