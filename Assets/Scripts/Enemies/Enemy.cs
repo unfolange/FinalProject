@@ -24,20 +24,29 @@ public class Enemy : MonoBehaviour
 
     //[Header("Enemies States Setttings")]
     protected enum EnemyStates { //Spider
+        //Spider
         Spider_Walk,
         Spider_Chase,
-        Spider_Flip
+        Spider_Flip,
+
+        //Eye
+        Eye_Idle,
+        Eye_Chase,       
+        Eye_Stunned,
+        Eye_Death
     }
 
     protected EnemyStates currentEnemyState;
 
     public PlayerController player;
     protected float playerDistance;
+    protected SpriteRenderer sr;
 
     protected virtual void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         //player = PlayerController.Instance;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         health = maxHealth;
