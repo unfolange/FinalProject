@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level_01_land.unity
     guid: 95b13963bdbae89468fba0db83adac40
   - enabled: 1
-    path: Assets/Scenes/Level_02_cave.unity
+    path: Assets/Scenes/Level_02_cave_intro.unity
     guid: c15c5be24dbd61a4ab93d1f43a966de3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

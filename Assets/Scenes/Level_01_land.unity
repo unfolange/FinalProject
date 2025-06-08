@@ -5180,7 +5180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Player
-  sceneName: Level_02_cave
+  sceneName: Level_02_cave_intro
 --- !u!4 &1857986492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8642778826292289085, guid: 043d0866828527242a391ad20a2504b7, type: 3}

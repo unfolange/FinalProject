@@ -6,6 +6,10 @@ using Unity.Cinemachine;
 
 public class AztherothDialogue : MonoBehaviour
 {
+    [Header("Aztheroth")]
+    [Tooltip("Assign the Animator component on your Aztheroth GameObject.")]
+    public Animator aztherothAnimator;
+
     [Header("Dialogue")]
     public GameObject dialogueBox;
     public TMP_Text _text;
@@ -23,12 +27,18 @@ public class AztherothDialogue : MonoBehaviour
     public int[] activeCamList; // Each entry should match a line index
     public CinemachineCamera fallbackCamera;
 
+    [Header("Next Timeline (after dialogue)")]
+    [Tooltip("Assign the PlayableDirector you want to play when dialogue ends.")]
+    public PlayableDirector nextTimeline;
+
     private int index = 0;
     private bool dialoguing = false;
 
     void Start()
     {
         timeline.stopped += OnTimelineStopped;
+        if (aztherothAnimator == null)
+            Debug.LogWarning("aztherothAnimator no está asignado en el inspector.");
     }
 
     void OnDestroy()
@@ -39,10 +49,11 @@ public class AztherothDialogue : MonoBehaviour
     void OnTimelineStopped(PlayableDirector pd)
     {
         brain.DefaultBlend = new CinemachineBlendDefinition(
-            CinemachineBlendDefinition.Styles.Cut, 
+            CinemachineBlendDefinition.Styles.Cut,
             0f
         );
-        UpdateActiveCamera(activeCamList[index]);
+        if (activeCamList != null && activeCamList.Length > index)
+            UpdateActiveCamera(activeCamList[index]);
         StartCoroutine(StartDialogueAfterTimeline());
     }
 
@@ -82,7 +93,10 @@ public class AztherothDialogue : MonoBehaviour
         if (index < lines.Length - 1)
         {
             index++;
-            UpdateActiveCamera(activeCamList[index]);
+            if (activeCamList != null && index < activeCamList.Length)
+                UpdateActiveCamera(activeCamList[index]);
+            else
+                Debug.LogWarning($"No hay cámara asignada para la línea {index}");
             _text.text = string.Empty;
             StartCoroutine(TypeLine());
         }
@@ -106,13 +120,11 @@ public class AztherothDialogue : MonoBehaviour
         for (int i = 0; i < dialogueCameras.Length; i++)
         {
             dialogueCameras[i].Priority = (i == activeIndex) ? 100 : 0;
-            Debug.Log("Switched to camera: " + dialogueCameras[i].name + "," + dialogueCameras[i].Priority + ", is active" + (i == activeIndex).ToString() + "," + ((i == activeIndex) ? 100 : 0).ToString());
+            aztherothAnimator.SetBool("Talking", activeCamList[index] == 1);
         }
 
         if (fallbackCamera != null)
             fallbackCamera.Priority = 0;
-
-        Debug.Log("Switched to camera: " + dialogueCameras[activeIndex].name);
     }
 
     void EndDialogue()
@@ -130,5 +142,8 @@ public class AztherothDialogue : MonoBehaviour
         }
 
         Input.ResetInputAxes();
+
+        if (nextTimeline != null)
+            nextTimeline.Play();
     }
 }
