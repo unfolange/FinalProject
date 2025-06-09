@@ -72,5 +72,8 @@ TagManager:
   - name: fog
     uniqueID: 47014295
     locked: 0
+  - name: Prueba
+    uniqueID: 808542541
+    locked: 0
   m_RenderingLayers:
   - Default
