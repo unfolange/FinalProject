@@ -14,8 +14,8 @@ public class Enemy : MonoBehaviour
     [Header("Attack Settings")]
     public float maxHealth;
     [HideInInspector] public float health;
-    [SerializeField] protected float recoilLength;
-    [SerializeField] protected float recoilFactor;
+    [SerializeField] protected float recoilLength; //tiempo de recuperacion
+    [SerializeField] protected float recoilFactor; //factor multiplicador del golpe
     [SerializeField] protected bool isRecoiling = false;
     protected float recoilTimer;
     //[Space(5)]
@@ -24,20 +24,29 @@ public class Enemy : MonoBehaviour
 
     //[Header("Enemies States Setttings")]
     protected enum EnemyStates { //Spider
+        //Spider
         Spider_Walk,
         Spider_Chase,
-        Spider_Flip
+        Spider_Flip,
+
+        //Eye
+        Eye_Idle,
+        Eye_Chase,       
+        Eye_Stunned,
+        Eye_Death
     }
 
     protected EnemyStates currentEnemyState;
 
     public PlayerController player;
     protected float playerDistance;
+    protected SpriteRenderer sr;
 
     protected virtual void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         //player = PlayerController.Instance;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         health = maxHealth;
@@ -83,16 +92,16 @@ public class Enemy : MonoBehaviour
     public virtual void TakeDamage(float _damageDone, Vector2 _hitDirection, float _hitForce)
     {
         if (isDead) return;
-        health -= _damageDone;       
+        health -= _damageDone;
 
         if (!isRecoiling)
         {
-            rb.AddForce(-_hitForce * recoilFactor * _hitDirection);
+            rb.AddForce(-_hitForce * recoilFactor * _hitDirection, ForceMode2D.Impulse);
             isRecoiling = true;
         }
 
         if (health <= 0)
-        {
+        {            
             isDead = true;
             Destroy(gameObject);
         }
@@ -114,7 +123,7 @@ public class Enemy : MonoBehaviour
     {
         if (_other.CompareTag("Player") && !PlayerController.Instance.pState.invincible)
         {
-            Attack();           
+            Attack();
         }
     }
 

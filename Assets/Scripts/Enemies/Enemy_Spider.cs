@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy_Spider : Enemy
@@ -10,8 +11,11 @@ public class Enemy_Spider : Enemy
     [SerializeField] private float acidAttackRange = 7f;
     [SerializeField] private float aimError = 1.5f; // margen de error en unidades
 
-    private float lastAcidTime;
+    [SerializeField] private int numberOfProjectiles = 5;
+    [SerializeField] private float projectileForce = 8f; // Ajusta según alcance
+    [SerializeField] private float inaccuracy = 5f;
 
+    private float lastAcidTime;
 
     [SerializeField] private float detectionRange = 5f;
     [SerializeField] private float flipWaitTime;
@@ -72,7 +76,6 @@ public class Enemy_Spider : Enemy
                     rb.linearVelocity = new Vector2(-speed, rb.linearVelocity.y);
                 }
 
-
                 if (!Physics2D.Raycast(transform.position + _ledgeCheckStartPoint, Vector3.down, ledgeCheckY, whatIsGround)
                     || Physics2D.Raycast(transform.position, _walkCheckDir, ledgeCheckY, whatIsGround))
                 {
@@ -101,12 +104,12 @@ public class Enemy_Spider : Enemy
 
                 float directionToPlayer = player.transform.position.x - transform.position.x;
 
-                if (Mathf.Abs(directionToPlayer) > 0.1f)
+                if (Mathf.Abs(directionToPlayer) > 0.1f && !isRecoiling) // Se golpea retrocede y continúa atacando
                 {
                     // Cambiar dirección de la araña según posición del jugador
                     transform.localScale = new Vector3(Mathf.Sign(directionToPlayer), transform.localScale.y, transform.localScale.z);
 
-                    rb.linearVelocity = new Vector2(Mathf.Sign(directionToPlayer) * speed, rb.linearVelocity.y);
+                    rb.linearVelocity = new Vector2(Mathf.Sign(directionToPlayer) * speed, rb.linearVelocity.y);                    
                 }
 
                 // Si el jugador se aleja, volver a patrullar
@@ -117,21 +120,11 @@ public class Enemy_Spider : Enemy
 
                 if (Vector2.Distance(transform.position, player.transform.position) <= acidAttackRange)
                 {
-                    //TryShootAcid();
-                    //ThrowAcidAtPlayer();
+                    ThrowAcidAtPlayer();                    
                 }
 
                 break;
         }
-
-    }
-
-    /// <summary>
-    /// Recibir daño
-    /// </summary>
-    public override void TakeDamage(float _damageDone, Vector2 _hitDirection, float _hitForce)
-    {
-        base.TakeDamage(_damageDone, _hitDirection, _hitForce);
     }
 
     private void OnDrawGizmosSelected()
@@ -140,118 +133,65 @@ public class Enemy_Spider : Enemy
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position + ledgeCheckStartPoint, transform.position + ledgeCheckStartPoint + Vector3.down * ledgeCheckY);
     }
-
-
-
-    private void TryShootAcid()
-    {
-        if (Time.time < lastAcidTime + acidCooldown) return;
-
-        Vector2 targetPos = player.transform.position;
-
-        // Introduce error en la puntería
-        targetPos += new Vector2(Random.Range(-aimError, aimError), Random.Range(-aimError, aimError));
-
-        Vector2 startPos = firePoint.position;
-        Vector2 toTarget = targetPos - startPos;
-
-        float gravity = Mathf.Abs(Physics2D.gravity.y);
-        float angleDegrees = 45f; // Ángulo fijo razonable para parábola
-        float angleRadians = angleDegrees * Mathf.Deg2Rad;
-
-        float distance = toTarget.magnitude;
-        float heightDifference = toTarget.y;
-
-        // Asegura que no se divide por 0 ni se saca raíz negativa
-        float underRoot = Mathf.Pow(acidForce, 2) - gravity * (gravity * Mathf.Pow(distance, 2) + 2 * heightDifference * Mathf.Pow(acidForce, 2));
-        if (underRoot <= 0)
-        {
-            Debug.LogWarning("No se puede disparar: objetivo fuera de alcance o demasiado cerca.");
-            return;
-        }
-
-        // Dirección horizontal normalizada
-        Vector2 direction = toTarget.normalized;
-
-        // Aplica rotación para ángulo
-        Vector2 launchDirection = Quaternion.Euler(0, 0, angleDegrees) * direction;
-
-        GameObject acid = Instantiate(acidPrefab, firePoint.position, Quaternion.identity);
-        Rigidbody2D rbAcid = acid.GetComponent<Rigidbody2D>();
-        rbAcid.linearVelocity = launchDirection * acidForce;
-
-        lastAcidTime = Time.time;
-    }
-
+    
 
     public void ThrowAcidAtPlayer()
     {
         if (player == null || acidPrefab == null || firePoint == null)
             return;
 
-        Vector2 targetPos = player.transform.position;
-        Vector2 startPos = firePoint.position;
-        Vector2 direction = targetPos - startPos;
-
-        // Margen de error: ajusta la posición del jugador con un pequeño offset aleatorio
-        float inaccuracy = 0.5f; // en unidades del mundo
-        direction.x += Random.Range(-inaccuracy, inaccuracy);
-        direction.y += Random.Range(-inaccuracy, inaccuracy);
-
-        // Ajusta este valor para cambiar la curva (más alto = más curva)
-        float angleDegrees = 45f;
-
-        // Calculamos la distancia horizontal y vertical
-        float distanceX = direction.x;
-        float distanceY = direction.y;
-
-        // Convertimos ángulo a radianes
-        float angleRad = angleDegrees * Mathf.Deg2Rad;
-
-        // Asegura que no se divide entre cero
-        float cosAngle = Mathf.Cos(angleRad);
-        float sinAngle = Mathf.Sin(angleRad);
-
-        if (Mathf.Abs(cosAngle) < 0.01f)
-        {
-            Debug.LogWarning("El ángulo es muy vertical, ajusta angleDegrees");
+        if (Time.time < lastAcidTime + acidCooldown)
             return;
-        }
 
-        // Fórmula física para proyectil lanzado con ángulo
-        float gravity = Mathf.Abs(Physics2D.gravity.y);
-        float numerator = gravity * Mathf.Pow(distanceX, 2);
-        float denominator = 2 * (distanceY - Mathf.Tan(angleRad) * distanceX) * Mathf.Pow(cosAngle, 2);
+        StartCoroutine(CO_ThrowAcidAtPlayer());
 
-        if (denominator <= 0)
-        {
-            Debug.LogWarning("No se puede calcular una trayectoria válida (denominator <= 0)");
-            return;
-        }
-
-        float velocity = Mathf.Sqrt(numerator / denominator);
-
-        if (float.IsNaN(velocity))
-        {
-            Debug.LogWarning("Velocidad resultó en NaN. Revisa la distancia y el ángulo.");
-            return;
-        }
-
-        // Instanciamos el proyectil
-        GameObject projectile = Instantiate(acidPrefab, firePoint.position, Quaternion.identity);
-
-        Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-        if (rb != null)
-        {
-            // Direcciones X y Y según ángulo
-            Vector2 launchVelocity = new Vector2(
-                velocity * cosAngle * Mathf.Sign(distanceX),
-                velocity * sinAngle
-            );
-
-            rb.linearVelocity = launchVelocity;
-        }
+        lastAcidTime = Time.time;
     }
+
+
+    public IEnumerator CO_ThrowAcidAtPlayer()
+    {
+        Vector2 directionToPlayer = (player.transform.position - firePoint.position).normalized;
+        float baseAngle;
+
+        // Decide hacia qué lado disparar
+        float angleSign = directionToPlayer.x >= 0 ? 1f : -1f;
+
+        for (int k = 0; k < 3; k++)
+        {
+            for (int i = 0; i < numberOfProjectiles; i++)
+            {
+                baseAngle = 15 + 5 * i;//ángulos de elevación del lanzamiento de los proyectiles.
+
+                float angleVariation = Random.Range(-inaccuracy, inaccuracy);
+                float angle = (baseAngle + angleVariation) * Mathf.Deg2Rad;
+
+                // Calculamos el vector de dirección según el ángulo
+                Vector2 forceDirection = new Vector2(Mathf.Cos(angle) * angleSign, Mathf.Sin(angle)).normalized;
+
+                GameObject projectile = Instantiate(acidPrefab, firePoint.position, Quaternion.identity);
+                //projectile.transform.localScale = new Vector3(2, 2, 1);
+
+                Rigidbody2D rbAcid = projectile.GetComponent<Rigidbody2D>();
+
+                if (rbAcid != null)
+                {
+                    rbAcid.AddForce(forceDirection * projectileForce, ForceMode2D.Impulse);
+                }
+
+                Destroy(projectile, 2f);
+            }
+
+            yield return new WaitForSeconds(0.3f); //tiempo de espera entre ráfagas
+        }
+
+
+        lastAcidTime = Time.time;
+    }
+
+
+
+
 
 
 

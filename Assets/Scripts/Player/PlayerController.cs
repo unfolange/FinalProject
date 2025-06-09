@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Joystick Settings")]
     public FloatingJoystick joystick;
+    public ActionsButtons actionsButtons;
     private bool dashButtonPressed = false;
     private bool attackButtonPressed = false;
     private bool jumpButtonPressed;
@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
     private float coyoteTimeCounter = 0;
     [SerializeField] private float coyoteTime;
     private int airJumpCounter = 0;
-    [SerializeField] private int maxAirJumps;
+    private int maxAirJumps;
     [Space(5)]
 
     [Header("Ground Check Settings")]
@@ -38,13 +38,14 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float dashTime;
     [SerializeField] private float dashCooldDown;
     [SerializeField] private GameObject dashEffect;
-    private bool canDash = true;
+    private bool canDash;
     private bool dashed;
     [Space(5)]
 
 
     [Header("Attack Settings")]
     bool attack = false;
+    bool canAttack = false;
     [SerializeField] Transform sideAttackTransform, upAttackTransform, downAttackTransform;
     [SerializeField] Vector2 sideAttackArea, upAttackArea, downAttackArea;
     [SerializeField] LayerMask attackableLayer;
@@ -98,6 +99,20 @@ public class PlayerController : MonoBehaviour
         }
 
         health = maxHealth;
+
+        //Borrar todas las habilidades encontradas desde el editor
+#if UNITY_EDITOR
+        PlayerPrefs.DeleteAll();
+        PlayerPrefs.Save();
+        Debug.Log("Habilidades Guardadas borradas en el editor.");
+#endif
+
+
+
+        //Recuperar las habilidades desbloqueadas
+        maxAirJumps = PlayerPrefs.GetInt("MaxJumps", 0);
+        canDash = PlayerPrefs.GetInt("Dash", 0) == 1;
+        canAttack = PlayerPrefs.GetInt("Attack", 0) == 1;
     }
 
 
@@ -133,7 +148,8 @@ public class PlayerController : MonoBehaviour
         Jump();
         StartDash();
         Attack();
-        RestoreTimeScale();       
+        RestoreTimeScale();
+        FlashWhileInvicible();
     }
 
     private void FixedUpdate()
@@ -184,7 +200,22 @@ public class PlayerController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(walkSpeed * xAxis, rb.linearVelocity.y);
             anim.SetBool("Walking", rb.linearVelocity.x != 0 && Grounded());
-        }        
+        }
+    }
+
+    //Actualizar las habilidades desbloqueadas
+    public void UpdateSkills()
+    {
+        canAttack = PlayerPrefs.GetInt("Attack", 0) == 1;
+        maxAirJumps = PlayerPrefs.GetInt("MaxJumps", 0);
+        canDash = PlayerPrefs.GetInt("Dash", 0) == 1;
+
+#if UNITY_ANDROID
+        joystick.AxisOptions = canAttack ? AxisOptions.Both : AxisOptions.Horizontal;
+        actionsButtons.UnlockAttack(canAttack);
+        actionsButtons.UnlockJump(maxAirJumps > 0);
+        actionsButtons.UnlockDash(canDash);
+#endif
     }
 
     void StartDash()
@@ -192,9 +223,9 @@ public class PlayerController : MonoBehaviour
         bool dashInput = false;
 
 #if UNITY_STANDALONE || UNITY_WEBGL || UNITY_EDITOR
-        dashInput = Input.GetButtonDown("Dash");
+            dashInput = Input.GetButtonDown("Dash");
 #else
-        dashInput = dashButtonPressed;
+            dashInput = dashButtonPressed;
 #endif
 
 
@@ -236,7 +267,7 @@ public class PlayerController : MonoBehaviour
     void Attack()
     {
         timeSinceAttack += Time.deltaTime;
-        if (attack && timeSinceAttack >= timeBetweenAttack && Time.timeScale != 0)
+        if (attack && timeSinceAttack >= timeBetweenAttack && Time.timeScale != 0 && canAttack)
         {
             timeSinceAttack = 0;
             anim.SetTrigger("Attacking");
@@ -402,13 +433,14 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         // Intentar salto en el suelo
-        if ((jumpBufferCounter > 0 && coyoteTimeCounter > 0) && !pState.jumping)
+        if ((jumpBufferCounter > 0 && coyoteTimeCounter > 0) && !pState.jumping && maxAirJumps >= 1)
         {
+            airJumpCounter = 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             pState.jumping = true;
         }
         //Intentar salto en el aire (doble salto)
-        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed))
+        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed)) 
         {
             airJumpCounter++;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -461,7 +493,7 @@ public class PlayerController : MonoBehaviour
     {
         health -= _damage;
         anim.SetTrigger("TakeDamage");
-        FlashWhileInvicible();
+        
         HitStopTime(0, 5, 0.5f);
 
         StartCoroutine(stopTakeDamage());
@@ -524,6 +556,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSecondsRealtime(_delay);
         restoreTime = true;
     }
+    
 
 
     //MÉTODOS PARA LOS BOTONES ANDROID

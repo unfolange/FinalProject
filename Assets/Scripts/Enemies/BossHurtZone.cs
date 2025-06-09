@@ -44,7 +44,7 @@ public class BossHurtZone : MonoBehaviour
 
     IEnumerator stopKockBack(PlayerController player)
     {
-        yield return new WaitForSecondsRealtime(0.5f);    
+        yield return new WaitForSecondsRealtime(1f);    
         player.isKnockback = false;
     }
 }

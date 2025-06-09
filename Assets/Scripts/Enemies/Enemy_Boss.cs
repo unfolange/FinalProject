@@ -4,7 +4,7 @@ public class Enemy_Boss : Enemy
 {
     [Header("Attack Settings Boss")]
     [SerializeField] private Transform sideAttackTransform;
-    [SerializeField] private float attackRadius;    
+    [SerializeField] private float attackRadius;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,8 +48,8 @@ public class Enemy_Boss : Enemy
         {
             if (collision.gameObject.CompareTag("Player"))
             {
-                PlayerController.Instance.TakeDamage(damage);
-                //collision.GetComponent<PlayerController>().TakeDamage(attackDamage);
+                //PlayerController.Instance.TakeDamage(damage);
+                collision.GetComponent<PlayerController>().TakeDamage(damage);
                 //PlayerController.Instance.HitStopTime(0, 5, 0.5f);
             }
         }

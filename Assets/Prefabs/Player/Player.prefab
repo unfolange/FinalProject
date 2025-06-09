@@ -297,11 +297,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
+  actionsButtons: {fileID: 0}
   walkSpeed: 5
   jumpForce: 40
   jumpBufferFrames: 1
   coyoteTime: 0.1
-  maxAirJumps: 1
   groundCheckPoint: {fileID: 7842956409119397240}
   groundCheckY: 0.2
   groundCheckX: 0.5

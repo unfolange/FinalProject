@@ -26,8 +26,8 @@ public class Enemy_BossSkill : MonoBehaviour
         {
             if (collisions.gameObject.CompareTag("Player"))
             {
-                PlayerController.Instance.TakeDamage(damage);
-                //collisions.GetComponent<PlayerController>().TakeDamage(damage);
+                //PlayerController.Instance.TakeDamage(damage);
+                collisions.GetComponent<PlayerController>().TakeDamage(damage);
             }
         }
     }
