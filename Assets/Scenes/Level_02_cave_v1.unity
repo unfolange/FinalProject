@@ -45858,6 +45858,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerC
       objectReference: {fileID: 0}
+    - target: {fileID: 2244210504283903940, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2244210504283903940, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 3644694291811528581, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c8a092b28e982674d9678f2fc3e1056b, type: 2}
+    - target: {fileID: 3906364556235642295, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.05
+      objectReference: {fileID: 0}
     - target: {fileID: 5085578959455085072, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
       propertyPath: m_Size.x
       value: 0.95264053
@@ -45918,14 +45934,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6500961995343431928, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 6500961995343431928, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.818
+      objectReference: {fileID: 0}
+    - target: {fileID: 7926185746403703165, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.05
+      objectReference: {fileID: 0}
     - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
       propertyPath: joystick
       value: 
       objectReference: {fileID: 118415524}
     - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: dashSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
       propertyPath: actionsButtons
       value: 
       objectReference: {fileID: 1251174567}
+    - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: upAttackArea.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: downAttackArea.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: sideAttackArea.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839743533963784270, guid: db691bda1cf60a244869db20cf09bf16, type: 3}
+      propertyPath: sideAttackArea.y
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
