@@ -102,7 +102,13 @@ public class PlayerController : MonoBehaviour
 
         //Borrar todas las habilidades encontradas desde el editor
 #if UNITY_EDITOR
-        PlayerPrefs.DeleteAll();
+
+        PlayerPrefs.SetInt("MaxJumps", 2);
+        PlayerPrefs.SetInt("Dash", 1);
+        PlayerPrefs.SetInt("Attack", 1);
+
+
+        //PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
         Debug.Log("Habilidades Guardadas borradas en el editor.");
 #endif
@@ -272,6 +278,9 @@ public class PlayerController : MonoBehaviour
             timeSinceAttack = 0;
             anim.SetTrigger("Attacking");
 
+            Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
+
+            /*
             if (yAxis > 0.5f) // Attack Up
             {
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
@@ -286,7 +295,7 @@ public class PlayerController : MonoBehaviour
             {
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
                 SlashEffectAngle(slashEffect, 0, sideAttackTransform);
-            }
+            }*/
         }
 
 #if !UNITY_STANDALONE && !UNITY_WEBGL
