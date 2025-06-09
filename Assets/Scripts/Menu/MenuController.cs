@@ -51,7 +51,7 @@ public class MenuController : MonoBehaviour
     private void Start()
     {
         resolutions = Screen.resolutions;
-        resolutionDropdown.ClearOptions();
+        // resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
 
@@ -72,9 +72,9 @@ public class MenuController : MonoBehaviour
                 currentResolutionIndex = i;
             }
         }
-        resolutionDropdown.AddOptions(options);
-        resolutionDropdown.value = currentResolutionIndex;
-        resolutionDropdown.RefreshShownValue();
+        // resolutionDropdown.AddOptions(options);
+        // resolutionDropdown.value = currentResolutionIndex;
+        // resolutionDropdown.RefreshShownValue();
     }
 
 
@@ -125,18 +125,18 @@ public class MenuController : MonoBehaviour
 
     public void GameplayApply()
     {
-        if (invertYToggle.isOn)
-        {
-            PlayerPrefs.SetInt("masterInvertY", 1);
+        // if (invertYToggle.isOn)
+        // {
+        //     PlayerPrefs.SetInt("masterInvertY", 1);
 
-        }
-        else
-        {
-            PlayerPrefs.SetInt("masterInvertY", 0);
-        }
+        // }
+        // else
+        // {
+        //     PlayerPrefs.SetInt("masterInvertY", 0);
+        // }
 
-        PlayerPrefs.SetFloat("masterSen", mainControllerSen);
-        StartCoroutine(ConfirmationBox());
+        // PlayerPrefs.SetFloat("masterSen", mainControllerSen);
+        // StartCoroutine(ConfirmationBox());
     }
 
 
