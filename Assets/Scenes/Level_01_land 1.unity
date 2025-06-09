@@ -1534,7 +1534,7 @@ GameObject:
   - component: {fileID: 451175802}
   - component: {fileID: 451175801}
   m_Layer: 0
-  m_Name: crate-bottles_0
+  m_Name: crate-bottles_0j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2112,7 +2112,7 @@ GameObject:
   - component: {fileID: 640271587}
   - component: {fileID: 640271586}
   m_Layer: 0
-  m_Name: structure-roof_0
+  m_Name: structure-roof_0j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2692,7 +2692,7 @@ PrefabInstance:
       objectReference: {fileID: 1874566998}
     - target: {fileID: 8957555831355239642, guid: 47e0e42e6d9002a4384433a67a29905c, type: 3}
       propertyPath: m_Name
-      value: BitacoraPaper
+      value: BitacoraPaperj
       objectReference: {fileID: 0}
     - target: {fileID: 8957555831355239642, guid: 47e0e42e6d9002a4384433a67a29905c, type: 3}
       propertyPath: m_IsActive
@@ -3479,7 +3479,7 @@ GameObject:
   - component: {fileID: 1116706256}
   - component: {fileID: 1116706258}
   m_Layer: 0
-  m_Name: Ship-pirate-large
+  m_Name: Ship-pirate-largej
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3860,7 +3860,7 @@ GameObject:
   - component: {fileID: 1321031277}
   - component: {fileID: 1321031276}
   m_Layer: 0
-  m_Name: crate-bottles_0 (1)
+  m_Name: crate-bottles_0 (1)j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4138,7 +4138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372391735}
   m_Layer: 0
-  m_Name: Cameras
+  m_Name: Camerasj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4320,7 +4320,7 @@ GameObject:
   - component: {fileID: 1494032496}
   - component: {fileID: 1494032495}
   m_Layer: 0
-  m_Name: crate_0
+  m_Name: crate_0j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4609,7 +4609,7 @@ GameObject:
   - component: {fileID: 1649885917}
   - component: {fileID: 1649885919}
   m_Layer: 3
-  m_Name: Floor
+  m_Name: Floorj
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5589,7 +5589,7 @@ GameObject:
   - component: {fileID: 1921164299}
   - component: {fileID: 1921164298}
   m_Layer: 0
-  m_Name: chest_0
+  m_Name: chest_0j
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6219,7 +6219,7 @@ GameObject:
   - component: {fileID: 2096315809}
   - component: {fileID: 2096315808}
   m_Layer: 0
-  m_Name: Sound
+  m_Name: Soundj
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
