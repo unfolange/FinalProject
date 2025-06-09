@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 17fd40b3ec3860347ab1ba9c45f5f4bd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3019291463286639842
+    second: Conjunto2_0
+  - first:
+      213: -991118447941365378
+    second: Conjunto2_1
+  - first:
+      213: 5802518185644039644
+    second: Conjunto2_2
+  - first:
+      213: -897919271803812484
+    second: Conjunto2_3
+  - first:
+      213: -2083193066768654635
+    second: Conjunto2_4
+  - first:
+      213: 6998942827470861752
+    second: Conjunto2_5
+  - first:
+      213: 2610446964698390102
+    second: Conjunto2_6
+  - first:
+      213: 8603340199530117301
+    second: Conjunto2_7
+  - first:
+      213: -7611810418072944313
+    second: Conjunto2_8
+  - first:
+      213: 8697430756323122615
+    second: Conjunto2_9
+  - first:
+      213: -1883904717717834100
+    second: Conjunto2_10
+  - first:
+      213: -1455178642672501043
+    second: Conjunto2_11
+  - first:
+      213: 6855005300721527427
+    second: Conjunto2_12
+  - first:
+      213: -8861697447535313933
+    second: Conjunto2_13
+  - first:
+      213: -808905335377770323
+    second: Conjunto2_14
+  - first:
+      213: -1820406965709651749
+    second: Conjunto2_15
+  - first:
+      213: 2427126188721705668
+    second: Conjunto2_16
+  - first:
+      213: 6459837530340257492
+    second: Conjunto2_17
+  - first:
+      213: 4603274721566522176
+    second: Conjunto2_18
+  - first:
+      213: 9157562060172008960
+    second: Conjunto2_19
+  - first:
+      213: 8187772933881184994
+    second: Conjunto2_20
+  - first:
+      213: 3659867009718658569
+    second: Conjunto2_21
+  - first:
+      213: -1802824745955656259
+    second: Conjunto2_22
+  - first:
+      213: 3242855819611362968
+    second: Conjunto2_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Conjunto2_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 533
+        width: 68
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ecc196c69da6e920800000000000000
+      internalID: 3019291463286639842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 535
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e715e14d507de32f0800000000000000
+      internalID: -991118447941365378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 543
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd9e0afb8fa68050800000000000000
+      internalID: 5802518185644039644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_3
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 522
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75082ffd23f983f0800000000000000
+      internalID: -897919271803812484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 519
+        width: 66
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de92b861f20713e0800000000000000
+      internalID: -2083193066768654635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_5
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 519
+        width: 65
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b53baa6b6d312160800000000000000
+      internalID: 6998942827470861752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_6
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 519
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65e18d30fab2a3420800000000000000
+      internalID: 2610446964698390102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_7
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 519
+        width: 22
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8b4da3454356770800000000000000
+      internalID: 8603340199530117301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_8
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 519
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741052df0ca6d5690800000000000000
+      internalID: -7611810418072944313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_9
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 519
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd5231213b73b870800000000000000
+      internalID: 8697430756323122615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_10
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 384
+        width: 165
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86febdf3a60bd5e0800000000000000
+      internalID: -1883904717717834100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 503
+        width: 52
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce35cefbba2ecbe0800000000000000
+      internalID: -1455178642672501043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_12
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 514
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38a2dea600fd12f50800000000000000
+      internalID: 6855005300721527427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_13
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 346
+        width: 105
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbfbac6f1de40580800000000000000
+      internalID: -8861697447535313933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_14
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 356
+        width: 164
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8c3eb12e036c4f0800000000000000
+      internalID: -808905335377770323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_15
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 455
+        width: 65
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0ca36728d9cb6e0800000000000000
+      internalID: -1820406965709651749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_16
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 451
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c21ecfb862eea120800000000000000
+      internalID: 2427126188721705668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_17
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 453
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4deeaa61204f5a950800000000000000
+      internalID: 6459837530340257492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_18
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 454
+        width: 62
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bf18658fd12ef30800000000000000
+      internalID: 4603274721566522176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_19
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 247
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e9525cc22361f70800000000000000
+      internalID: 9157562060172008960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_20
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 247
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2cb894a10d0a170800000000000000
+      internalID: 8187772933881184994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_21
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 247
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 906a37f87a57ac230800000000000000
+      internalID: 3659867009718658569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 247
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd770102741bf6e0800000000000000
+      internalID: -1802824745955656259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Conjunto2_23
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 247
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8965eb1cf20f00d20800000000000000
+      internalID: 3242855819611362968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Conjunto2_0: 3019291463286639842
+      Conjunto2_1: -991118447941365378
+      Conjunto2_10: -1883904717717834100
+      Conjunto2_11: -1455178642672501043
+      Conjunto2_12: 6855005300721527427
+      Conjunto2_13: -8861697447535313933
+      Conjunto2_14: -808905335377770323
+      Conjunto2_15: -1820406965709651749
+      Conjunto2_16: 2427126188721705668
+      Conjunto2_17: 6459837530340257492
+      Conjunto2_18: 4603274721566522176
+      Conjunto2_19: 9157562060172008960
+      Conjunto2_2: 5802518185644039644
+      Conjunto2_20: 8187772933881184994
+      Conjunto2_21: 3659867009718658569
+      Conjunto2_22: -1802824745955656259
+      Conjunto2_23: 3242855819611362968
+      Conjunto2_3: -897919271803812484
+      Conjunto2_4: -2083193066768654635
+      Conjunto2_5: 6998942827470861752
+      Conjunto2_6: 2610446964698390102
+      Conjunto2_7: 8603340199530117301
+      Conjunto2_8: -7611810418072944313
+      Conjunto2_9: 8697430756323122615
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
