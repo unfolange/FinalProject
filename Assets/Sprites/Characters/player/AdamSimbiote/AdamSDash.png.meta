@@ -1,10 +1,28 @@
 fileFormatVersion: 2
-guid: 6d4b26ea93bf9f64d8b1589a46e77a5e
+guid: f47bdd70068211643a1c3f56d62f8b04
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 318805145125781677
-    second: smoke2_14_0
+      213: -2008464437673938269
+    second: AdamSDash_0
+  - first:
+      213: 3799346103525382950
+    second: AdamSDash_1
+  - first:
+      213: -7773725647214901835
+    second: AdamSDash_2
+  - first:
+      213: -7342071112530784500
+    second: AdamSDash_3
+  - first:
+      213: 1608980056263087264
+    second: AdamSDash_4
+  - first:
+      213: -8648202873575349919
+    second: AdamSDash_5
+  - first:
+      213: -952805186218556096
+    second: AdamSDash_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -84,7 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
+    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -110,7 +128,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: WebGL
+    buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,7 +141,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -152,23 +170,155 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smoke2_14_0
+      name: AdamSDash_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 26
-        width: 458
-        height: 459
+        x: 25
+        y: 7
+        width: 92
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da00ac3279f9c6400800000000000000
-      internalID: 318805145125781677
+      spriteID: 58f47859a5c5bd240a4ed89cd9b00d94
+      internalID: 584780142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSDash_1
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 7
+        width: 106
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dafa179d830eaf4dbefb10ec019c025
+      internalID: 1107776645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSDash_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 5
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f89906a1db3d34c81b6841772962e9
+      internalID: -404849057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSDash_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 5
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45484e2c0eab2e44793eb59e2ec254e4
+      internalID: -128942203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSDash_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 5
+        width: 118
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1978d3ce19e7ce243800773e8b9f9ae9
+      internalID: 446523627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSDash_5
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 7
+        width: 106
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c4de9b625722a42960a51ac9e8a2bc
+      internalID: -12630645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSDash_6
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 7
+        width: 92
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a5bc91bc52cd04a9fbc51b27a2551b
+      internalID: 2079894516
       vertices: []
       indices: 
       edges: []
@@ -177,7 +327,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 32010e2c3cfcfce4fa3e4c52e87f500f
+    spriteID: ad6780afd4119324e9b1df292d8c83be
     internalID: 0
     vertices: []
     indices: 
@@ -187,7 +337,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      smoke2_14_0: 318805145125781677
+      AdamSDash_0: 584780142
+      AdamSDash_1: 1107776645
+      AdamSDash_2: -404849057
+      AdamSDash_3: -128942203
+      AdamSDash_4: 446523627
+      AdamSDash_5: -12630645
+      AdamSDash_6: 2079894516
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,91 +1,82 @@
 fileFormatVersion: 2
-guid: 1f44a6f956b011a4398fb2b129ea1ef6
+guid: 6f093bed7c2953e47a4c8c405116af19
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8418059174008649006
-    second: Conjunto1_0
+      213: 8824389556528078017
+    second: FinalBoss_0
   - first:
-      213: -4070158405095863825
-    second: Conjunto1_1
+      213: -600217316167502388
+    second: FinalBoss_1
   - first:
-      213: 2729996616471572073
-    second: Conjunto1_2
+      213: -2113419650931069436
+    second: FinalBoss_2
   - first:
-      213: 4376906143653268711
-    second: Conjunto1_3
+      213: 1215443268139205981
+    second: FinalBoss_3
   - first:
-      213: -8981757838873220330
-    second: Conjunto1_4
+      213: 3431150416901100092
+    second: FinalBoss_4
   - first:
-      213: 7721045413384927781
-    second: Conjunto1_5
+      213: 7649223890077266305
+    second: FinalBoss_5
   - first:
-      213: -6230678719672766225
-    second: Conjunto1_6
+      213: 3440036865597214727
+    second: FinalBoss_6
   - first:
-      213: -3349720533327963189
-    second: Conjunto1_7
+      213: -703379092806660437
+    second: FinalBoss_7
   - first:
-      213: -1321273433447517054
-    second: Conjunto1_8
+      213: 6021900051761584922
+    second: FinalBoss_8
   - first:
-      213: -4450622370302272647
-    second: Conjunto1_9
+      213: 2732343090264923645
+    second: FinalBoss_9
   - first:
-      213: -5993542849703401699
-    second: Conjunto1_10
+      213: -6814248779799151722
+    second: FinalBoss_10
   - first:
-      213: -3966535462713935711
-    second: Conjunto1_11
+      213: 7209007514170823097
+    second: FinalBoss_11
   - first:
-      213: -7436185762855302812
-    second: Conjunto1_12
+      213: 3281261231478870241
+    second: FinalBoss_12
   - first:
-      213: 2799282510837465458
-    second: Conjunto1_13
+      213: -3565366130656631028
+    second: FinalBoss_13
   - first:
-      213: -3978526784758494016
-    second: Conjunto1_14
+      213: 6213805196339135859
+    second: FinalBoss_14
   - first:
-      213: -8327663011814242258
-    second: Conjunto1_15
+      213: -8583558712272884828
+    second: FinalBoss_15
   - first:
-      213: 8370580293651582204
-    second: Conjunto1_16
+      213: 3540834707749159221
+    second: FinalBoss_16
   - first:
-      213: 5119424401882864728
-    second: Conjunto1_17
+      213: 7546321399567898157
+    second: FinalBoss_17
   - first:
-      213: 8642951601314515989
-    second: Conjunto1_18
+      213: -5207803652997589393
+    second: FinalBoss_18
   - first:
-      213: -3758963393794768185
-    second: Conjunto1_19
+      213: -41120771876500619
+    second: FinalBoss_19
   - first:
-      213: -2815560125679858909
-    second: Conjunto1_20
+      213: -7957052777287350102
+    second: FinalBoss_20
   - first:
-      213: 1264290813109558946
-    second: Conjunto1_21
+      213: 1210037566796963234
+    second: FinalBoss_21
   - first:
-      213: -7857195676117702717
-    second: Conjunto1_22
+      213: -206262032419460728
+    second: FinalBoss_22
   - first:
-      213: 8350590710460404358
-    second: Conjunto1_23
+      213: 9188923280903137449
+    second: FinalBoss_23
   - first:
-      213: 4735913774204914184
-    second: Conjunto1_24
-  - first:
-      213: -6535618512506407183
-    second: Conjunto1_25
-  - first:
-      213: -1034187225393470752
-    second: Conjunto1_26
-  - first:
-      213: 6570727481506330331
-    second: Conjunto1_27
+      213: 8843031525356804293
+    second: FinalBoss_24
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -118,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -132,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -156,7 +147,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -165,7 +156,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Standalone
+    buildTarget: iOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -191,6 +182,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -204,24 +208,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: iOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
     buildTarget: WindowsStoreApps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -233,13 +224,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Conjunto1_0
+      name: FinalBoss_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 488
-        width: 66
-        height: 22
+        x: 33
+        y: 16
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2da0ff238cb0d2b80800000000000000
-      internalID: -8418059174008649006
+      spriteID: 1ccd58c4c87867a70800000000000000
+      internalID: 8824389556528078017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_1
+      name: FinalBoss_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 480
-        width: 64
-        height: 32
+        x: 297
+        y: 15
+        width: 190
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +261,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe9c0b4ce74e387c0800000000000000
-      internalID: -4070158405095863825
+      spriteID: cc53cc1f7899ba7f0800000000000000
+      internalID: -600217316167502388
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_2
+      name: FinalBoss_2
       rect:
         serializedVersion: 2
-        x: 231
-        y: 402
-        width: 87
-        height: 86
+        x: 561
+        y: 14
+        width: 190
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +283,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 96e6ec26575e2e520800000000000000
-      internalID: 2729996616471572073
+      spriteID: 40e6cec5600aba2e0800000000000000
+      internalID: -2113419650931069436
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_3
+      name: FinalBoss_3
       rect:
         serializedVersion: 2
-        x: 365
-        y: 447
-        width: 43
-        height: 65
+        x: 825
+        y: 13
+        width: 193
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,20 +305,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ec8da3a2f4edbc30800000000000000
-      internalID: 4376906143653268711
+      spriteID: d55c312763f1ed010800000000000000
+      internalID: 1215443268139205981
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_4
+      name: FinalBoss_4
       rect:
         serializedVersion: 2
-        x: 447
-        y: 431
-        width: 49
-        height: 66
+        x: 1089
+        y: 12
+        width: 192
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,20 +327,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61ba16b35d26a5380800000000000000
-      internalID: -8981757838873220330
+      spriteID: c32d25a0025ed9f20800000000000000
+      internalID: 3431150416901100092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_5
+      name: FinalBoss_5
       rect:
         serializedVersion: 2
-        x: 15
-        y: 415
-        width: 66
-        height: 66
+        x: 1353
+        y: 13
+        width: 199
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,20 +349,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52ab77745e9a62b60800000000000000
-      internalID: 7721045413384927781
+      spriteID: 181bc77c990872a60800000000000000
+      internalID: 7649223890077266305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_6
+      name: FinalBoss_6
       rect:
         serializedVersion: 2
-        x: 96
-        y: 425
-        width: 28
-        height: 45
+        x: 1617
+        y: 14
+        width: 199
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,20 +371,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe0b15c47be2889a0800000000000000
-      internalID: -6230678719672766225
+      spriteID: 7009b2c9d477dbf20800000000000000
+      internalID: 3440036865597214727
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_7
+      name: FinalBoss_7
       rect:
         serializedVersion: 2
-        x: 127
-        y: 415
-        width: 66
-        height: 66
+        x: 1881
+        y: 14
+        width: 201
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,20 +393,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bcb972a2ce66381d0800000000000000
-      internalID: -3349720533327963189
+      spriteID: bae82d611781d36f0800000000000000
+      internalID: -703379092806660437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_8
+      name: FinalBoss_8
       rect:
         serializedVersion: 2
-        x: 194
-        y: 425
-        width: 28
-        height: 45
+        x: 2145
+        y: 15
+        width: 202
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +415,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 284333c00d4e9ade0800000000000000
-      internalID: -1321273433447517054
+      spriteID: a1bd7221136129350800000000000000
+      internalID: 6021900051761584922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_9
+      name: FinalBoss_9
       rect:
         serializedVersion: 2
-        x: 353
-        y: 379
-        width: 66
-        height: 62
+        x: 2409
+        y: 16
+        width: 200
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,20 +437,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 97bd9bcd8863c32c0800000000000000
-      internalID: -4450622370302272647
+      spriteID: dfddbb3609b3be520800000000000000
+      internalID: 2732343090264923645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_10
+      name: FinalBoss_10
       rect:
         serializedVersion: 2
-        x: 14
-        y: 319
-        width: 67
-        height: 77
+        x: 2673
+        y: 15
+        width: 199
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +459,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d17a8598888a2dca0800000000000000
-      internalID: -5993542849703401699
+      spriteID: 69bbee496dcee61a0800000000000000
+      internalID: -6814248779799151722
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_11
+      name: FinalBoss_11
       rect:
         serializedVersion: 2
-        x: 130
-        y: 386
-        width: 60
-        height: 30
+        x: 2937
+        y: 14
+        width: 190
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,20 +481,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a832f3230904f8c0800000000000000
-      internalID: -3966535462713935711
+      spriteID: 9b11641a32a8b0460800000000000000
+      internalID: 7209007514170823097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_12
+      name: FinalBoss_12
       rect:
         serializedVersion: 2
-        x: 445
-        y: 381
-        width: 55
-        height: 36
+        x: 3201
+        y: 13
+        width: 190
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,20 +503,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4694131827c5dc890800000000000000
-      internalID: -7436185762855302812
+      spriteID: 1e01f8584b1698d20800000000000000
+      internalID: 3281261231478870241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_13
+      name: FinalBoss_13
       rect:
         serializedVersion: 2
-        x: 95
-        y: 303
-        width: 58
-        height: 55
+        x: 3465
+        y: 12
+        width: 190
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -534,20 +525,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2714e64cc9c09d620800000000000000
-      internalID: 2799282510837465458
+      spriteID: c07a000f466458ec0800000000000000
+      internalID: -3565366130656631028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_14
+      name: FinalBoss_14
       rect:
         serializedVersion: 2
-        x: 155
-        y: 303
-        width: 58
-        height: 55
+        x: 3729
+        y: 13
+        width: 190
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -556,20 +547,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ccc719e7fe69c8c0800000000000000
-      internalID: -3978526784758494016
+      spriteID: 375454767eedb3650800000000000000
+      internalID: 6213805196339135859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_15
+      name: FinalBoss_15
       rect:
         serializedVersion: 2
-        x: 217
-        y: 303
-        width: 58
-        height: 55
+        x: 3993
+        y: 14
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -578,20 +569,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2807a3dc923e6c80800000000000000
-      internalID: -8327663011814242258
+      spriteID: 4abe34e24d211e880800000000000000
+      internalID: -8583558712272884828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_16
+      name: FinalBoss_16
       rect:
         serializedVersion: 2
-        x: 279
-        y: 303
-        width: 58
-        height: 55
+        x: 4257
+        y: 15
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -600,20 +591,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfcccf68d664a2470800000000000000
-      internalID: 8370580293651582204
+      spriteID: 53143c31862932130800000000000000
+      internalID: 3540834707749159221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_17
+      name: FinalBoss_17
       rect:
         serializedVersion: 2
-        x: 351
-        y: 315
-        width: 66
-        height: 54
+        x: 4521
+        y: 16
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -622,20 +613,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 85cd1b0ae59db0740800000000000000
-      internalID: 5119424401882864728
+      spriteID: d265c2ea45be9b860800000000000000
+      internalID: 7546321399567898157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_18
+      name: FinalBoss_18
       rect:
         serializedVersion: 2
-        x: 442
-        y: 326
-        width: 59
-        height: 32
+        x: 4785
+        y: 15
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -644,20 +635,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51cce3760bee1f770800000000000000
-      internalID: 8642951601314515989
+      spriteID: f66d8137b2a2ab7b0800000000000000
+      internalID: -5207803652997589393
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_19
+      name: FinalBoss_19
       rect:
         serializedVersion: 2
-        x: 15
-        y: 239
-        width: 66
-        height: 66
+        x: 5049
+        y: 14
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -666,20 +657,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7c28a2d85ba75dbc0800000000000000
-      internalID: -3758963393794768185
+      spriteID: 57b496730e8ed6ff0800000000000000
+      internalID: -41120771876500619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_20
+      name: FinalBoss_20
       rect:
         serializedVersion: 2
-        x: 154
-        y: 238
-        width: 119
-        height: 55
+        x: 5313
+        y: 9
+        width: 189
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -688,20 +679,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 32b0911bbfe1de8d0800000000000000
-      internalID: -2815560125679858909
+      spriteID: aa880c648aed29190800000000000000
+      internalID: -7957052777287350102
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_21
+      name: FinalBoss_21
       rect:
         serializedVersion: 2
-        x: 347
-        y: 243
-        width: 39
-        height: 62
+        x: 5577
+        y: 6
+        width: 189
+        height: 235
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -710,20 +701,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ae5f28cbc9ab8110800000000000000
-      internalID: 1264290813109558946
+      spriteID: 2ad9fc581caeac010800000000000000
+      internalID: 1210037566796963234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_22
+      name: FinalBoss_22
       rect:
         serializedVersion: 2
-        x: 436
-        y: 241
-        width: 44
-        height: 66
+        x: 5841
+        y: 9
+        width: 189
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -732,20 +723,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3c7e44a6922a5f290800000000000000
-      internalID: -7857195676117702717
+      spriteID: 889ecfa36c5332df0800000000000000
+      internalID: -206262032419460728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_23
+      name: FinalBoss_23
       rect:
         serializedVersion: 2
-        x: 475
-        y: 241
-        width: 22
-        height: 66
+        x: 6105
+        y: 14
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -754,20 +745,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6825ba1020243e370800000000000000
-      internalID: 8350590710460404358
+      spriteID: 9a86c8af90d958f70800000000000000
+      internalID: 9188923280903137449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Conjunto1_24
+      name: FinalBoss_24
       rect:
         serializedVersion: 2
-        x: 354
-        y: 187
-        width: 61
-        height: 54
+        x: 6369
+        y: 15
+        width: 189
+        height: 229
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -776,74 +767,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 80a0d565c7859b140800000000000000
-      internalID: 4735913774204914184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conjunto1_25
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 174
-        width: 65
-        height: 49
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1f6b69e0791dc45a0800000000000000
-      internalID: -6535618512506407183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conjunto1_26
-      rect:
-        serializedVersion: 2
-        x: 351
-        y: 132
-        width: 66
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0e2ec27a234d5a1f0800000000000000
-      internalID: -1034187225393470752
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Conjunto1_27
-      rect:
-        serializedVersion: 2
-        x: 442
-        y: 95
-        width: 51
-        height: 62
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd6f41bc4d9ef2b50800000000000000
-      internalID: 6570727481506330331
+      spriteID: 5c81976e152c8ba70800000000000000
+      internalID: 8843031525356804293
       vertices: []
       indices: 
       edges: []
@@ -861,35 +786,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Conjunto1_0: -8418059174008649006
-      Conjunto1_1: -4070158405095863825
-      Conjunto1_10: -5993542849703401699
-      Conjunto1_11: -3966535462713935711
-      Conjunto1_12: -7436185762855302812
-      Conjunto1_13: 2799282510837465458
-      Conjunto1_14: -3978526784758494016
-      Conjunto1_15: -8327663011814242258
-      Conjunto1_16: 8370580293651582204
-      Conjunto1_17: 5119424401882864728
-      Conjunto1_18: 8642951601314515989
-      Conjunto1_19: -3758963393794768185
-      Conjunto1_2: 2729996616471572073
-      Conjunto1_20: -2815560125679858909
-      Conjunto1_21: 1264290813109558946
-      Conjunto1_22: -7857195676117702717
-      Conjunto1_23: 8350590710460404358
-      Conjunto1_24: 4735913774204914184
-      Conjunto1_25: -6535618512506407183
-      Conjunto1_26: -1034187225393470752
-      Conjunto1_27: 6570727481506330331
-      Conjunto1_3: 4376906143653268711
-      Conjunto1_4: -8981757838873220330
-      Conjunto1_5: 7721045413384927781
-      Conjunto1_6: -6230678719672766225
-      Conjunto1_7: -3349720533327963189
-      Conjunto1_8: -1321273433447517054
-      Conjunto1_9: -4450622370302272647
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -257,7 +257,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Dash()
     {
         canDash = false;
-        pState.invincible = true;
+        //pState.invincible = true;
         pState.dashing = true;
         anim.SetTrigger("Dashing");
         rb.gravityScale = 0;
@@ -266,7 +266,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashTime);
 
         rb.gravityScale = gravity;
-        pState.invincible = false;
+        //pState.invincible = false;
         pState.dashing = false;
         yield return new WaitForSeconds(dashCooldDown);
         canDash = true;
