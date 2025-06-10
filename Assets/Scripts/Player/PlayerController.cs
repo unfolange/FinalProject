@@ -137,8 +137,8 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(sideAttackTransform.position, sideAttackArea);
-        Gizmos.DrawWireCube(upAttackTransform.position, upAttackArea);
-        Gizmos.DrawWireCube(downAttackTransform.position, downAttackArea);
+        //Gizmos.DrawWireCube(upAttackTransform.position, upAttackArea);
+        //Gizmos.DrawWireCube(downAttackTransform.position, downAttackArea);
     }
 
 
@@ -217,7 +217,8 @@ public class PlayerController : MonoBehaviour
         canDash = PlayerPrefs.GetInt("Dash", 0) == 1;
 
 #if UNITY_ANDROID
-        joystick.AxisOptions = canAttack ? AxisOptions.Both : AxisOptions.Horizontal;
+        //joystick.AxisOptions = canAttack ? AxisOptions.Both : AxisOptions.Horizontal;
+        joystick.AxisOptions = AxisOptions.Horizontal;
         actionsButtons.UnlockAttack(canAttack);
         actionsButtons.UnlockJump(maxAirJumps > 0);
         actionsButtons.UnlockDash(canDash);
@@ -256,6 +257,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Dash()
     {
         canDash = false;
+        pState.invincible = true;
         pState.dashing = true;
         anim.SetTrigger("Dashing");
         rb.gravityScale = 0;
@@ -264,6 +266,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(dashTime);
 
         rb.gravityScale = gravity;
+        pState.invincible = false;
         pState.dashing = false;
         yield return new WaitForSeconds(dashCooldDown);
         canDash = true;
@@ -279,6 +282,7 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("Attacking");
 
             Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
+            //SlashEffectAngle(slashEffect, 0, sideAttackTransform);
 
             /*
             if (yAxis > 0.5f) // Attack Up
@@ -294,7 +298,7 @@ public class PlayerController : MonoBehaviour
             else //Attack left and right
             {
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
-                SlashEffectAngle(slashEffect, 0, sideAttackTransform);
+                
             }*/
         }
 
