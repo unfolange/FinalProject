@@ -959,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 207913147530113118, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: orthographic size
-      value: 3.98
+      value: 1.86
       objectReference: {fileID: 0}
     - target: {fileID: 207913147530113118, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -23940,7 +23940,7 @@ Transform:
   m_GameObject: {fileID: 1765237363}
   serializedVersion: 2
   m_LocalRotation: {x: -0.1089189, y: 0.000000004885153, z: 3.8089001e-10, w: 0.9940507}
-  m_LocalPosition: {x: -23.8, y: -1.4, z: -10}
+  m_LocalPosition: {x: -34.079998, y: -1.52, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42506,7 +42506,7 @@ Transform:
   m_GameObject: {fileID: 2041455832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.369999, y: 0.089999996, z: -10}
+  m_LocalPosition: {x: -34.649998, y: -0.030000001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
