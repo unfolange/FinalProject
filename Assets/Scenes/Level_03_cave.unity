@@ -44763,7 +44763,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Player
-  sceneName: Level_05_cave
+  sceneName: Level_04_cave
 --- !u!61 &680650669
 BoxCollider2D:
   m_ObjectHideFlags: 0
