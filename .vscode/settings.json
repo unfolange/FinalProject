@@ -56,5 +56,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Final.sln"
+ menu-instrucciones
+    "dotnet.defaultSolution": "FinalProject.sln"
+ main
 }

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17b4c05f3e35bf94c9b364211a2b0461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 830723048775053684, guid: f975ef7970ce3a64cbf8d45bb376796e, type: 3}
+  projectilePrefab: {fileID: 1600116743640933214, guid: 541cdf357647a2842bd83a90d62851f0, type: 3}
   spawnPoint: {fileID: 8059914914147205354}
   interval: 3
 --- !u!1 &8890219939882410071
