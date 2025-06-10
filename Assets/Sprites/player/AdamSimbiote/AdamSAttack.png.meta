@@ -182,13 +182,13 @@ TextureImporter:
       name: AdamSAttack_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 179
-        height: 128
+        x: 15
+        y: 5
+        width: 59
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 9, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -204,13 +204,13 @@ TextureImporter:
       name: AdamSAttack_1
       rect:
         serializedVersion: 2
-        x: 179
-        y: 0
-        width: 179
-        height: 128
+        x: 369
+        y: 12
+        width: 118
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 13, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -226,13 +226,13 @@ TextureImporter:
       name: AdamSAttack_2
       rect:
         serializedVersion: 2
-        x: 358
-        y: 0
-        width: 179
-        height: 128
+        x: 545
+        y: 12
+        width: 167
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 13, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -248,13 +248,13 @@ TextureImporter:
       name: AdamSAttack_3
       rect:
         serializedVersion: 2
-        x: 537
-        y: 0
-        width: 179
-        height: 128
+        x: 724
+        y: 12
+        width: 168
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 13, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -270,13 +270,13 @@ TextureImporter:
       name: AdamSAttack_4
       rect:
         serializedVersion: 2
-        x: 716
-        y: 0
-        width: 179
-        height: 128
+        x: 852
+        y: 114
+        width: 21
+        height: 4
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 13, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -292,13 +292,13 @@ TextureImporter:
       name: AdamSAttack_5
       rect:
         serializedVersion: 2
-        x: 895
-        y: 0
-        width: 179
-        height: 128
+        x: 903
+        y: 12
+        width: 121
+        height: 105
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 13, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -314,13 +314,13 @@ TextureImporter:
       name: AdamSAttack_6
       rect:
         serializedVersion: 2
-        x: 1074
-        y: 0
-        width: 179
-        height: 128
+        x: 1268
+        y: 5
+        width: 59
+        height: 115
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 13, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -336,13 +336,13 @@ TextureImporter:
       name: AdamSAttack_7
       rect:
         serializedVersion: 2
-        x: 1253
-        y: 0
-        width: 179
-        height: 128
+        x: 190
+        y: 11
+        width: 78
+        height: 99
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 9, z: 0, w: 0}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -350,6 +350,50 @@ TextureImporter:
       bones: []
       spriteID: 20e92e181dbd8f3e0800000000000000
       internalID: -2019622740001907198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSAttack_8
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 97
+        width: 5
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280e38109469f324da5b89e61e4fff1c
+      internalID: -1846213325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AdamSAttack_9
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 11
+        width: 78
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797c1e707051d8549a9f65e7c1a61eed
+      internalID: 122460685
       vertices: []
       indices: 
       edges: []
@@ -376,6 +420,8 @@ TextureImporter:
       AdamSAttack_5: -5270722650137774878
       AdamSAttack_6: -8563450936636084917
       AdamSAttack_7: -2019622740001907198
+      AdamSAttack_8: -1846213325
+      AdamSAttack_9: 122460685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
