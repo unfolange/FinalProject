@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_05_cave.unity
     guid: 23e3b19b14c1162438f7e4cb52d278de
+  - enabled: 1
+    path: Assets/Scenes/Level_02_cave_intro.unity
+    guid: fbea9b9ff635d5444aeeb34a1f26027d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
