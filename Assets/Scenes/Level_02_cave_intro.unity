@@ -2442,7 +2442,7 @@ GameObject:
   - component: {fileID: 333518502}
   - component: {fileID: 333518501}
   m_Layer: 0
-  m_Name: Dolly Spline
+  m_Name: DollySpline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23887,7 +23887,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 2.61, y: -1.3, z: -10}
+  FollowOffset: {x: 3.32, y: -0.51, z: -10}
 --- !u!114 &1765237365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23913,7 +23913,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 2.37
+    OrthographicSize: 2.96
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -23940,7 +23940,7 @@ Transform:
   m_GameObject: {fileID: 1765237363}
   serializedVersion: 2
   m_LocalRotation: {x: -0.1089189, y: 0.000000004885153, z: 3.8089001e-10, w: 0.9940507}
-  m_LocalPosition: {x: -34.079998, y: -1.52, z: -10}
+  m_LocalPosition: {x: -33.37, y: -0.73, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23958,7 +23958,7 @@ GameObject:
   - component: {fileID: 1778485700}
   - component: {fileID: 1778485702}
   m_Layer: 0
-  m_Name: question
+  m_Name: Question
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41952,7 +41952,7 @@ GameObject:
   - component: {fileID: 2002264664}
   - component: {fileID: 2002264663}
   m_Layer: 0
-  m_Name: expositionCam
+  m_Name: ExpositionCam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41976,7 +41976,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: -7.05, y: -2.23, z: -10}
+  FollowOffset: {x: -4.29, y: -2.23, z: -10}
 --- !u!114 &2002264664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42029,7 +42029,7 @@ Transform:
   m_GameObject: {fileID: 2002264662}
   serializedVersion: 2
   m_LocalRotation: {x: -0.1089189, y: 0.000000004885153, z: 3.8089001e-10, w: 0.9940507}
-  m_LocalPosition: {x: -26.083748, y: 0.71000004, z: -10}
+  m_LocalPosition: {x: -23.323746, y: 0.71000004, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

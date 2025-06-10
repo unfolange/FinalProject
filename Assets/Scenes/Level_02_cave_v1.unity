@@ -46209,6 +46209,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 259556040878764090, guid: ca65b4eaa81ec9e47ade5f82788ff2af, type: 3}
+      propertyPath: skillToUnlock
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 837026889875907806, guid: ca65b4eaa81ec9e47ade5f82788ff2af, type: 3}
       propertyPath: m_Name
       value: Orbe
