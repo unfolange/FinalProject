@@ -511,7 +511,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AdamSIdle - respaldo_0: -856142918755746233
+      AdamSIdle - respaldo_1: 2391727807083728769
+      AdamSIdle - respaldo_10: 2740051154949791547
+      AdamSIdle - respaldo_11: -1796572936108158552
+      AdamSIdle - respaldo_12: -5257098108011598454
+      AdamSIdle - respaldo_13: 3982518817750893456
+      AdamSIdle - respaldo_2: 6080441296147213697
+      AdamSIdle - respaldo_3: -2527748300825570666
+      AdamSIdle - respaldo_4: -5476736068467187374
+      AdamSIdle - respaldo_5: -5822956759720600057
+      AdamSIdle - respaldo_6: 7146430052013659048
+      AdamSIdle - respaldo_7: 6900721686392227649
+      AdamSIdle - respaldo_8: -8636647221553907313
+      AdamSIdle - respaldo_9: -7714200583968702118
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
