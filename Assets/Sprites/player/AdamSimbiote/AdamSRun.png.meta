@@ -209,441 +209,441 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: symbioteRun_0
+      name: AdamSRun_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 22
         y: 0
-        width: 128
-        height: 128
+        width: 92
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a3ae1a231f7a1fab0800000000000000
-      internalID: -4976011458889258438
+      spriteID: c99b8a501f37d5d4b92e8300a78ad033
+      internalID: 2105053824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_1
+      name: AdamSRun_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 167
         y: 0
-        width: 128
-        height: 128
+        width: 54
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9c9f65bad4344d4b0800000000000000
-      internalID: -5416630450953717303
+      spriteID: fb9b9eb88c87c2843be5f82e551773dc
+      internalID: -1080160183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_2
+      name: AdamSRun_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 281
         y: 0
-        width: 128
-        height: 128
+        width: 79
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 710cc3c60e51a37e0800000000000000
-      internalID: -1785090248666202089
+      spriteID: cf0d4791ab50c7a4ebc956761a8ffa6e
+      internalID: -96331551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_3
+      name: AdamSRun_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 128
-        height: 128
+        x: 401
+        y: 10
+        width: 89
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4d9f8bd124c7cde80800000000000000
-      internalID: -8152504602039092780
+      spriteID: 967eda672be2f2e40b37badd94d1ddfd
+      internalID: -806564026
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_4
+      name: AdamSRun_4
       rect:
         serializedVersion: 2
-        x: 512
+        x: 526
         y: 0
-        width: 128
-        height: 128
+        width: 93
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ee0d9992dbd395b50800000000000000
-      internalID: 6582360213034750190
+      spriteID: bc427a97f33e2764784333414607b037
+      internalID: 422224047
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_5
+      name: AdamSRun_5
       rect:
         serializedVersion: 2
-        x: 640
+        x: 657
         y: 0
-        width: 128
-        height: 128
+        width: 84
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2669ea3c1b6df8db0800000000000000
-      internalID: -4787371819890993566
+      spriteID: 3af2f57852bc8a6408b33639390f195d
+      internalID: -2028505055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_6
+      name: AdamSRun_6
       rect:
         serializedVersion: 2
-        x: 768
+        x: 807
         y: 0
-        width: 128
-        height: 128
+        width: 53
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 00acc68003d4d1710800000000000000
-      internalID: 1665572305892067840
+      spriteID: b05749bf2ea97c440b3df9fcf306222b
+      internalID: 243883098
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_7
+      name: AdamSRun_7
       rect:
         serializedVersion: 2
-        x: 896
+        x: 922
         y: 0
-        width: 128
-        height: 128
+        width: 85
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8735b995c33812370800000000000000
-      internalID: 8296056283817792376
+      spriteID: b27fc62ee75753f408b895340a743aef
+      internalID: 78993881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_8
+      name: AdamSRun_8
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
+        x: 1040
+        y: 9
+        width: 105
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 37cc8ce315ef6cb90800000000000000
-      internalID: -7221805327542858637
+      spriteID: 8c14af2816a91754dbb3b52d091ebfe3
+      internalID: -2133091720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_9
+      name: AdamSRun_9
       rect:
         serializedVersion: 2
-        x: 1152
+        x: 1167
         y: 0
-        width: 128
-        height: 128
+        width: 108
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 412d00ff98a6366c0800000000000000
-      internalID: -4151357290584157676
+      spriteID: 8b5092444a4586845a9fb5ce41915b7e
+      internalID: 672384705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_10
+      name: AdamSRun_10
       rect:
         serializedVersion: 2
-        x: 1280
+        x: 1302
         y: 0
-        width: 128
-        height: 128
+        width: 92
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 91198c20d00f0e8e0800000000000000
-      internalID: -1666067923455143655
+      spriteID: 389c13bfd762c67449833618df724053
+      internalID: 164131251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_11
+      name: AdamSRun_11
       rect:
         serializedVersion: 2
-        x: 1408
+        x: 1447
         y: 0
-        width: 128
-        height: 128
+        width: 54
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d10c63a0c671deeb0800000000000000
-      internalID: -4689065884227551203
+      spriteID: 0ec3ce2ab73cd8a479941b36b5b51ea3
+      internalID: 1151879411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_12
+      name: AdamSRun_12
       rect:
         serializedVersion: 2
-        x: 1536
+        x: 1561
         y: 0
-        width: 128
-        height: 128
+        width: 79
+        height: 113
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1441d366a5f3adf0800000000000000
-      internalID: -170022265921911778
+      spriteID: c8c819194897a8a41a52f555a0849cd3
+      internalID: -1630492465
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_13
+      name: AdamSRun_13
       rect:
         serializedVersion: 2
-        x: 1664
-        y: 0
-        width: 128
-        height: 128
+        x: 1681
+        y: 10
+        width: 89
+        height: 105
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1e6722b01fc20d5f0800000000000000
-      internalID: -734037325475842335
+      spriteID: 8bb07b4172c88eb479369b61afb487d6
+      internalID: -2141602322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_14
+      name: AdamSRun_14
       rect:
         serializedVersion: 2
-        x: 1792
+        x: 1806
         y: 0
-        width: 128
-        height: 128
+        width: 93
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a54dc5de5419c4e10800000000000000
-      internalID: 2183279648888902746
+      spriteID: 5bceb4912e2eecd4781aae513e6af24e
+      internalID: -67028077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_15
+      name: AdamSRun_15
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 1937
         y: 0
-        width: 128
-        height: 128
+        width: 84
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: feab2f5c40072db00800000000000000
-      internalID: 851866445329644271
+      spriteID: a730dd58215d2d540b3e7d3f5485bd7f
+      internalID: -1062741611
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_16
+      name: AdamSRun_16
       rect:
         serializedVersion: 2
-        x: 2048
+        x: 2087
         y: 0
-        width: 128
-        height: 128
+        width: 53
+        height: 109
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ceeb6750324821600800000000000000
-      internalID: 437557399758749420
+      spriteID: 86053353d7132ae4db295a390db3cfe9
+      internalID: -1519508788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_17
+      name: AdamSRun_17
       rect:
         serializedVersion: 2
-        x: 2176
+        x: 2202
         y: 0
-        width: 128
-        height: 128
+        width: 85
+        height: 112
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d02de9fdb3e5cb60800000000000000
-      internalID: 7765863537551679702
+      spriteID: 0047f610f00b72a4798c2ac772f157d9
+      internalID: -332717853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_18
+      name: AdamSRun_18
       rect:
         serializedVersion: 2
-        x: 2304
-        y: 0
-        width: 128
-        height: 128
+        x: 2320
+        y: 9
+        width: 105
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 09486a5ca21566f90800000000000000
-      internalID: -6960786929908022128
+      spriteID: a4649f4017fb00042b99462df5b3c490
+      internalID: 503541054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: symbioteRun_19
+      name: AdamSRun_19
       rect:
         serializedVersion: 2
-        x: 2432
+        x: 2447
         y: 0
-        width: 128
-        height: 128
+        width: 108
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5c263840ebc7c9280800000000000000
-      internalID: -9035209596850707771
+      spriteID: a0f68dadfe5e0e3409647797945311c0
+      internalID: 1579164172
       vertices: []
       indices: 
       edges: []
@@ -662,26 +662,26 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      symbioteRun_0: -4976011458889258438
-      symbioteRun_1: -5416630450953717303
-      symbioteRun_10: -1666067923455143655
-      symbioteRun_11: -4689065884227551203
-      symbioteRun_12: -170022265921911778
-      symbioteRun_13: -734037325475842335
-      symbioteRun_14: 2183279648888902746
-      symbioteRun_15: 851866445329644271
-      symbioteRun_16: 437557399758749420
-      symbioteRun_17: 7765863537551679702
-      symbioteRun_18: -6960786929908022128
-      symbioteRun_19: -9035209596850707771
-      symbioteRun_2: -1785090248666202089
-      symbioteRun_3: -8152504602039092780
-      symbioteRun_4: 6582360213034750190
-      symbioteRun_5: -4787371819890993566
-      symbioteRun_6: 1665572305892067840
-      symbioteRun_7: 8296056283817792376
-      symbioteRun_8: -7221805327542858637
-      symbioteRun_9: -4151357290584157676
+      AdamSRun_0: 2105053824
+      AdamSRun_1: -1080160183
+      AdamSRun_10: 164131251
+      AdamSRun_11: 1151879411
+      AdamSRun_12: -1630492465
+      AdamSRun_13: -2141602322
+      AdamSRun_14: -67028077
+      AdamSRun_15: -1062741611
+      AdamSRun_16: -1519508788
+      AdamSRun_17: -332717853
+      AdamSRun_18: 503541054
+      AdamSRun_19: 1579164172
+      AdamSRun_2: -96331551
+      AdamSRun_3: -806564026
+      AdamSRun_4: 422224047
+      AdamSRun_5: -2028505055
+      AdamSRun_6: 243883098
+      AdamSRun_7: 78993881
+      AdamSRun_8: -2133091720
+      AdamSRun_9: 672384705
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
