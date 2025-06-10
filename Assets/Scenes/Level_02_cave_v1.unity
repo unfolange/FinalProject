@@ -46215,7 +46215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 837026889875907806, guid: ca65b4eaa81ec9e47ade5f82788ff2af, type: 3}
       propertyPath: m_Name
-      value: Orbe
+      value: Orb
       objectReference: {fileID: 0}
     - target: {fileID: 3902458352211532951, guid: ca65b4eaa81ec9e47ade5f82788ff2af, type: 3}
       propertyPath: m_Pivot.x
