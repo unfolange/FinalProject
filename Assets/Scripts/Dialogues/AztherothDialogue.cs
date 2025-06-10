@@ -30,6 +30,11 @@ public class AztherothDialogue : MonoBehaviour
     [Header("Next Timeline (after dialogue)")]
     [Tooltip("Assign the PlayableDirector you want to play when dialogue ends.")]
     public PlayableDirector nextTimeline;
+    [Header("Audio")]                                      // ► AUDIO
+    public AudioSource audioSource;                         // ► AUDIO
+    public AudioClip[] characterClips;  // tamaño 2: [0]=PersonajeA, [1]=PersonajeB  // ► AUDIO
+
+    public AudioClip fallbackClip;
 
     private int index = 0;
     private bool dialoguing = false;
@@ -125,6 +130,16 @@ public class AztherothDialogue : MonoBehaviour
 
         if (fallbackCamera != null)
             fallbackCamera.Priority = 0;
+
+        if (audioSource != null
+            && characterClips != null
+            && activeIndex < characterClips.Length
+            && characterClips[activeIndex] != null)
+        {
+            audioSource.clip = characterClips[activeIndex];
+            audioSource.loop = true;
+            audioSource.Play();
+        }
     }
 
     void EndDialogue()
@@ -140,6 +155,7 @@ public class AztherothDialogue : MonoBehaviour
             foreach (var cam in dialogueCameras)
                 cam.Priority = 0;
         }
+        audioSource.Stop();
 
         Input.ResetInputAxes();
 

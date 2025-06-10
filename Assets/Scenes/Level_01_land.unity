@@ -2125,6 +2125,10 @@ PrefabInstance:
       propertyPath: actionsButtons
       value: 
       objectReference: {fileID: 364160615}
+    - target: {fileID: 6204341251110665576, guid: 00f2e9b25c2dada48b1264eb46be4f43, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13742,7 +13746,7 @@ GameObject:
   - component: {fileID: 2096315809}
   - component: {fileID: 2096315808}
   m_Layer: 0
-  m_Name: 'Sonido '
+  m_Name: Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13758,12 +13762,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: b5a28807af45a9846b72a89255833a93, type: 3}
+  m_Resource: {fileID: 8300000, guid: b5a28807af45a9846b72a89255833a93, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
