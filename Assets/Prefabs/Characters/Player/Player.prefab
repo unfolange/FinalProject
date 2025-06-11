@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 129428889297248479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.53, y: 0.12, z: 0}
+  m_LocalPosition: {x: 0.98, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -183,7 +183,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1.6875}
+  m_Size: {x: 1.6, y: 2.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -223,17 +223,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.120788574, y: -0.002346158}
+  m_Offset: {x: -0.25164986, y: 0.053019047}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 1.6, y: 2.7}
-    newSize: {x: 1, y: 1.6875}
+    newSize: {x: 1.6, y: 2.7}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.82899475, y: 1.6222532}
+  m_Size: {x: 1.0907173, y: 2.7396116}
   m_EdgeRadius: 0
 --- !u!50 &9083740397780668544
 Rigidbody2D:
@@ -315,7 +315,7 @@ MonoBehaviour:
   sideAttackTransform: {fileID: 5225083160120750478}
   upAttackTransform: {fileID: 2848149638475612030}
   downAttackTransform: {fileID: 8797937669891299456}
-  sideAttackArea: {x: 2, y: 1.4}
+  sideAttackArea: {x: 2, y: 2.41}
   upAttackArea: {x: 3.5, y: 4.5}
   downAttackArea: {x: 3.5, y: 4.5}
   attackableLayer:
@@ -378,7 +378,7 @@ Transform:
   m_GameObject: {fileID: 8908978278662805067}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14, y: -0.8, z: 0}
+  m_LocalPosition: {x: -0.3, y: -1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
