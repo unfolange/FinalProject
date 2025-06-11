@@ -1,28 +1,31 @@
 fileFormatVersion: 2
-guid: 8254be7c99bacbd4ca182e227a20450d
+guid: 15d4141c35687c34bb850da1b20a71a5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2008464437673938269
-    second: AdamSDash_0
+      213: -7033076797488420934
+    second: AscendingAttack_0
   - first:
-      213: 3799346103525382950
-    second: AdamSDash_1
+      213: 1722453627292530227
+    second: AscendingAttack_1
   - first:
-      213: -7773725647214901835
-    second: AdamSDash_2
+      213: 6627316557100946076
+    second: AscendingAttack_2
   - first:
-      213: -7342071112530784500
-    second: AdamSDash_3
+      213: -3824092042682055447
+    second: AscendingAttack_3
   - first:
-      213: 1608980056263087264
-    second: AdamSDash_4
+      213: 2385369620345106016
+    second: AscendingAttack_4
   - first:
-      213: -8648202873575349919
-    second: AdamSDash_5
+      213: 812924307125916672
+    second: AscendingAttack_5
   - first:
-      213: -952805186218556096
-    second: AdamSDash_6
+      213: 1526402690884634976
+    second: AscendingAttack_6
+  - first:
+      213: -7380077968655503051
+    second: AscendingAttack_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -157,13 +160,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdamSDash_0
+      name: AscendingAttack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3a2b0783c308024e0800000000000000
-      internalID: -2008464437673938269
+      spriteID: ab729af5aed756e90800000000000000
+      internalID: -7033076797488420934
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdamSDash_1
+      name: AscendingAttack_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 164
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 62b156fb62df9b430800000000000000
-      internalID: 3799346103525382950
+      spriteID: 336bad4b27267e710800000000000000
+      internalID: 1722453627292530227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdamSDash_2
+      name: AscendingAttack_2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 328
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b58968f5bd2e1490800000000000000
-      internalID: -7773725647214901835
+      spriteID: c921110bb45f8fb50800000000000000
+      internalID: 6627316557100946076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdamSDash_3
+      name: AscendingAttack_3
       rect:
         serializedVersion: 2
-        x: 384
+        x: 492
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0f02fd1939bb1a90800000000000000
-      internalID: -7342071112530784500
+      spriteID: 9e4c98f4c881eeac0800000000000000
+      internalID: -3824092042682055447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdamSDash_4
+      name: AscendingAttack_4
       rect:
         serializedVersion: 2
-        x: 512
+        x: 656
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0a4df3026de345610800000000000000
-      internalID: 1608980056263087264
+      spriteID: 06eadae08098a1120800000000000000
+      internalID: 2385369620345106016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdamSDash_5
+      name: AscendingAttack_5
       rect:
         serializedVersion: 2
-        x: 640
+        x: 820
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,20 +285,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 161670f7e496bf780800000000000000
-      internalID: -8648202873575349919
+      spriteID: 004558ba956184b00800000000000000
+      internalID: 812924307125916672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: AdamSDash_6
+      name: AscendingAttack_6
       rect:
         serializedVersion: 2
-        x: 768
+        x: 984
         y: 0
-        width: 128
-        height: 128
+        width: 164
+        height: 212
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -304,8 +307,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0450b473bb4f6c2f0800000000000000
-      internalID: -952805186218556096
+      spriteID: 069016ef82fde2510800000000000000
+      internalID: 1526402690884634976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AscendingAttack_7
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 0
+        width: 164
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5313a975032b49990800000000000000
+      internalID: -7380077968655503051
       vertices: []
       indices: 
       edges: []
@@ -314,7 +339,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 162f57293db51ea44b23e9f27a0ced6d
+    spriteID: 4591461bfd37ba641bf1c2cd55969e54
     internalID: 0
     vertices: []
     indices: 
@@ -324,13 +349,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      AdamSDash_0: -2008464437673938269
-      AdamSDash_1: 3799346103525382950
-      AdamSDash_2: -7773725647214901835
-      AdamSDash_3: -7342071112530784500
-      AdamSDash_4: 1608980056263087264
-      AdamSDash_5: -8648202873575349919
-      AdamSDash_6: -952805186218556096
+      AscendingAttack_0: -7033076797488420934
+      AscendingAttack_1: 1722453627292530227
+      AscendingAttack_2: 6627316557100946076
+      AscendingAttack_3: -3824092042682055447
+      AscendingAttack_4: 2385369620345106016
+      AscendingAttack_5: 812924307125916672
+      AscendingAttack_6: 1526402690884634976
+      AscendingAttack_7: -7380077968655503051
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
