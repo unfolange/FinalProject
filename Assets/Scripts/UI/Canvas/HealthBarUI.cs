@@ -15,7 +15,7 @@ public class HealthBarUI : MonoBehaviour
     [Header("Flash Settings")]
     public float flashDuration = 0.5f;
     public float flashSpeed = 5f;
-    public Color flashColor = Color.red;
+    public Color flashColor = Color.white;
 
     private float currentHealth;
     private float maxHealth;

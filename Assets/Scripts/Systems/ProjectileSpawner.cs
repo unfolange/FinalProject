@@ -18,7 +18,7 @@ public class ProjectileSpawner : MonoBehaviour
 
     private void Start()
     {
-        InvokeRepeating(nameof(SpawnProjectile), 0f, interval);
+        InvokeRepeating(nameof(SpawnProjectile), Random.Range(0f, 3f), interval);
     }
 
     private void SpawnProjectile()
