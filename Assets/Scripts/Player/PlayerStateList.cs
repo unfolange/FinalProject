@@ -8,14 +8,18 @@ public class PlayerStateList : MonoBehaviour
     [HideInInspector] public bool lookingRight;
     [HideInInspector] public bool invincible;
 
+    public bool canJump = false;
+    public bool canAttack = false;    
+    public bool canDobleJump = false;
+    public bool canDash = false;
+
     //Variables para desbloquear habiliades
     public enum SkillType
     {
         Attack,
         Dash,
         Jump,       
-        DoubleJump,        
-        TripleJump
+        DoubleJump
     }
 
     public void UnlockSkill(SkillType ability)
@@ -36,10 +40,6 @@ public class PlayerStateList : MonoBehaviour
 
             case SkillType.DoubleJump:
                 UnlockDoubleJump();
-                break;            
-
-            case SkillType.TripleJump:
-                UnlockTripleJump();
                 break;
 
             default:
@@ -53,37 +53,22 @@ public class PlayerStateList : MonoBehaviour
 
     void UnlockAttack()
     {
-        PlayerPrefs.SetInt("Attack", 1);
-        PlayerPrefs.Save();
-        Debug.Log("Attack unlocked!");
+        canAttack = true;        
     }
 
     void UnlockDash()
     {
-        PlayerPrefs.SetInt("Dash", 1);
-        PlayerPrefs.Save();
-        Debug.Log("Dash unlocked!");
+        canDash = true;
     }
 
     void UnlockJump()
     {
-        PlayerPrefs.SetInt("MaxJumps", 1);
-        PlayerPrefs.Save();
-        Debug.Log("Jump unlocked!");
+        canJump = true;
     }
 
     void UnlockDoubleJump()
     {
-        PlayerPrefs.SetInt("MaxJumps", 2);
-        PlayerPrefs.Save();
-        Debug.Log("Double Jump unlocked!");
-    }    
-
-    void UnlockTripleJump()
-    {
-        PlayerPrefs.SetInt("MaxJumps", 3);
-        PlayerPrefs.Save();
-        Debug.Log("Triple Jump unlocked!");
+        canDobleJump = true;
     }
 
     void UpdateSkills()

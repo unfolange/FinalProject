@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy_Boss : Enemy
@@ -47,10 +48,11 @@ public class Enemy_Boss : Enemy
         foreach(Collider2D collision in objects)
         {
             if (collision.gameObject.CompareTag("Player"))
-            {
-                //PlayerController.Instance.TakeDamage(damage);
-                collision.GetComponent<PlayerController>().TakeDamage(damage);
-                //PlayerController.Instance.HitStopTime(0, 5, 0.5f);
+            {                
+                if (!collision.GetComponent<PlayerStateList>().dashing)
+                {
+                    collision.GetComponent<PlayerController>().TakeDamage(damage);
+                }               
             }
         }
     }

@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dash Settings")]
     [SerializeField] private float dashSpeed;
-    [SerializeField] private float dashTime;
+    [SerializeField] public float dashTime;
     [SerializeField] private float dashCooldDown;
     [SerializeField] private GameObject dashEffect;
     private bool canDash;
@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float timeBetweenAttack;
     private float timeSinceAttack;
     public bool isKnockBack;
-    [Space(5)]
+   [Space(5)]
 
     [Header("Recoil")]
     [SerializeField] int recoilXSteps = 5;
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
     [Header("Health Settings")]
     [SerializeField] GameObject bloodSpurt;
     public float maxHealth;
-    [HideInInspector] public float health;
+    [HideInInspector] public float health;    
     [SerializeField] float hitFlashSpeed;
     private SpriteRenderer spritePlayer;
     [HideInInspector] public bool isKnockback = false;
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
     private float xAxis, yAxis;
     private float gravity;
     Animator anim;
-
+ 
 
     //Time
     bool restoreTime;
@@ -98,27 +98,7 @@ public class PlayerController : MonoBehaviour
             Instance = this;
         }
 
-        health = maxHealth;
-
-        //Borrar todas las habilidades encontradas desde el editor
-#if UNITY_EDITOR
-
-        PlayerPrefs.SetInt("MaxJumps", 2);
-        PlayerPrefs.SetInt("Dash", 1);
-        PlayerPrefs.SetInt("Attack", 1);
-
-
-        //PlayerPrefs.DeleteAll();
-        PlayerPrefs.Save();
-        Debug.Log("Habilidades Guardadas borradas en el editor.");
-#endif
-
-
-
-        //Recuperar las habilidades desbloqueadas
-        maxAirJumps = PlayerPrefs.GetInt("MaxJumps", 0);
-        canDash = PlayerPrefs.GetInt("Dash", 0) == 1;
-        canAttack = PlayerPrefs.GetInt("Attack", 0) == 1;
+        health = maxHealth;        
     }
 
 
@@ -130,6 +110,8 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         gravity = rb.gravityScale;
         spritePlayer = GetComponent<SpriteRenderer>();
+
+        UpdateSkills();
     }
 
 
@@ -212,17 +194,22 @@ public class PlayerController : MonoBehaviour
     //Actualizar las habilidades desbloqueadas
     public void UpdateSkills()
     {
-        canAttack = PlayerPrefs.GetInt("Attack", 0) == 1;
-        maxAirJumps = PlayerPrefs.GetInt("MaxJumps", 0);
-        canDash = PlayerPrefs.GetInt("Dash", 0) == 1;
+        maxAirJumps = pState.canDobleJump ? 2 : (pState.canJump ? 1 : 0);
+        canDash = pState.canDash;
+        canAttack = pState.canAttack;
+
 
 #if UNITY_ANDROID
+
         //joystick.AxisOptions = canAttack ? AxisOptions.Both : AxisOptions.Horizontal;
-        joystick.AxisOptions = AxisOptions.Horizontal;
-        actionsButtons.UnlockAttack(canAttack);
+        //joystick.AxisOptions = AxisOptions.Horizontal;
+
         actionsButtons.UnlockJump(maxAirJumps > 0);
         actionsButtons.UnlockDash(canDash);
+        actionsButtons.UnlockAttack(canAttack);
 #endif
+
+
     }
 
     void StartDash()
@@ -230,7 +217,7 @@ public class PlayerController : MonoBehaviour
         bool dashInput = false;
 
 #if UNITY_STANDALONE || UNITY_WEBGL || UNITY_EDITOR
-        dashInput = Input.GetButtonDown("Dash");
+            dashInput = Input.GetButtonDown("Dash");
 #else
             dashInput = dashButtonPressed;
 #endif
@@ -257,18 +244,20 @@ public class PlayerController : MonoBehaviour
     IEnumerator Dash()
     {
         canDash = false;
-        //pState.invincible = true;
         pState.dashing = true;
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Default"), LayerMask.NameToLayer("Attackable"), true);
+
         anim.SetTrigger("Dashing");
         rb.gravityScale = 0;
         rb.linearVelocity = new Vector2(transform.localScale.x * dashSpeed, 0);
         if (Grounded()) Instantiate(dashEffect, transform);
-        yield return new WaitForSeconds(dashTime);
+        yield return new WaitForSecondsRealtime(dashTime);
 
-        rb.gravityScale = gravity;
-        //pState.invincible = false;
+        rb.gravityScale = gravity;        
         pState.dashing = false;
-        yield return new WaitForSeconds(dashCooldDown);
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Default"), LayerMask.NameToLayer("Attackable"), false);
+
+        yield return new WaitForSecondsRealtime(dashCooldDown);
         canDash = true;
     }
 
@@ -453,7 +442,7 @@ public class PlayerController : MonoBehaviour
             pState.jumping = true;
         }
         //Intentar salto en el aire (doble salto)
-        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed))
+        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed)) 
         {
             airJumpCounter++;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -479,7 +468,6 @@ public class PlayerController : MonoBehaviour
 #endif
     }
 
-
     void UpdateJumpVariables()
     {
         if (Grounded())
@@ -502,14 +490,18 @@ public class PlayerController : MonoBehaviour
             jumpBufferCounter = jumpBufferCounter - Time.deltaTime * 10;
         }
     }
+
     public void TakeDamage(float _damage)
     {
-        health -= _damage;
-        anim.SetTrigger("TakeDamage");
+        //---------------acá colocar el p.state.dashing ...para evitar daño -----------------
 
-        HitStopTime(0, 5, 0.5f);
-
-        StartCoroutine(stopTakeDamage());
+        if (!pState.dashing)
+        {
+            health -= _damage;
+            anim.SetTrigger("TakeDamage");
+            HitStopTime(0, 5, 0.5f);
+            StartCoroutine(stopTakeDamage());
+        }       
     }
 
     IEnumerator stopTakeDamage()
@@ -517,7 +509,7 @@ public class PlayerController : MonoBehaviour
         pState.invincible = true;
         GameObject _bloodSpurt = Instantiate(bloodSpurt, transform.position, Quaternion.identity);
         Destroy(_bloodSpurt, 1.5f);
-
+        
 
         anim.SetTrigger("TakeDamage");
         ClampHealth();
@@ -530,15 +522,13 @@ public class PlayerController : MonoBehaviour
         spritePlayer.color = pState.invincible ? Color.Lerp(Color.white, Color.red, Mathf.PingPong(Time.time * hitFlashSpeed, 0.8f)) : Color.white;
     }
 
-
-
     void RestoreTimeScale()
     {
         if (restoreTime)
         {
             if (Time.timeScale < 1)
             {
-                Time.timeScale += Time.unscaledDeltaTime * restoreTimeSpeed;
+                Time.timeScale += Time.unscaledDeltaTime  * restoreTimeSpeed;
             }
             else
             {
@@ -565,12 +555,11 @@ public class PlayerController : MonoBehaviour
     }
 
     IEnumerator StartTimeAgain(float _delay)
-    {
+    {       
         yield return new WaitForSecondsRealtime(_delay);
         restoreTime = true;
     }
-
-
+    
 
     //MÉTODOS PARA LOS BOTONES ANDROID
     public void OnDashButtonPressed()

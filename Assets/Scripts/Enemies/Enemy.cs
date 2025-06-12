@@ -19,7 +19,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected bool isRecoiling = false;
     protected float recoilTimer;
     //[Space(5)]
-
     
 
     //[Header("Enemies States Setttings")]
@@ -41,14 +40,22 @@ public class Enemy : MonoBehaviour
     public PlayerController player;
     protected float playerDistance;
     protected SpriteRenderer sr;
+    [HideInInspector] public Collider2D enemyCol;
+    [HideInInspector] public Collider2D playerCol;
 
     protected virtual void Awake()
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        enemyCol = GetComponent<Collider2D>();
+
+
+
         //player = PlayerController.Instance;
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        playerCol = player.GetComponent<Collider2D>();
+
         health = maxHealth;
     }
 
