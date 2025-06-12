@@ -959,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 207913147530113118, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: orthographic size
-      value: 1.86
+      value: 3.71
       objectReference: {fileID: 0}
     - target: {fileID: 207913147530113118, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: m_BackGroundColor.b
@@ -987,11 +987,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1339550453909108621, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -34.649998
+      value: -34.01
       objectReference: {fileID: 0}
     - target: {fileID: 1339550453909108621, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.030000001
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 1339550453909108621, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1043,6 +1043,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8733333984926243726, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
       insertIndex: -1
       addedObject: {fileID: 175317363}
+    - targetCorrespondingSourceObject: {fileID: 8733333984926243726, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 175317364}
   m_SourcePrefab: {fileID: 100100000, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
 --- !u!1 &175317362 stripped
 GameObject:
@@ -1064,10 +1067,11 @@ MonoBehaviour:
   target: {fileID: 142144819}
   smoothSpeed: 5
   offset: {x: 1, y: 3, z: 0}
---- !u!114 &175317371 stripped
+--- !u!114 &175317364
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1310947147637242368, guid: 7ff8a47373ff2e14d94e9371e4ff2443, type: 3}
-  m_PrefabInstance: {fileID: 175317360}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 175317362}
   m_Enabled: 1
@@ -1075,6 +1079,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ShowDebugText: 0
+  ShowCameraFrustum: 1
+  IgnoreTimeScale: 0
+  WorldUpOverride: {fileID: 0}
+  ChannelMask: -1
+  UpdateMethod: 2
+  BlendUpdateMethod: 1
+  LensModeOverride:
+    Enabled: 0
+    DefaultMode: 2
+  DefaultBlend:
+    Style: 1
+    Time: 2
+    CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  CustomBlends: {fileID: 0}
 --- !u!1 &176197639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1289,7 @@ PlayableDirector:
   - key: {fileID: 7155124760009560773, guid: 9165d9ef861427547830abcedc9fa672, type: 2}
     value: {fileID: 1778485699}
   - key: {fileID: 1683789761248043768, guid: 9165d9ef861427547830abcedc9fa672, type: 2}
-    value: {fileID: 175317371}
+    value: {fileID: 0}
   - key: {fileID: 4273996219651741546, guid: 9165d9ef861427547830abcedc9fa672, type: 2}
     value: {fileID: 248011650}
   m_ExposedReferences:
@@ -2895,6 +2919,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &372440719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3509,6 +3534,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!61 &455054287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4503,6 +4529,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &539987002
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5393,6 +5420,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &680487183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16153,7 +16181,7 @@ MonoBehaviour:
   - "Ja ja ja eso... es lo m\xE1s humano que has dicho."
   textSpeed: 0.1
   timeline: {fileID: 193610943}
-  brain: {fileID: 175317371}
+  brain: {fileID: 175317364}
   dialogueCameras:
   - {fileID: 2041455834}
   - {fileID: 1824246800}
@@ -20574,7 +20602,7 @@ PlayableDirector:
   - key: {fileID: -7529802381010574695, guid: 33790209643d211419b39c170267f47c, type: 2}
     value: {fileID: 2125394286}
   - key: {fileID: 3095198330616247151, guid: 33790209643d211419b39c170267f47c, type: 2}
-    value: {fileID: 175317371}
+    value: {fileID: 0}
   - key: {fileID: 567883436642559989, guid: 33790209643d211419b39c170267f47c, type: 2}
     value: {fileID: 1847561067}
   m_ExposedReferences:
@@ -21039,6 +21067,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &1370591669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21941,8 +21970,32 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 240.9
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 824243765925781492, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32.07
       objectReference: {fileID: 0}
     - target: {fileID: 1596522461855917357, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
       propertyPath: m_Pivot.x
@@ -22027,6 +22080,54 @@ PrefabInstance:
     - target: {fileID: 5196132474141713232, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_fontSize
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 33c358d1695b7244c95e4386e8d9611a, type: 2}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_fontSizeMax
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_fontSizeMin
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -5880438896434313927, guid: 33c358d1695b7244c95e4386e8d9611a, type: 2}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_TextWrappingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7183105338916102662, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548878922630219354, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7548878922630219354, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8123645696351528164, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_Type
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8319406280394807843, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
       propertyPath: m_IsActive
@@ -22452,6 +22553,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!61 &1538534959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22622,6 +22724,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 2.5
+  damageOnPlayer: 1
 --- !u!212 &1547321119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22888,6 +22991,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 2.5
+  damageOnPlayer: 1
 --- !u!212 &1566428130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23310,6 +23414,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 2.5
+  damageOnPlayer: 1
 --- !u!212 &1624767205
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42453,7 +42558,7 @@ MonoBehaviour:
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
-  FollowOffset: {x: 2.04, y: 0.19, z: -10}
+  FollowOffset: {x: 2.68, y: 1.99, z: -10}
 --- !u!114 &2041455834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42479,7 +42584,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 1.86
+    OrthographicSize: 3.71
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -42506,7 +42611,7 @@ Transform:
   m_GameObject: {fileID: 2041455832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.649998, y: -0.030000001, z: -10}
+  m_LocalPosition: {x: -34.01, y: 1.77, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
