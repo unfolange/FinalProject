@@ -83,5 +83,8 @@ TagManager:
   - name: Blocking
     uniqueID: 4055527963
     locked: 0
+  - name: FinalBoss
+    uniqueID: 3020287857
+    locked: 0
   m_RenderingLayers:
   - Default
