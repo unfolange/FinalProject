@@ -561,7 +561,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Boss2Attack_0: 6153834811826344678
+      Boss2Attack_1: -4851248846729069534
+      Boss2Attack_10: 8093303934811754860
+      Boss2Attack_11: -8419809953825962059
+      Boss2Attack_12: -2294654968858111465
+      Boss2Attack_13: 4840507612342407152
+      Boss2Attack_14: -3616533824002144218
+      Boss2Attack_15: 8164619702620508573
+      Boss2Attack_2: 3804831739333782436
+      Boss2Attack_3: -2938288979304129457
+      Boss2Attack_4: 4551937708584048366
+      Boss2Attack_5: -165058943082312993
+      Boss2Attack_6: -2019145648191880604
+      Boss2Attack_7: 3583574003635983066
+      Boss2Attack_8: 8028494241398852108
+      Boss2Attack_9: -4061556449643582941
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
