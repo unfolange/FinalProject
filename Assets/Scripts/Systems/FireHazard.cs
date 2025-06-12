@@ -18,14 +18,12 @@ public class FireHazard : MonoBehaviour
             var player = collision.GetComponent<PlayerController>();
             if (player != null)
             {
-                // 1) Lo movemos al punto de respawn
                 if (respawnPoint != null)
-
+                {
                     player.transform.position = respawnPoint.position;
-                // 2) Le quitamos vida (usa tu método existente)
-                player.TakeDamage(fireDamage);
+                    player.TakeDamage(fireDamage);
+                }
             }
         }
-        else return;
     }
 }
