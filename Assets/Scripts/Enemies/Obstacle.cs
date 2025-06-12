@@ -4,13 +4,15 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField] float fallSpeed = 2f;
-    
+
     [SerializeField] float timeOfDestroyOnGround = 0.2f;
     [SerializeField] float timeOfDestroyOnPlayer = 0.1f;
-    [SerializeField] float activationDistance = 10f; 
+    [SerializeField] float activationDistance = 10f;
+    [SerializeField] float damageOnPlayer = 1f;  // <-- daño a infligir
+
     Rigidbody2D rbEnemy;
-    Transform playerTransform; 
-    bool hasBeenActivated = false; 
+    Transform playerTransform;
+    bool hasBeenActivated = false;
 
     void Start()
     {
@@ -29,37 +31,37 @@ public class Obstacle : MonoBehaviour
         {
             playerTransform = playerObject.transform;
         }
-        
+
     }
 
     void Update()
     {
-        
+
         if (!hasBeenActivated && playerTransform != null)
         {
-            
+
             float distanceToPlayer = Vector2.Distance(transform.position, playerTransform.position);
 
             if (distanceToPlayer <= activationDistance)
             {
                 rbEnemy.bodyType = RigidbodyType2D.Dynamic;
-                hasBeenActivated = true; 
+                hasBeenActivated = true;
             }
         }
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        TimeOfDestroyObject(collision);
-    }
 
-    void TimeOfDestroyObject(Collision2D collision)
-    {
         if (collision.gameObject.CompareTag("Player"))
         {
+            var pc = collision.gameObject.GetComponent<PlayerController>();
+            if (pc != null)
+                pc.TakeDamage(damageOnPlayer);
+
             Destroy(gameObject, timeOfDestroyOnPlayer);
         }
-        if (collision.gameObject.CompareTag("Ground"))
+        else if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(gameObject, timeOfDestroyOnGround);
         }
@@ -67,10 +69,10 @@ public class Obstacle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
+
         if (rbEnemy.bodyType == RigidbodyType2D.Dynamic)
         {
             rbEnemy.AddForce(Vector2.down * fallSpeed, ForceMode2D.Force);
         }
     }
-}  
+}

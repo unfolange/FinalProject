@@ -7,6 +7,9 @@ TagManager:
   - Ground
   - Boss
   - Enemy
+  - Wall
+  - Orb
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -76,6 +79,9 @@ TagManager:
     locked: 0
   - name: Prueba
     uniqueID: 808542541
+    locked: 0
+  - name: Blocking
+    uniqueID: 4055527963
     locked: 0
   m_RenderingLayers:
   - Default
