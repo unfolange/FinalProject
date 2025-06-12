@@ -54,7 +54,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float timeBetweenAttack;
     private float timeSinceAttack;
     public bool isKnockBack;
-   [Space(5)]
+    [Space(5)]
 
     [Header("Recoil")]
     [SerializeField] int recoilXSteps = 5;
@@ -67,7 +67,7 @@ public class PlayerController : MonoBehaviour
     [Header("Health Settings")]
     [SerializeField] GameObject bloodSpurt;
     public float maxHealth;
-    [HideInInspector] public float health;    
+    [HideInInspector] public float health;
     [SerializeField] float hitFlashSpeed;
     private SpriteRenderer spritePlayer;
     [HideInInspector] public bool isKnockback = false;
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour
     private float xAxis, yAxis;
     private float gravity;
     Animator anim;
- 
+
 
     //Time
     bool restoreTime;
@@ -230,7 +230,7 @@ public class PlayerController : MonoBehaviour
         bool dashInput = false;
 
 #if UNITY_STANDALONE || UNITY_WEBGL || UNITY_EDITOR
-            dashInput = Input.GetButtonDown("Dash");
+        dashInput = Input.GetButtonDown("Dash");
 #else
             dashInput = dashButtonPressed;
 #endif
@@ -453,7 +453,7 @@ public class PlayerController : MonoBehaviour
             pState.jumping = true;
         }
         //Intentar salto en el aire (doble salto)
-        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed)) 
+        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed))
         {
             airJumpCounter++;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -506,7 +506,7 @@ public class PlayerController : MonoBehaviour
     {
         health -= _damage;
         anim.SetTrigger("TakeDamage");
-        
+
         HitStopTime(0, 5, 0.5f);
 
         StartCoroutine(stopTakeDamage());
@@ -517,7 +517,7 @@ public class PlayerController : MonoBehaviour
         pState.invincible = true;
         GameObject _bloodSpurt = Instantiate(bloodSpurt, transform.position, Quaternion.identity);
         Destroy(_bloodSpurt, 1.5f);
-        
+
 
         anim.SetTrigger("TakeDamage");
         ClampHealth();
@@ -538,7 +538,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Time.timeScale < 1)
             {
-                Time.timeScale += Time.unscaledDeltaTime  * restoreTimeSpeed;
+                Time.timeScale += Time.unscaledDeltaTime * restoreTimeSpeed;
             }
             else
             {
@@ -565,11 +565,11 @@ public class PlayerController : MonoBehaviour
     }
 
     IEnumerator StartTimeAgain(float _delay)
-    {       
+    {
         yield return new WaitForSecondsRealtime(_delay);
         restoreTime = true;
     }
-    
+
 
 
     //MÉTODOS PARA LOS BOTONES ANDROID

@@ -19,7 +19,7 @@ public class ProjectileSetup : MonoBehaviour
             var player = PlayerController.Instance;
             if (player != null)
             {
-                player.TakeDamage(10); // Cambia el valor según el daño deseado
+                player.TakeDamage(0.5f); // Cambia el valor según el daño deseado
             }
         };
     }
