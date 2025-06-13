@@ -1,0 +1,464 @@
+fileFormatVersion: 2
+guid: b1f4ba63150981d408fcc014bb8070d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5578069974230258689
+    second: goticas_0
+  - first:
+      213: 3472098590876868079
+    second: goticas_1
+  - first:
+      213: -6937647002138206800
+    second: goticas_2
+  - first:
+      213: 290637001236865667
+    second: goticas_3
+  - first:
+      213: -7040778611582653719
+    second: goticas_4
+  - first:
+      213: -7603746544981971480
+    second: goticas_5
+  - first:
+      213: 3884839282402959513
+    second: goticas_6
+  - first:
+      213: 8514725973753466742
+    second: goticas_7
+  - first:
+      213: -6279949596393279739
+    second: goticas_8
+  - first:
+      213: -6499317399008448235
+    second: goticas_9
+  - first:
+      213: -3031769567405924667
+    second: goticas_10
+  - first:
+      213: -9107103167291610455
+    second: goticas_11
+  - first:
+      213: -276646186882236358
+    second: goticas_12
+  - first:
+      213: 6271244835097411535
+    second: goticas_13
+  - first:
+      213: -6194177240201581071
+    second: goticas_14
+  - first:
+      213: -8289486351944647299
+    second: goticas_15
+  - first:
+      213: -5264018712447332561
+    second: goticas_16
+  - first:
+      213: -5374453282505388840
+    second: goticas_17
+  - first:
+      213: -8367093738085673820
+    second: goticas_18
+  - first:
+      213: -3943280618450366898
+    second: goticas_19
+  - first:
+      213: 7103220057636006757
+    second: goticas_20
+  - first:
+      213: 8468772474725627660
+    second: goticas_21
+  - first:
+      213: 2277203298481560881
+    second: goticas_22
+  - first:
+      213: 7209965662643303541
+    second: goticas_23
+  - first:
+      213: 5473999329821994406
+    second: goticas_24
+  - first:
+      213: -5092389690381307241
+    second: goticas_25
+  - first:
+      213: 8278200656496734354
+    second: goticas_26
+  - first:
+      213: 1867845696992010272
+    second: goticas_27
+  - first:
+      213: 8262597173658156333
+    second: goticas_28
+  - first:
+      213: -6807980591238510607
+    second: goticas_29
+  - first:
+      213: -687862091425978848
+    second: goticas_30
+  - first:
+      213: 8594192624588850288
+    second: goticas_31
+  - first:
+      213: -975113727191924789
+    second: goticas_32
+  - first:
+      213: 8864270065418844953
+    second: goticas_33
+  - first:
+      213: 5717134248665570521
+    second: goticas_34
+  - first:
+      213: 6033790461818702902
+    second: goticas_35
+  - first:
+      213: 4906773450687737486
+    second: goticas_36
+  - first:
+      213: -4587998729620464334
+    second: goticas_37
+  - first:
+      213: 7170554129686294201
+    second: goticas_38
+  - first:
+      213: -2082920977866053321
+    second: goticas_39
+  - first:
+      213: -5329052650590069845
+    second: goticas_40
+  - first:
+      213: 9169780407563153915
+    second: goticas_41
+  - first:
+      213: 8907559909302215299
+    second: goticas_42
+  - first:
+      213: -1574737174448431860
+    second: goticas_43
+  - first:
+      213: 8796338551564807856
+    second: goticas_44
+  - first:
+      213: -2325016273226443235
+    second: goticas_45
+  - first:
+      213: 5222545408279781316
+    second: goticas_46
+  - first:
+      213: 7469236160025462759
+    second: goticas_47
+  - first:
+      213: -4150577422740575421
+    second: goticas_48
+  - first:
+      213: -8152304311251113107
+    second: goticas_49
+  - first:
+      213: 5582180455596685680
+    second: goticas_50
+  - first:
+      213: 6922378911435952667
+    second: goticas_51
+  - first:
+      213: 8583310003523583624
+    second: goticas_52
+  - first:
+      213: 9204530469002978700
+    second: goticas_53
+  - first:
+      213: -13248988752350987
+    second: goticas_54
+  - first:
+      213: -5237971742640099249
+    second: goticas_55
+  - first:
+      213: -3919538820459898460
+    second: goticas_56
+  - first:
+      213: 6934365802133519517
+    second: goticas_57
+  - first:
+      213: -5119212671452625621
+    second: goticas_58
+  - first:
+      213: -5185002568232697025
+    second: goticas_59
+  - first:
+      213: -654216267277713847
+    second: goticas_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: goticas_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10454427619496d40800000000000000
+      internalID: 5578069974230258689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goticas_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed995eb54f5f2030800000000000000
+      internalID: 3472098590876868079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goticas_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd9f7c0fc688bf90800000000000000
+      internalID: -6937647002138206800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goticas_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 382ee4110dc880400800000000000000
+      internalID: 290637001236865667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goticas_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eaa27a08212a4e90800000000000000
+      internalID: -7040778611582653719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: goticas_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8edee30cdc01a7690800000000000000
+      internalID: -7603746544981971480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1d317fd83ae818a4eb6c388f3e8c27ea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      goticas_0: 5578069974230258689
+      goticas_1: 3472098590876868079
+      goticas_2: -6937647002138206800
+      goticas_3: 290637001236865667
+      goticas_4: -7040778611582653719
+      goticas_5: -7603746544981971480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
