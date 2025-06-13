@@ -204,21 +204,21 @@ MonoBehaviour:
   speed: 3
   isLookingRight: 0
   damage: 1
-  maxHealth: 10
+  maxHealth: 5
   health: 10
   recoilLength: 2
-  recoilFactor: 3
+  recoilFactor: 1
   isRecoiling: 0
   player: {fileID: 0}
   enemyCol: {fileID: 0}
   playerCol: {fileID: 0}
   acidPrefab: {fileID: 4336379936130536961, guid: e8666322e2770d241bbd0487b5ea8538, type: 3}
   firePoint: {fileID: 8583092671538385863}
-  acidForce: 20
-  acidCooldown: 3
-  acidAttackRange: 7
+  acidForce: 8
+  acidCooldown: 5
+  acidAttackRange: 2
   aimError: 1.5
-  numberOfProjectiles: 5
+  numberOfProjectiles: 2
   projectileForce: 12
   inaccuracy: 0.3
   detectionRange: 8

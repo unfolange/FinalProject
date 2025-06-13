@@ -153,7 +153,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &6469488848183871639
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   speed: 5
   isLookingRight: 1
   damage: 1
-  maxHealth: 10
+  maxHealth: 5
   health: 0
   recoilLength: 2
   recoilFactor: 1

@@ -511,7 +511,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SpiderWalking_0: 4843785710097822554
+      SpiderWalking_1: 5359211304848452337
+      SpiderWalking_10: 3683302913908470381
+      SpiderWalking_11: -1594629364663259816
+      SpiderWalking_12: -5048177952993798603
+      SpiderWalking_13: 6256441573911310890
+      SpiderWalking_2: -1074110805204370806
+      SpiderWalking_3: -8410088291966257682
+      SpiderWalking_4: -1755621684226244468
+      SpiderWalking_5: 229073013176413481
+      SpiderWalking_6: -5452749645743556170
+      SpiderWalking_7: 6377071142616911003
+      SpiderWalking_8: 1801014362776554522
+      SpiderWalking_9: 4870520594896282052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
