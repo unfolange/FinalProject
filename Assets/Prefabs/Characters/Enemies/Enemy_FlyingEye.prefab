@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -9.23, y: 4.61, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,10 +78,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 947279183
+  m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4795363162621231457, guid: e9b6762e0e445814480e3ef0d26cc4c4, type: 3}
+  m_Sprite: {fileID: 8137124184132111772, guid: 8477006ef5c6c664887c3b4dd13693e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-  speed: 20
+  speed: 5
   isLookingRight: 1
   damage: 1
   maxHealth: 10
@@ -177,6 +177,8 @@ MonoBehaviour:
   recoilFactor: 1
   isRecoiling: 0
   player: {fileID: 0}
+  enemyCol: {fileID: 0}
+  playerCol: {fileID: 0}
   chaseDistance: 7
   stunDuration: 1
 --- !u!95 &774433321883326833

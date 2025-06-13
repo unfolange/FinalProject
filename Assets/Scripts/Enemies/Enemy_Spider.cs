@@ -107,7 +107,7 @@ public class Enemy_Spider : Enemy
                 if (Mathf.Abs(directionToPlayer) > 0.1f && !isRecoiling) // Se golpea retrocede y continúa atacando
                 {
                     // Cambiar dirección de la araña según posición del jugador
-                    transform.localScale = new Vector3(Mathf.Sign(directionToPlayer), transform.localScale.y, transform.localScale.z);
+                    transform.localScale = new Vector3(Mathf.Sign(directionToPlayer) * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
 
                     rb.linearVelocity = new Vector2(Mathf.Sign(directionToPlayer) * speed, rb.linearVelocity.y);                    
                 }
