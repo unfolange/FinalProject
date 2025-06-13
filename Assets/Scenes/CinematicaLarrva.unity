@@ -698,6 +698,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &372440719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1035,6 +1036,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!61 &455054287
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1159,6 +1161,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &539987002
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1472,6 +1475,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &680487183
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2154,6 +2158,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!212 &1370591669
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2560,6 +2565,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 4
+  damageOnPlayer: 1
 --- !u!61 &1538534959
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2730,6 +2736,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 2.5
+  damageOnPlayer: 1
 --- !u!212 &1547321119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3043,6 +3050,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 2.5
+  damageOnPlayer: 1
 --- !u!212 &1566428130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3634,6 +3642,7 @@ MonoBehaviour:
   timeOfDestroyOnGround: 0.2
   timeOfDestroyOnPlayer: 0.1
   activationDistance: 2.5
+  damageOnPlayer: 1
 --- !u!212 &1624767205
 SpriteRenderer:
   m_ObjectHideFlags: 0
