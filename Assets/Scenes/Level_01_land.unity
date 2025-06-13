@@ -1040,6 +1040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5196132474141713232, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8319406280394807843, guid: 7f2fdf5c8830fc143b9a46b4c5b0701e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2965,6 +2969,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BitacoraPaper
       objectReference: {fileID: 0}
+    - target: {fileID: 8957555831355239642, guid: 47e0e42e6d9002a4384433a67a29905c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3328,6 +3336,10 @@ PrefabInstance:
     - target: {fileID: 26625890156463515, guid: ea68325c73289b94dab8a620797c67e4, type: 3}
       propertyPath: m_Name
       value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 26625890156463515, guid: ea68325c73289b94dab8a620797c67e4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6530269128708767217, guid: ea68325c73289b94dab8a620797c67e4, type: 3}
       propertyPath: m_LocalPosition.x

@@ -46,7 +46,7 @@ public class MenuController : MonoBehaviour
 
     [Header("Resolution Dropdowns")]
     public TMP_Dropdown resolutionDropdown;
-    private Resolution[] resolutions = {};
+    private Resolution[] resolutions = { };
 
     private void Start()
     {
@@ -93,15 +93,18 @@ public class MenuController : MonoBehaviour
 
     public void LoadGameDialogYes()
     {
-        if (PlayerPrefs.HasKey("SavedLevels"))
-        {
-            levelToLoad = PlayerPrefs.GetString("SavedLevels");
-            SceneManager.LoadScene(levelToLoad);
-        }
-        else
-        {
-            noSaveGameDialog.SetActive(true);
-        }
+        Debug.Log("hola mundo");
+        SceneManager.LoadScene(_newGameLevel);
+        // if (PlayerPrefs.HasKey("SavedLevels"))
+        // {
+        //     // levelToLoad = PlayerPrefs.GetString("SavedLevels");
+        //     Debug.Log("hola mundo");
+        //     SceneManager.LoadScene(levelToLoad);
+        // }
+        // else
+        // {
+        //     noSaveGameDialog.SetActive(true);
+        // }
     }
 
     public void ExitButton()
