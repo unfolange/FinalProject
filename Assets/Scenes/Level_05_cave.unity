@@ -1321,7 +1321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7196426522082561690, guid: f938c7f187f1fec4cb090d45ca766948, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.960697
+      value: -25.961758
       objectReference: {fileID: 0}
     - target: {fileID: 7196426522082561690, guid: f938c7f187f1fec4cb090d45ca766948, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10205,7 +10205,7 @@ GameObject:
   - component: {fileID: 807334417}
   - component: {fileID: 807334416}
   m_Layer: 0
-  m_Name: flag-pirate-pennant_0
+  m_Name: Colider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10224,7 +10224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   triggeringTag: Player
-  sceneName: GameOver
+  sceneName: FinalGame
 --- !u!61 &807334417
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_03_cave.unity
     guid: 09766caf78b61b4469aa4ea0978307bc
+  - enabled: 0
+    path: Assets/Scenes/Menu.unity
+    guid: 5e095b412d7645d4eb724f21ab6929ce
   - enabled: 1
     path: Assets/Scenes/Level_04_cave.unity
     guid: 7c79a0733205b114282fe1f790d25f56
@@ -26,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 761837e2e9b02964fadbbeb2f2ef247f
+  - enabled: 1
+    path: Assets/Scenes/FinalGame.unity
+    guid: 2f33e790b51309048819cba591a20eac
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
