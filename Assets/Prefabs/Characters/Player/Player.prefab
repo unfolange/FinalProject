@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 129428889297248479}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.98, y: -0.03, z: 0}
+  m_LocalPosition: {x: 1.82, y: -0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1107021004265184784}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.5, z: 0}
+  m_LocalPosition: {x: 0, y: 2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87,7 +87,7 @@ Transform:
   m_GameObject: {fileID: 7216968104109473546}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -3.47, z: 0}
+  m_LocalPosition: {x: 0, y: -2.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,15 +309,15 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   dashSpeed: 20
-  dashTime: 0.2
+  dashTime: 0.3
   dashCooldDown: 0.35
   dashEffect: {fileID: 1957778548484137217, guid: 5279511b26859e045809356ab2a01b65, type: 3}
   sideAttackTransform: {fileID: 5225083160120750478}
   upAttackTransform: {fileID: 2848149638475612030}
   downAttackTransform: {fileID: 8797937669891299456}
-  sideAttackArea: {x: 2, y: 2.41}
-  upAttackArea: {x: 3.5, y: 4.5}
-  downAttackArea: {x: 3.5, y: 4.5}
+  sideAttackArea: {x: 4, y: 2.4}
+  upAttackArea: {x: 3, y: 3}
+  downAttackArea: {x: 3, y: 3}
   attackableLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -354,9 +354,9 @@ MonoBehaviour:
   lookingRight: 1
   invincible: 0
   canJump: 1
-  canAttack: 0
-  canDobleJump: 0
-  canDash: 0
+  canAttack: 1
+  canDobleJump: 1
+  canDash: 1
 --- !u!1 &8908978278662805067
 GameObject:
   m_ObjectHideFlags: 0
