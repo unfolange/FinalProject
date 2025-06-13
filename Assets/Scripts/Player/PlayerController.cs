@@ -119,8 +119,8 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(sideAttackTransform.position, sideAttackArea);
-        //Gizmos.DrawWireCube(upAttackTransform.position, upAttackArea);
-        //Gizmos.DrawWireCube(downAttackTransform.position, downAttackArea);
+        Gizmos.DrawWireCube(upAttackTransform.position, upAttackArea);
+        Gizmos.DrawWireCube(downAttackTransform.position, downAttackArea);
     }
 
 
@@ -269,26 +269,25 @@ public class PlayerController : MonoBehaviour
         {
             timeSinceAttack = 0;
             anim.SetTrigger("Attacking");
-
-            Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
-            //SlashEffectAngle(slashEffect, 0, sideAttackTransform);
-
-            /*
+                        
             if (yAxis > 0.5f) // Attack Up
             {
+                anim.SetInteger("attackDirection", 1);
                 Hit(upAttackTransform, upAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, 80, upAttackTransform);
             }
             else if (yAxis < -0.5 && !Grounded()) //Attack Down
             {
+                anim.SetInteger("attackDirection", -1);
                 Hit(downAttackTransform, downAttackArea, ref pState.recoilingY, recoilYSpeed);
                 SlashEffectAngle(slashEffect, -90, downAttackTransform);
             }
             else //Attack left and right
             {
+                anim.SetInteger("attackDirection", 0);
                 Hit(sideAttackTransform, sideAttackArea, ref pState.recoilingX, recoilXSpeed);
-                
-            }*/
+                SlashEffectAngle(slashEffect, 0, sideAttackTransform);
+            }
         }
 
 #if !UNITY_STANDALONE && !UNITY_WEBGL
@@ -331,8 +330,9 @@ public class PlayerController : MonoBehaviour
     void SlashEffectAngle(GameObject _slashEffect, int _effectAngle, Transform _attackTransform)
     {
         _slashEffect = Instantiate(_slashEffect, _attackTransform);
+        
         _slashEffect.transform.eulerAngles = new Vector3(0, 0, _effectAngle);
-        _slashEffect.transform.localScale = new Vector2(_attackTransform.localScale.x, _attackTransform.localScale.y);
+        _slashEffect.transform.localScale = new Vector2(_attackTransform.localScale.x, _attackTransform.localScale.y) * 0.75f;
     }
 
 

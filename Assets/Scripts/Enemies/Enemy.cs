@@ -71,7 +71,8 @@ public class Enemy : MonoBehaviour
         UpdateEnemyStates();
 
         if (isRecoiling)
-        {
+        {          
+
             if (recoilTimer < recoilLength)
             {
                 recoilTimer += Time.deltaTime;
