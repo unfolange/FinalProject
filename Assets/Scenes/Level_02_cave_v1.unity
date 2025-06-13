@@ -18195,6 +18195,18 @@ PrefabInstance:
       propertyPath: sideAttackArea.x
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 9088037749876490647, guid: fc63936a8ffaaf349a2fecc0d6e5d5fb, type: 3}
+      propertyPath: canDash
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088037749876490647, guid: fc63936a8ffaaf349a2fecc0d6e5d5fb, type: 3}
+      propertyPath: canAttack
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9088037749876490647, guid: fc63936a8ffaaf349a2fecc0d6e5d5fb, type: 3}
+      propertyPath: canDobleJump
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9177536992245437844, guid: fc63936a8ffaaf349a2fecc0d6e5d5fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -24.5
