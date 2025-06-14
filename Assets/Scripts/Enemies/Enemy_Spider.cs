@@ -12,6 +12,7 @@ public class Enemy_Spider : Enemy
     [SerializeField] private float aimError = 1.5f; // margen de error en unidades
 
     [SerializeField] private int numberOfProjectiles = 5;
+    [SerializeField] private int numberOfBursts = 1;
     [SerializeField] private float projectileForce = 8f; // Ajusta según alcance
     [SerializeField] private float inaccuracy = 5f;
 
@@ -157,7 +158,7 @@ public class Enemy_Spider : Enemy
         // Decide hacia qué lado disparar
         float angleSign = directionToPlayer.x >= 0 ? 1f : -1f;
 
-        for (int k = 0; k < 3; k++)
+        for (int k = 0; k < numberOfBursts; k++)
         {
             for (int i = 0; i < numberOfProjectiles; i++)
             {
