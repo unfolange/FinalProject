@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29d81088cf23393469cb9c8fa685d233
+guid: d710c671d436aa843b46c1bd42d54b93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5707680139760729209
-    second: icons8-itch-io-30_0
+      213: -2970073484504309273
+    second: BackButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons8-itch-io-30_0
+      name: BackButton_0
       rect:
         serializedVersion: 2
-        x: 2
+        x: 4
         y: 3
-        width: 26
-        height: 24
+        width: 72
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 783820a472f3ac0b0800000000000000
-      internalID: -5707680139760729209
+      spriteID: 7e16057e6ed28c6d0800000000000000
+      internalID: -2970073484504309273
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      icons8-itch-io-30_0: -5707680139760729209
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

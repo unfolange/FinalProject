@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29d81088cf23393469cb9c8fa685d233
+guid: 1d46b219d094587498ff6fbbd642b9e8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5707680139760729209
-    second: icons8-itch-io-30_0
+      213: 2827235875984692977
+    second: Periodico 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons8-itch-io-30_0
+      name: Periodico 1_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 26
-        height: 24
+        x: 0
+        y: 0
+        width: 689
+        height: 469
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 783820a472f3ac0b0800000000000000
-      internalID: -5707680139760729209
+      spriteID: 1f6de44cc0c5c3720800000000000000
+      internalID: 2827235875984692977
       vertices: []
       indices: 
       edges: []
@@ -164,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      icons8-itch-io-30_0: -5707680139760729209
+      Periodico 1_0: 2827235875984692977
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
