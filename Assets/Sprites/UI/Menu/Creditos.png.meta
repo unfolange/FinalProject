@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 29d81088cf23393469cb9c8fa685d233
+guid: 0bfa66507c78a454ea665f2d68d13e5f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5707680139760729209
-    second: icons8-itch-io-30_0
+      213: 7175261627662145010
+    second: Creditos_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: icons8-itch-io-30_0
+      name: Creditos_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
-        width: 26
-        height: 24
+        x: 0
+        y: 0
+        width: 1923
+        height: 1083
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 783820a472f3ac0b0800000000000000
-      internalID: -5707680139760729209
+      spriteID: 2f51b472f66a39360800000000000000
+      internalID: 7175261627662145010
       vertices: []
       indices: 
       edges: []
@@ -173,8 +173,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      icons8-itch-io-30_0: -5707680139760729209
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
