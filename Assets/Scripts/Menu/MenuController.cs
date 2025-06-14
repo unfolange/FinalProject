@@ -107,6 +107,17 @@ public class MenuController : MonoBehaviour
         // }
     }
 
+
+    public void LoadGameSaved()
+    {
+        if (PlayerPrefs.HasKey("LastScene"))
+        {
+            string lastEscene = PlayerPrefs.GetString("LastScene");
+            SceneManager.LoadScene(lastEscene);
+        }
+    }
+
+
     public void ExitButton()
     {
         Application.Quit();

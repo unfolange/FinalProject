@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float hitFlashSpeed;
     private SpriteRenderer spritePlayer;
     [HideInInspector] public bool isKnockback = false;
+    private bool isAlive = true;
     [Space(5)]
 
     [HideInInspector] public PlayerStateList pState;
@@ -112,6 +114,10 @@ public class PlayerController : MonoBehaviour
         spritePlayer = GetComponent<SpriteRenderer>();
 
         UpdateSkills();
+
+        //Guardar Avance
+        PlayerPrefs.SetString("LastScene", SceneManager.GetActiveScene().name);
+        PlayerPrefs.Save();
     }
 
 
@@ -128,14 +134,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetInputs();
-        UpdateJumpVariables();
-        if (pState.dashing) return;
-        Flip();
-        Move();
-        Jump();
-        StartDash();
-        Attack();
+        if (isAlive)
+        {
+            GetInputs();
+            UpdateJumpVariables();
+            if (pState.dashing) return;
+            Flip();
+            Move();
+            Jump();
+            StartDash();
+            Attack();
+        }
+
         RestoreTimeScale();
         FlashWhileInvicible();
     }
@@ -493,15 +503,21 @@ public class PlayerController : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        //---------------acá colocar el p.state.dashing ...para evitar daño -----------------
-
-        if (!pState.dashing)
+        if (!pState.dashing && isAlive)
         {
-            health -= _damage;
+            health -= _damage;            
+
             anim.SetTrigger("TakeDamage");
             HitStopTime(0, 5, 0.5f);
             StartCoroutine(stopTakeDamage());
-        }       
+        }
+
+
+        if (health<=0 && isAlive)
+        {
+            isAlive = false;
+            StartCoroutine(GameOver());
+        }
     }
 
     IEnumerator stopTakeDamage()
@@ -514,7 +530,20 @@ public class PlayerController : MonoBehaviour
         anim.SetTrigger("TakeDamage");
         ClampHealth();
         yield return new WaitForSeconds(1);
-        pState.invincible = false;
+        pState.invincible = false;        
+    }
+
+    IEnumerator GameOver()
+    {
+        //---------Activar Animación de Morir
+        anim.SetTrigger("Death");
+        Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Default"), LayerMask.NameToLayer("Attackable"), true);
+        
+        rb.linearVelocity = Vector2.zero;
+        rb.constraints = RigidbodyConstraints2D.FreezePositionX;
+
+        yield return new WaitForSecondsRealtime(5);
+        SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
     }
 
     void FlashWhileInvicible()

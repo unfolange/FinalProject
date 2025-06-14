@@ -219,12 +219,13 @@ MonoBehaviour:
   acidAttackRange: 2
   aimError: 1.5
   numberOfProjectiles: 2
+  numberOfBursts: 1
   projectileForce: 12
   inaccuracy: 0.3
   detectionRange: 8
   flipWaitTime: 1
-  ledgeCheckX: 1.2
-  ledgeCheckY: 1
+  ledgeCheckX: 1.3
+  ledgeCheckY: 1.6
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -313,7 +314,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5310377655905443432}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1

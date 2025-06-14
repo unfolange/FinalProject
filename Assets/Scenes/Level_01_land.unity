@@ -1138,30 +1138,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ActionsButtonsPanel
       objectReference: {fileID: 0}
-    - target: {fileID: 1869068751630943821, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2655010683430915880, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4033139457957272791, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4332064307672016763, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6154390711843893704}
     - target: {fileID: 4785908536636394934, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6154390711843893704}
     - target: {fileID: 4785908536636394934, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6154390711843893704}
     - target: {fileID: 7534772429051455971, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -1242,14 +1230,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8047389951319704031, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8279115281151097533, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 6154390711843893704}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4307,9 +4291,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Floating Joystick
       objectReference: {fileID: 0}
-    - target: {fileID: 8170153791668043269, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
-      propertyPath: m_IsActive
-      value: 1
+    - target: {fileID: 8170153791961219456, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -28503,7 +28487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.671036
+      value: 8.671017
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -28511,7 +28495,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15917206
+      value: 0.15917015
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29569,7 +29553,7 @@ Transform:
   m_GameObject: {fileID: 1802097069}
   serializedVersion: 2
   m_LocalRotation: {x: 0.043386832, y: -0.023508321, z: 0.0010211972, w: 0.9987812}
-  m_LocalPosition: {x: 8.195461, y: 0.5548845, z: -0.07385254}
+  m_LocalPosition: {x: 8.195412, y: 0.5548845, z: -0.0738554}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
