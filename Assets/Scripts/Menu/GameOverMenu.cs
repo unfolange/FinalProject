@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class GameOverMenu : MonoBehaviour
 {
-    // 2️⃣ Método público que cargará la escena Main
     void Awake()
     {
         Debug.Log("GameOverMenu awake");
@@ -25,6 +24,6 @@ public class GameOverMenu : MonoBehaviour
         {
             string lastEscene = PlayerPrefs.GetString("LastScene");
             SceneManager.LoadScene(lastEscene, LoadSceneMode.Single);
-        }   
+        }
     }
 }

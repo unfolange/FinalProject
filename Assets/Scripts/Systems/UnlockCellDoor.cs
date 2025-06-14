@@ -10,7 +10,7 @@ public class UnlockCellDoor : MonoBehaviour
         if (other.CompareTag("Player") && cellDoor != null)
         {
             cellDoor.UnlockDoor();
-            Destroy(gameObject);  // Destruye orbe
+            Destroy(gameObject);
             // UIManager.Instance.ShowMessage("¡Puerta desbloqueada!", 2f);
         }
     }
