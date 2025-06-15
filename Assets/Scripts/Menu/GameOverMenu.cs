@@ -13,7 +13,7 @@ public class GameOverMenu : MonoBehaviour
     {
         Debug.Log("entro");
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Default"), LayerMask.NameToLayer("Attackable"), false);
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("MenuWebVersion");
     }
 
 
