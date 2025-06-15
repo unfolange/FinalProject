@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 68e7324e98b4c07489c191704703621e
+guid: 74f6ba09e27747c4c9ecceee1fe5ec3f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8073780401491598675
-    second: HomeIConpng_0
+      213: -4849207947515956521
+    second: ClicIzqui_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,30 +122,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HomeIConpng_0
+      name: ClicIzqui_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 92
-        height: 83
+        x: 44
+        y: 9
+        width: 232
+        height: 292
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da22596608b24ff80800000000000000
-      internalID: -8073780401491598675
+      spriteID: 7d27f4e501724bcb0800000000000000
+      internalID: -4849207947515956521
       vertices: []
       indices: 
       edges: []
@@ -173,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      HomeIConpng_0: -8073780401491598675
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
