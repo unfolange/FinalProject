@@ -138,10 +138,11 @@ public class PlayerController : MonoBehaviour
         {
             GetInputs();
             UpdateJumpVariables();
+            Jump();
             if (pState.dashing) return;
             Flip();
             Move();
-            Jump();
+            
             StartDash();
             Attack();
         }
@@ -169,6 +170,13 @@ public class PlayerController : MonoBehaviour
         xAxis = joystick.Horizontal;
         yAxis = joystick.Vertical;
         attack = attackButtonPressed;
+
+        // Resetear el estado del botón inmediatamente después de usarlo
+        if (jumpButtonPressed) 
+        {            
+            jumpBufferCounter = jumpBufferFrames; // Simular el input down
+        }
+
 #endif
     }
 
@@ -445,24 +453,38 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         // Intentar salto en el suelo
-        if ((jumpBufferCounter > 0 && coyoteTimeCounter > 0) && !pState.jumping && maxAirJumps >= 1)
+        if ((jumpBufferCounter > 0 && coyoteTimeCounter > 0) && !pState.jumping && maxAirJumps >= 1 && Grounded())
         {
+            Debug.Log("Primer Salto");
             airJumpCounter = 1;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             pState.jumping = true;
+            jumpBufferCounter = 0;
+
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+            jumpButtonPressed = false;
+#endif
         }
         //Intentar salto en el aire (doble salto)
-        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed)) 
+        else if (!Grounded() && airJumpCounter < maxAirJumps && (Input.GetButtonDown("Jump") || jumpButtonPressed))
         {
+            Debug.Log("Segundo Salto");
             airJumpCounter++;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             pState.jumping = true;
+
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+            jumpButtonPressed = false;
+#endif
         }
 
         // Cortar salto si se suelta el botón mientras asciende (Variar intensidad de salto)
         if ((Input.GetButtonUp("Jump") || jumpButtonReleased) && rb.linearVelocity.y > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
+#if !UNITY_STANDALONE && !UNITY_WEBGL
+            jumpButtonReleased = false;
+#endif
         }
 
         if (Grounded())
@@ -471,11 +493,6 @@ public class PlayerController : MonoBehaviour
         }
 
         anim.SetBool("Jumping", !Grounded());
-
-#if !UNITY_STANDALONE && !UNITY_WEBGL
-        jumpButtonPressed = false;
-        jumpButtonReleased = false;
-#endif
     }
 
     void UpdateJumpVariables()
@@ -484,7 +501,7 @@ public class PlayerController : MonoBehaviour
         {
             pState.jumping = false;
             coyoteTimeCounter = coyoteTime;
-            airJumpCounter = 0;
+            //airJumpCounter = 0;
         }
         else
         {
@@ -497,7 +514,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            jumpBufferCounter = jumpBufferCounter - Time.deltaTime * 10;
+            jumpBufferCounter -= Time.deltaTime * 10;
         }
     }
 
@@ -535,7 +552,6 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator GameOver()
     {
-        //---------Activar Animación de Morir
         anim.SetTrigger("Death");
         Physics2D.IgnoreLayerCollision(LayerMask.NameToLayer("Default"), LayerMask.NameToLayer("Attackable"), true);
         
@@ -610,4 +626,10 @@ public class PlayerController : MonoBehaviour
     {
         jumpButtonReleased = true;
     }
+
+
+
+
+
+
 }

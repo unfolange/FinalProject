@@ -300,8 +300,8 @@ MonoBehaviour:
   actionsButtons: {fileID: 0}
   walkSpeed: 5
   jumpForce: 30
-  jumpBufferFrames: 1
-  coyoteTime: 0.1
+  jumpBufferFrames: 0.15
+  coyoteTime: 0.15
   groundCheckPoint: {fileID: 7842956409119397240}
   groundCheckY: 0.2
   groundCheckX: 0.5

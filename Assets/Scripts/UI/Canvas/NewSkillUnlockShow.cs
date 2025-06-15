@@ -9,6 +9,12 @@ public class NewSkillUnlockShow : MonoBehaviour
     public void Show()
     {
         skillUnlockUI.SetActive(true);
+
+#if UNITY_ANDROID
+        skillUnlockUI.transform.GetChild(1).gameObject.SetActive(false);
+#endif
+
+
         StartCoroutine(HideSkillUnlockUI());
     }
 

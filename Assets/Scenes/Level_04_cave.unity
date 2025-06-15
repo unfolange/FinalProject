@@ -310,7 +310,7 @@ GameObject:
   - component: {fileID: 10818072}
   - component: {fileID: 10818071}
   m_Layer: 0
-  m_Name: blocking
+  m_Name: Blocking
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47072,6 +47072,10 @@ PrefabInstance:
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnJumpButtonDown
       objectReference: {fileID: 0}
+    - target: {fileID: 5928073081179496611, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 309407042}
     - target: {fileID: 7534772429051455971, guid: b846e91bcd97fd945b7ff0e0842e57e2, type: 3}
       propertyPath: m_Pivot.x
       value: 1
@@ -65372,6 +65376,10 @@ PrefabInstance:
     - target: {fileID: 9047118640187570056, guid: f8300013230dc664787655b27a57300c, type: 3}
       propertyPath: m_Name
       value: DoubleJumpUnlockUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 9047118640187570056, guid: f8300013230dc664787655b27a57300c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -99833,7 +99841,7 @@ GameObject:
   - component: {fileID: 1509612536}
   - component: {fileID: 1509612535}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Wall NoBack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -102034,7 +102042,7 @@ Transform:
   m_GameObject: {fileID: 1801240636}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.548073, y: -7.015255, z: 0.1268549}
+  m_LocalPosition: {x: -32.54169, y: -7.0152245, z: 0.1268549}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
