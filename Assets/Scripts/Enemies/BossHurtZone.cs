@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class BossHurtZone : MonoBehaviour
 {
-    [SerializeField] private float damageAmount = 10f;
+    [SerializeField] private float damageAmount = 2f;
     [SerializeField] private float bounceForce = 8f;
     [SerializeField] private float horizontalForce = 5f;
     [SerializeField] private float verticalOffsetThreshold = 0.5f;   
@@ -15,8 +15,8 @@ public class BossHurtZone : MonoBehaviour
             PlayerController player = collision.GetComponent<PlayerController>();
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
 
-            if (player != null && rb != null)
-            {                
+            if (player != null && rb != null && !player.pState.invincible)
+            {
                 player.TakeDamage(damageAmount);
 
                 Vector2 bossPos = transform.position;

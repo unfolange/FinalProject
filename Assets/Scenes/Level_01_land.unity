@@ -28487,15 +28487,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.671017
+      value: 8.671047
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.971961
+      value: 2.9719605
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.15917015
+      value: 0.15917301
       objectReference: {fileID: 0}
     - target: {fileID: 7018937396282388643, guid: 62c9a78c7474e4d429ff456d31842db5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29553,7 +29553,7 @@ Transform:
   m_GameObject: {fileID: 1802097069}
   serializedVersion: 2
   m_LocalRotation: {x: 0.043386832, y: -0.023508321, z: 0.0010211972, w: 0.9987812}
-  m_LocalPosition: {x: 8.195412, y: 0.5548845, z: -0.0738554}
+  m_LocalPosition: {x: 8.195488, y: 0.5548845, z: -0.073851585}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32042,7 +32042,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.25, y: 1.734375}
+  m_Size: {x: 1.15, y: 2.7}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
