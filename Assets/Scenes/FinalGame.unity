@@ -153,7 +153,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 987, y: -281}
+  m_AnchoredPosition: {x: 987, y: -299}
   m_SizeDelta: {x: 361.407, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &160489955
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 282254237}
   - component: {fileID: 282254236}
   m_Layer: 5
-  m_Name: Juegalo
+  m_Name: AvailableText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ju\xE9galo aqu\xED"
+  m_text: 'Disponible en:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 33c358d1695b7244c95e4386e8d9611a, type: 2}
   m_sharedMaterial: {fileID: -5880438896434313927, guid: 33c358d1695b7244c95e4386e8d9611a, type: 2}
@@ -476,6 +476,7 @@ GameObject:
   - component: {fileID: 484831715}
   - component: {fileID: 484831714}
   - component: {fileID: 484831713}
+  - component: {fileID: 484831716}
   m_Layer: 5
   m_Name: ButtonMain
   m_TagString: Untagged
@@ -490,17 +491,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484831711}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7059036, w: 0.7083079}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1218097528}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -89.805}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 781.0001, y: 379.00006}
-  m_SizeDelta: {x: 160, y: 160}
+  m_AnchoredPosition: {x: 693, y: 364}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &484831713
 MonoBehaviour:
@@ -521,7 +522,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -578,7 +579,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 952482b8b3d60574aa7971c31d80f5c4, type: 3}
+  m_Sprite: {fileID: -8073780401491598675, guid: 68e7324e98b4c07489c191704703621e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -596,6 +597,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484831711}
   m_CullTransparentMesh: 1
+--- !u!95 &484831716
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484831711}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 196e51126d15aae4abf765011809ed02, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &584925710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1419,7 +1442,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 590, y: 283}
+  m_AnchoredPosition: {x: 716, y: 124}
   m_SizeDelta: {x: -1281.5105, y: -873.03986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837488886
@@ -1442,7 +1465,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Menu
+  m_text: 'Menu
+
+    Principal'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 33c358d1695b7244c95e4386e8d9611a, type: 2}
   m_sharedMaterial: {fileID: -5880438896434313927, guid: 33c358d1695b7244c95e4386e8d9611a, type: 2}
